@@ -1,0 +1,12 @@
+.env*
+!.env.example
+node_modules/
+.next/
+venv/
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+*.sqlite-wal
+*.sqlite-shm
