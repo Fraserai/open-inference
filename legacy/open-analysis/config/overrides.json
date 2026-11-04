@@ -1,0 +1,25 @@
+{
+  "_note": "Manual corrections applied on top of automatic matching. gateway_aliases joins a Vercel id to an OpenRouter id when the names differ too much to match automatically. artificial_analysis_aliases pins a model id (Vercel or OpenRouter) to an Artificial Analysis slug. open_weights forces the open/closed flag for a model id. Each entry has its evidence recorded under _evidence.",
+  "gateway_aliases": {
+    "amazon/nova-lite": "amazon/nova-lite-v1",
+    "amazon/nova-micro": "amazon/nova-micro-v1",
+    "amazon/nova-pro": "amazon/nova-pro-v1",
+    "amazon/nova-2-lite": "amazon/nova-2-lite-v1",
+    "deepseek/deepseek-v3.1": "deepseek/deepseek-chat-v3.1",
+    "mistral/mistral-large-3": "mistralai/mistral-large-2512",
+    "mistral/mistral-large-4": "mistralai/mistral-large-4-0",
+    "alibaba/qwen-3-30b": "qwen/qwen3-30b-a3b"
+  },
+  "artificial_analysis_aliases": {
+    "meta/muse-glimmer-30b": "muse-glimmer"
+  },
+  "open_weights": {},
+  "_evidence": {
+    "amazon/nova-*": "OpenRouter appends -v1 to the same Amazon Nova model names.",
+    "deepseek/deepseek-v3.1": "Both gateways call it 'DeepSeek V3.1' at the same price (2026-10-11).",
+    "mistral/mistral-large-3": "Vercel 'Mistral Large 3', OpenRouter 'Mistral Large 3 2512', same price (2026-10-11).",
+    "mistral/mistral-large-4": "Both gateways call it 'Mistral Large 4' at the same price (2026-10-11).",
+    "alibaba/qwen-3-30b": "Vercel 'Qwen3-30B-A3B', OpenRouter 'Qwen3 30B A3B', same price (2026-10-11).",
+    "meta/muse-glimmer-30b": "OpenRouter's copy of this model's AA index (17.5) equals AA's 'Muse Glimmer (High)' on 2026-10-11; AA lists no other Muse Glimmer."
+  }
+}

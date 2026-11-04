@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-11",
+  "title": "Model Market Spread Map",
+  "notes": "2026-10-11-spread-map.md",
+  "basis": "Hand-checked from two Artificial Analysis charts: Intelligence Index in whole points, and cost per Intelligence Index task in USD.",
+  "slug_note": "The notes name models as the charts do. artificial_analysis_slug was added afterwards by matching each name to the Artificial Analysis API listing of the same day.",
+  "models": [
+    {"name": "Claude Opus 5.5", "artificial_analysis_slug": "claude-opus-5-5", "intelligence": 58, "cost_per_task_usd": 5.98, "open_weights": false, "public": true},
+    {"name": "Claude Sonnet 5.5", "artificial_analysis_slug": "claude-sonnet-5-5", "intelligence": 56, "cost_per_task_usd": 5.46, "open_weights": false, "public": true},
+    {"name": "Claude Fable 5.1 (max, fallback)", "artificial_analysis_slug": "claude-fable-5-1", "intelligence": 53, "cost_per_task_usd": 7.63, "open_weights": false, "public": true},
+    {"name": "GPT-6 Astra (max)", "artificial_analysis_slug": "gpt-6-astra", "intelligence": 53, "cost_per_task_usd": 3.26, "open_weights": false, "public": true},
+    {"name": "Gemini 4 Argon", "artificial_analysis_slug": "gemini-4-argon", "intelligence": 53, "cost_per_task_usd": 1.99, "open_weights": false, "public": false, "note": "Marked 'Not publicly available' on the chart."},
+    {"name": "GPT-6.1 Sol", "artificial_analysis_slug": "gpt-6-1-sol", "intelligence": 52, "cost_per_task_usd": 0.72, "open_weights": false, "public": true},
+    {"name": "Muse Spark 1.3", "artificial_analysis_slug": "muse-spark-1-3", "intelligence": 48, "cost_per_task_usd": 1.60, "open_weights": false, "public": true},
+    {"name": "Grok 4.7 (xhigh)", "artificial_analysis_slug": "grok-4-7", "intelligence": 46, "cost_per_task_usd": 3.74, "open_weights": false, "public": true},
+    {"name": "MiMo-V2.6-Pro", "artificial_analysis_slug": "mimo-v2-6-pro", "intelligence": 46, "cost_per_task_usd": 0.13, "open_weights": true, "public": true},
+    {"name": "Qwen3.8 Max (0902)", "artificial_analysis_slug": "qwen3-8-max", "intelligence": 45, "cost_per_task_usd": 5.41, "open_weights": false, "public": true},
+    {"name": "GLM-5.3 (max)", "artificial_analysis_slug": "glm-5-3", "intelligence": 45, "cost_per_task_usd": 2.01, "open_weights": true, "public": true},
+    {"name": "Step 5 Preview", "artificial_analysis_slug": "step-5", "intelligence": 44, "cost_per_task_usd": 1.03, "open_weights": false, "public": true},
+    {"name": "Kimi K3 (max)", "artificial_analysis_slug": "kimi-k3", "intelligence": 44, "cost_per_task_usd": 2.00, "open_weights": true, "public": true},
+    {"name": "Claude Haiku 5.5", "artificial_analysis_slug": "claude-haiku-5-5", "intelligence": 43, "cost_per_task_usd": 0.21, "open_weights": false, "public": true, "note": "Asterisked on the chart; footnote not captured. Provisional."},
+    {"name": "GLM-5.3-Flash", "artificial_analysis_slug": "glm-5-3-flash", "intelligence": 42, "cost_per_task_usd": 0.25, "open_weights": true, "public": true},
+    {"name": "Gemini 3.8 Flash", "artificial_analysis_slug": "gemini-3-8-flash", "intelligence": 41, "cost_per_task_usd": 1.24, "open_weights": false, "public": true},
+    {"name": "DeepSeek V4.1 Flash", "artificial_analysis_slug": "deepseek-v4-1-flash", "intelligence": 39, "cost_per_task_usd": 0.27, "open_weights": true, "public": true},
+    {"name": "Mistral Large 4 Preview", "artificial_analysis_slug": "mistral-large-4", "intelligence": 38, "cost_per_task_usd": 1.13, "open_weights": false, "public": true},
+    {"name": "GPT-6 Luna (max)", "artificial_analysis_slug": "gpt-6-luna", "intelligence": 38, "cost_per_task_usd": 0.07, "open_weights": false, "public": true},
+    {"name": "Qwen3.8 27B", "artificial_analysis_slug": "qwen3-8-27b", "intelligence": 34, "cost_per_task_usd": 1.01, "open_weights": true, "public": true},
+    {"name": "K2 Horizon 375B", "artificial_analysis_slug": "k2-horizon-375b-a23b", "intelligence": 31, "cost_per_task_usd": null, "open_weights": null, "public": null, "note": "No cost bar on the chart; excluded from the spread map."},
+    {"name": "MiniMax-M3", "artificial_analysis_slug": "minimax-m3", "intelligence": 29, "cost_per_task_usd": 0.51, "open_weights": true, "public": true},
+    {"name": "Inkling", "artificial_analysis_slug": "inkling", "intelligence": 25, "cost_per_task_usd": null, "open_weights": null, "public": null, "note": "No cost bar on the chart; excluded from the spread map."},
+    {"name": "Nemotron 3 Ultra", "artificial_analysis_slug": "nvidia-nemotron-3-ultra-550b-a55b", "intelligence": 23, "cost_per_task_usd": 0.60, "open_weights": true, "public": true},
+    {"name": "Muse Glimmer", "artificial_analysis_slug": "muse-glimmer", "intelligence": 17, "cost_per_task_usd": 0.06, "open_weights": true, "public": true}
+  ],
+  "expected": {
+    "all_models": {
+      "models": 23,
+      "dominated": 16,
+      "dominance_relationships": 64,
+      "same_intelligence_relationships": 7,
+      "frontier": ["muse-glimmer", "gpt-6-luna", "mimo-v2-6-pro", "gpt-6-1-sol", "gemini-4-argon", "claude-sonnet-5-5", "claude-opus-5-5"],
+      "cheapest_at_least": {
+        "17": "muse-glimmer", "23": "gpt-6-luna", "30": "gpt-6-luna", "38": "gpt-6-luna",
+        "40": "mimo-v2-6-pro", "42": "mimo-v2-6-pro", "44": "mimo-v2-6-pro", "46": "mimo-v2-6-pro", "47": "gpt-6-1-sol",
+        "48": "gpt-6-1-sol", "50": "gpt-6-1-sol", "52": "gpt-6-1-sol", "53": "gemini-4-argon",
+        "56": "claude-sonnet-5-5", "58": "claude-opus-5-5"
+      },
+      "dominated_by": {
+        "qwen3-8-max": "mimo-v2-6-pro", "grok-4-7": "mimo-v2-6-pro", "mistral-large-4": "gpt-6-luna",
+        "glm-5-3": "mimo-v2-6-pro", "kimi-k3": "mimo-v2-6-pro", "qwen3-8-27b": "gpt-6-luna",
+        "gemini-3-8-flash": "mimo-v2-6-pro", "nvidia-nemotron-3-ultra-550b-a55b": "gpt-6-luna",
+        "step-5": "mimo-v2-6-pro", "minimax-m3": "gpt-6-luna", "claude-fable-5-1": "gemini-4-argon",
+        "muse-spark-1-3": "gpt-6-1-sol", "deepseek-v4-1-flash": "mimo-v2-6-pro", "glm-5-3-flash": "mimo-v2-6-pro",
+        "gpt-6-astra": "gemini-4-argon", "claude-haiku-5-5": "mimo-v2-6-pro"
+      },
+      "dominates_count": {
+        "mimo-v2-6-pro": 13, "gpt-6-1-sol": 9, "claude-haiku-5-5": 7, "gemini-4-argon": 6, "glm-5-3-flash": 6,
+        "gpt-6-luna": 4, "muse-spark-1-3": 4, "deepseek-v4-1-flash": 4, "gpt-6-astra": 3, "step-5": 3,
+        "claude-sonnet-5-5": 1, "claude-opus-5-5": 1
+      }
+    },
+    "public_models": {
+      "models": 22,
+      "dominated": 15,
+      "dominance_relationships": 58,
+      "frontier": ["muse-glimmer", "gpt-6-luna", "mimo-v2-6-pro", "gpt-6-1-sol", "gpt-6-astra", "claude-sonnet-5-5", "claude-opus-5-5"],
+      "cheapest_at_least": {"53": "gpt-6-astra"},
+      "dominated_by": {"claude-fable-5-1": "gpt-6-astra"}
+    },
+    "open_models": {
+      "models": 9,
+      "dominated": 7,
+      "frontier": ["muse-glimmer", "mimo-v2-6-pro"],
+      "dominated_by": {
+        "glm-5-3": "mimo-v2-6-pro", "kimi-k3": "mimo-v2-6-pro", "qwen3-8-27b": "mimo-v2-6-pro",
+        "nvidia-nemotron-3-ultra-550b-a55b": "mimo-v2-6-pro", "minimax-m3": "mimo-v2-6-pro",
+        "deepseek-v4-1-flash": "mimo-v2-6-pro", "glm-5-3-flash": "mimo-v2-6-pro"
+      }
+    }
+  }
+}

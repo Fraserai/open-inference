@@ -1,0 +1,18 @@
+# Secrets
+.env
+
+# Raw API responses (kept locally for re-runs; not for redistribution)
+data/raw/
+
+__pycache__/
+*.pyc
+.DS_Store
+logs/
+
+# Website build output and dependencies
+site/node_modules
+site/dist/
+site/.astro/
+
+# Snapshots written by the Mac backup job; the repo's copies come from GitHub Actions
+backup/

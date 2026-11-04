@@ -14,5 +14,20 @@ Copied in on 2026-11-04. The originals are untouched in their old folders. Don't
 - **Original:** `~/Documents/Codex/2026-09-13/ai/outputs/australian-endpoints`, plus `work/` (a catalogue update script and two Hugging Face model listings).
 - **Left out on purpose:** `state/` (a local admin token and the mock database), `venv`, caches, and `egg-info`.
 
+## open-analysis/ (Oct 2026): the daily data job, trimmed
+- **What:** a small Python job with no dependencies (35 tests pass, re-run 2026-11-04). It pulls Artificial Analysis, OpenRouter, Vercel AI Gateway and RBA exchange rates, and writes a dated snapshot of every model.
+- **Kept, because Open Inference needs it (first moves 1 and 3):**
+  - `sources.py`: fetches models, providers and their datacenter countries.
+  - `match.py`: joins models across sources by name. `config/overrides.json` holds the corrections.
+  - `fx.py`: RBA AUD rates.
+  - `providers_in_australia` (point 10): which models the gateways list as deployed in Australia, plus `vs_list_price`, the **Australian markup**.
+  - `smartest_open` (point 7): Intelligence Index, open-weights flag, and rank among open models.
+  - `price_aud` (point 1): list price in AUD, the global baseline for the markup.
+  - `data/snapshots/`: 4 real snapshots (11, 13, 14 and 23 Oct 2026), a baseline for "the gap hasn't moved".
+- **Router-oriented, ignore for now:** the spread map (`metrics.py`, dominance and "cheapest per intelligence level"), `value_aud`, `cost_per_task_aud` and `inputs/cost_per_task`. They're still inside `snapshot.py`, `check.py` and `reference/`, because removing them would break the code and its tests.
+- **Left out:** the Astro website (`site/`, `site.py`), the GitHub Actions workflow, the Mac launch agent, `data/raw`, `.env` (real keys) and the CSV copies of the snapshots.
+- **Keys it needs to run live:** `ARTIFICIAL_ANALYSIS_API_KEY` and `OPENROUTER_API_KEY` (both free tiers). See `.env.example`.
+- **Original:** `~/Desktop/CODEBASES/OPEN-ANALYSIS` (git history in `GIT_HISTORY.txt`).
+
 ## Secret scan (gitleaks, 2026-11-04)
 2 hits, both false positives: a placeholder `coral_…` key in Coral's README curl example, and the Hugging Face model name "SkinTokens" in `work/qwen-small.json`.
