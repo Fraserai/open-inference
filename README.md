@@ -16,6 +16,15 @@ Australian AI compute data first: which open and closed models really run in Aus
 | `data/` | Raw daily pulls (dated). |
 | `reports/` | What gets published. |
 
+## Daily report (first move 1, built 2026-11-04)
+- **Read it:** `reports/latest.md` (one file per day in `reports/`, the full data in `data/<date>/snapshot.json`).
+- **Runs itself:** at 6pm Brisbane and at login (launchd job `com.openinference.daily`, which catches up after the Mac was off). It runs the tests, builds the report and commits it locally. Log: `bin/daily.log`.
+- **Run by hand:** `bin/daily.sh`, or `python3 -m tracker --offline` to rebuild from today's saved pages.
+- **Providers read:** SCX (regions per model), AWS Bedrock Sydney/Melbourne (regions per model), ResetData and Xinference (their own claim that serving is in Australia). Azure, Google, Amaze, Micron21, NorthStar, Datacom and Sovereign Australia AI are listed as not checked yet, with reasons.
+- **Scores:** Artificial Analysis. Without a key it uses the saved copy in `data/scores/` (currently 23 Oct). For live scores, put a free `ARTIFICIAL_ANALYSIS_API_KEY=...` in `.env` (gitignored).
+- **Code:** `tracker/` (`providers.py` holds parsers and provider facts, `names.py` model-name matching, `build.py`, `report.py`). Tests: `python3 -m unittest discover -s tests`.
+- **Turn it off:** `launchctl bootout gui/$(id -u)/com.openinference.daily && rm ~/Library/LaunchAgents/com.openinference.daily.plist`
+
 ## First moves (from the one-pager)
 1. Automate the daily report across every Australian provider.
 2. Collect GPU prices, online and by talking to providers.
