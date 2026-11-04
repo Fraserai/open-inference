@@ -1,0 +1,4207 @@
+{
+ "as_of": "2026-10-23",
+ "source": "Artificial Analysis Intelligence Index, via the Open-Analysis snapshot of 2026-10-23 (artificialanalysis.ai)",
+ "note": "Fallback copy. Replaced by a live pull when ARTIFICIAL_ANALYSIS_API_KEY is set.",
+ "models": [
+  {
+   "name": "Claude Opus 5.5",
+   "aa_name": "Claude Opus 5.5 (Max, Default Fallback)",
+   "creator": "anthropic",
+   "score": 57.6,
+   "open_weights": false,
+   "release_date": "2026-09-22"
+  },
+  {
+   "name": "Claude Sonnet 5.5",
+   "aa_name": "Claude Sonnet 5.5 (Max, Default Fallback)",
+   "creator": "anthropic",
+   "score": 56,
+   "open_weights": false,
+   "release_date": "2026-09-28"
+  },
+  {
+   "name": "Muse Wonder Full (Max)",
+   "aa_name": "Muse Wonder Full (Max)",
+   "creator": "meta",
+   "score": 55.8,
+   "open_weights": null,
+   "release_date": "2026-10-12"
+  },
+  {
+   "name": "Claude Fable 5.1",
+   "aa_name": "Claude Fable 5.1 (Max, Default Fallback)",
+   "creator": "anthropic",
+   "score": 53.4,
+   "open_weights": false,
+   "release_date": "2026-09-01"
+  },
+  {
+   "name": "GPT-6 Astra",
+   "aa_name": "GPT-6 Astra (Max)",
+   "creator": "openai",
+   "score": 52.7,
+   "open_weights": false,
+   "release_date": "2026-09-03"
+  },
+  {
+   "name": "Gemini 4 Argon",
+   "aa_name": "Gemini 4 Argon (High)",
+   "creator": "google",
+   "score": 52.6,
+   "open_weights": false,
+   "release_date": "2026-09-30"
+  },
+  {
+   "name": "Muse Wonder",
+   "aa_name": "Muse Wonder (Max)",
+   "creator": "meta",
+   "score": 52.4,
+   "open_weights": false,
+   "release_date": "2026-10-12"
+  },
+  {
+   "name": "Muse Wonder",
+   "aa_name": "Muse Wonder (Max)",
+   "creator": "meta",
+   "score": 52.4,
+   "open_weights": null,
+   "release_date": "2026-10-12"
+  },
+  {
+   "name": "GPT-6.1 Sol",
+   "aa_name": "GPT-6.1 Sol (Max)",
+   "creator": "openai",
+   "score": 51.8,
+   "open_weights": false,
+   "release_date": "2026-09-29"
+  },
+  {
+   "name": "Claude Opus 5",
+   "aa_name": "Claude Opus 5 (Max)",
+   "creator": "anthropic",
+   "score": 50.8,
+   "open_weights": false,
+   "release_date": "2026-07-24"
+  },
+  {
+   "name": "Claude Fable 5",
+   "aa_name": "Claude Fable 5 (Max, Opus 4.8 Fallback)",
+   "creator": "anthropic",
+   "score": 49.6,
+   "open_weights": false,
+   "release_date": "2026-06-09"
+  },
+  {
+   "name": "Muse Spark 1.3",
+   "aa_name": "Muse Spark 1.3 (Max)",
+   "creator": "meta",
+   "score": 48.1,
+   "open_weights": false,
+   "release_date": "2026-09-02"
+  },
+  {
+   "name": "GPT-6 Sol",
+   "aa_name": "GPT-6 Sol (Max)",
+   "creator": "openai",
+   "score": 47.6,
+   "open_weights": false,
+   "release_date": "2026-09-22"
+  },
+  {
+   "name": "GPT 5.6 Sol",
+   "aa_name": "GPT-5.6 Sol (Max)",
+   "creator": "openai",
+   "score": 47,
+   "open_weights": false,
+   "release_date": "2026-07-09"
+  },
+  {
+   "name": "Grok 4.7",
+   "aa_name": "Grok 4.7 (Xhigh)",
+   "creator": "xai",
+   "score": 46.4,
+   "open_weights": false,
+   "release_date": "2026-09-21"
+  },
+  {
+   "name": "MiMo V2.6 Pro",
+   "aa_name": "MiMo-V2.6-Pro",
+   "creator": "xiaomi",
+   "score": 46.3,
+   "open_weights": true,
+   "release_date": "2026-09-21"
+  },
+  {
+   "name": "Qwen3.8 Max 0902",
+   "aa_name": "Qwen3.8 Max (0902)",
+   "creator": "alibaba",
+   "score": 45.4,
+   "open_weights": false,
+   "release_date": "2026-09-02"
+  },
+  {
+   "name": "DeepSeek V4.1 Flash 1017",
+   "aa_name": "DeepSeek V4.1 Flash 1017 (Max)",
+   "creator": "deepseek",
+   "score": 45.1,
+   "open_weights": true,
+   "release_date": "2026-10-17"
+  },
+  {
+   "name": "GLM 5.3",
+   "aa_name": "GLM-5.3 (Max)",
+   "creator": "zai",
+   "score": 44.8,
+   "open_weights": true,
+   "release_date": "2026-08-18"
+  },
+  {
+   "name": "Grok 4.6",
+   "aa_name": "Grok 4.6 (High)",
+   "creator": "xai",
+   "score": 44.3,
+   "open_weights": false,
+   "release_date": "2026-08-12"
+  },
+  {
+   "name": "Ling 3.1 Flash 1019",
+   "aa_name": "Ling 3.1 Flash 1019",
+   "creator": "inclusionai",
+   "score": 43.9,
+   "open_weights": null,
+   "release_date": "2026-10-22"
+  },
+  {
+   "name": "Step 5 Preview",
+   "aa_name": "Step 5 Preview",
+   "creator": "stepfun",
+   "score": 43.7,
+   "open_weights": true,
+   "release_date": "2026-09-18"
+  },
+  {
+   "name": "Kimi K3",
+   "aa_name": "Kimi K3 (Max)",
+   "creator": "moonshotai",
+   "score": 43.6,
+   "open_weights": true,
+   "release_date": "2026-07-16"
+  },
+  {
+   "name": "Claude Haiku 5.5",
+   "aa_name": "Claude Haiku 5.5 (Max)",
+   "creator": "anthropic",
+   "score": 43.4,
+   "open_weights": false,
+   "release_date": "2026-10-07"
+  },
+  {
+   "name": "MiniMax-M3.1-Flash",
+   "aa_name": "MiniMax-M3.1-Flash",
+   "creator": "minimax",
+   "score": 42.7,
+   "open_weights": false,
+   "release_date": "2026-10-19"
+  },
+  {
+   "name": "GPT 5.6 Terra",
+   "aa_name": "GPT-5.6 Terra (Max)",
+   "creator": "openai",
+   "score": 42.1,
+   "open_weights": false,
+   "release_date": "2026-07-09"
+  },
+  {
+   "name": "Claude Opus 4.8",
+   "aa_name": "Claude Opus 4.8 (Max)",
+   "creator": "anthropic",
+   "score": 41.8,
+   "open_weights": false,
+   "release_date": "2026-05-28"
+  },
+  {
+   "name": "GLM 5.3 Flash",
+   "aa_name": "GLM-5.3-Flash",
+   "creator": "zai",
+   "score": 41.8,
+   "open_weights": true,
+   "release_date": "2026-08-26"
+  },
+  {
+   "name": "Ling 3.1 Flash",
+   "aa_name": "Ling 3.1 Flash",
+   "creator": "inclusionai",
+   "score": 41.1,
+   "open_weights": false,
+   "release_date": "2026-10-01"
+  },
+  {
+   "name": "Gemini 3.8 Flash",
+   "aa_name": "Gemini 3.8 Flash (High)",
+   "creator": "google",
+   "score": 40.9,
+   "open_weights": false,
+   "release_date": "2026-09-02"
+  },
+  {
+   "name": "Claude Opus 4.7",
+   "aa_name": "Claude Opus 4.7 (Max)",
+   "creator": "anthropic",
+   "score": 40.7,
+   "open_weights": false,
+   "release_date": "2026-04-16"
+  },
+  {
+   "name": "Qwen 3.8 Max",
+   "aa_name": "Qwen3.8 Max",
+   "creator": "alibaba",
+   "score": 40.2,
+   "open_weights": null,
+   "release_date": "2026-08-03"
+  },
+  {
+   "name": "Qwen3.8 2.4T A95B",
+   "aa_name": "Qwen3.8 2.4T A95B",
+   "creator": "alibaba",
+   "score": 39.9,
+   "open_weights": true,
+   "release_date": "2026-08-12"
+  },
+  {
+   "name": "Qwen3.8-Flash-Next",
+   "aa_name": "Qwen3.8-Flash-Next",
+   "creator": "alibaba",
+   "score": 39.8,
+   "open_weights": null,
+   "release_date": "2026-08-26"
+  },
+  {
+   "name": "Gemini 3.7 Flash",
+   "aa_name": "Gemini 3.7 Flash (Medium)",
+   "creator": "google",
+   "score": 39.6,
+   "open_weights": false,
+   "release_date": "2026-08-13"
+  },
+  {
+   "name": "Muse Spark 1.2",
+   "aa_name": "Muse Spark 1.2 (Xhigh)",
+   "creator": "meta",
+   "score": 39.6,
+   "open_weights": false,
+   "release_date": "2026-08-05"
+  },
+  {
+   "name": "DeepSeek V4.1 Flash",
+   "aa_name": "DeepSeek V4.1 Flash (Max)",
+   "creator": "deepseek",
+   "score": 39.5,
+   "open_weights": true,
+   "release_date": "2026-09-10"
+  },
+  {
+   "name": "GPT 5.4",
+   "aa_name": "GPT-5.4 (Xhigh)",
+   "creator": "openai",
+   "score": 39,
+   "open_weights": false,
+   "release_date": "2026-03-05"
+  },
+  {
+   "name": "Muse Spark Open",
+   "aa_name": "Muse Spark Open (Xhigh)",
+   "creator": "meta",
+   "score": 38.9,
+   "open_weights": true,
+   "release_date": "2026-10-15"
+  },
+  {
+   "name": "Grok 4.5",
+   "aa_name": "Grok 4.5 (High)",
+   "creator": "xai",
+   "score": 38.8,
+   "open_weights": false,
+   "release_date": "2026-07-08"
+  },
+  {
+   "name": "Mistral Large 4",
+   "aa_name": "Mistral Large 4 Preview",
+   "creator": "mistral",
+   "score": 38.4,
+   "open_weights": false,
+   "release_date": "2026-10-06"
+  },
+  {
+   "name": "GPT 5.5",
+   "aa_name": "GPT-5.5 (Xhigh)",
+   "creator": "openai",
+   "score": 38.4,
+   "open_weights": false,
+   "release_date": "2026-04-23"
+  },
+  {
+   "name": "Claude Sonnet 5",
+   "aa_name": "Claude Sonnet 5 (Max)",
+   "creator": "anthropic",
+   "score": 38.2,
+   "open_weights": false,
+   "release_date": "2026-06-30"
+  },
+  {
+   "name": "GPT-6 Luna",
+   "aa_name": "GPT-6 Luna (Max)",
+   "creator": "openai",
+   "score": 38.1,
+   "open_weights": false,
+   "release_date": "2026-09-22"
+  },
+  {
+   "name": "MiMo V2.6 Flash",
+   "aa_name": "MiMo-V2.6-Flash",
+   "creator": "xiaomi",
+   "score": 37.9,
+   "open_weights": true,
+   "release_date": "2026-09-21"
+  },
+  {
+   "name": "GPT 5.6 Luna",
+   "aa_name": "GPT-5.6 Luna (Max)",
+   "creator": "openai",
+   "score": 37.3,
+   "open_weights": false,
+   "release_date": "2026-07-09"
+  },
+  {
+   "name": "DeepSeek V4 Pro 0813",
+   "aa_name": "DeepSeek V4 Pro 0813 (Max)",
+   "creator": "deepseek",
+   "score": 36,
+   "open_weights": true,
+   "release_date": "2026-08-13"
+  },
+  {
+   "name": "Agnes 2.5 Pro Beta",
+   "aa_name": "Agnes 2.5 Pro Beta",
+   "creator": "agnes-ai",
+   "score": 35.2,
+   "open_weights": null,
+   "release_date": "2026-08-26"
+  },
+  {
+   "name": "DeepSeek V4 Flash Vision (Max)",
+   "aa_name": "DeepSeek V4 Flash Vision (Max)",
+   "creator": "deepseek",
+   "score": 34.8,
+   "open_weights": null,
+   "release_date": "2026-08-21"
+  },
+  {
+   "name": "DeepSeek V4 Flash Vision Exp",
+   "aa_name": null,
+   "creator": "deepseek",
+   "score": 34.8,
+   "open_weights": true,
+   "release_date": null
+  },
+  {
+   "name": "DeepSeek V4 Flash 0731",
+   "aa_name": "DeepSeek V4 Flash 0731 (Max)",
+   "creator": "deepseek",
+   "score": 34.3,
+   "open_weights": true,
+   "release_date": "2026-07-31"
+  },
+  {
+   "name": "Gemini 3.6 Flash",
+   "aa_name": "Gemini 3.6 Flash (High)",
+   "creator": "google",
+   "score": 34,
+   "open_weights": false,
+   "release_date": "2026-07-21"
+  },
+  {
+   "name": "JT-4.1 Flash 236B A21B (Reasoning)",
+   "aa_name": "JT-4.1 Flash 236B A21B (Reasoning)",
+   "creator": "china-mobile",
+   "score": 33.9,
+   "open_weights": null,
+   "release_date": "2026-07-09"
+  },
+  {
+   "name": "Qwen3.8 27B",
+   "aa_name": "Qwen3.8 27B (Xhigh)",
+   "creator": "alibaba",
+   "score": 33.7,
+   "open_weights": true,
+   "release_date": "2026-08-14"
+  },
+  {
+   "name": "Muse Spark 1.1",
+   "aa_name": "Muse Spark 1.1 (Xhigh)",
+   "creator": "meta",
+   "score": 33.7,
+   "open_weights": false,
+   "release_date": "2026-07-09"
+  },
+  {
+   "name": "GLM 5.2",
+   "aa_name": "GLM-5.2 (Max)",
+   "creator": "zai",
+   "score": 33.7,
+   "open_weights": true,
+   "release_date": "2026-06-16"
+  },
+  {
+   "name": "Motif 3",
+   "aa_name": "Motif 3",
+   "creator": "motif-technologies",
+   "score": 33.6,
+   "open_weights": null,
+   "release_date": "2026-08-12"
+  },
+  {
+   "name": "Gemini 3.5 Flash",
+   "aa_name": "Gemini 3.5 Flash (Medium)",
+   "creator": "google",
+   "score": 33.6,
+   "open_weights": false,
+   "release_date": "2026-05-19"
+  },
+  {
+   "name": "GPT 5.3 Codex",
+   "aa_name": "GPT-5.3 Codex (Xhigh)",
+   "creator": "openai",
+   "score": 32.5,
+   "open_weights": false,
+   "release_date": "2026-02-05"
+  },
+  {
+   "name": "Motif 3 (Beta)",
+   "aa_name": "Motif 3 (Beta)",
+   "creator": "motif-technologies",
+   "score": 32.3,
+   "open_weights": null,
+   "release_date": "2026-07-14"
+  },
+  {
+   "name": "Claude Opus 4.6",
+   "aa_name": "Claude Opus 4.6 (Max)",
+   "creator": "anthropic",
+   "score": 31.9,
+   "open_weights": false,
+   "release_date": "2026-02-05"
+  },
+  {
+   "name": "Muse Spark",
+   "aa_name": "Muse Spark",
+   "creator": "meta",
+   "score": 31.3,
+   "open_weights": null,
+   "release_date": "2026-04-08"
+  },
+  {
+   "name": "K2 Horizon 375B A23B",
+   "aa_name": "K2 Horizon 375B A23B",
+   "creator": "ifm",
+   "score": 30.5,
+   "open_weights": null,
+   "release_date": "2026-09-03"
+  },
+  {
+   "name": "DeepSeek V4 Pro",
+   "aa_name": "DeepSeek V4 Pro 0424 (Max)",
+   "creator": "deepseek",
+   "score": 30.4,
+   "open_weights": true,
+   "release_date": "2026-04-24"
+  },
+  {
+   "name": "GPT 5.2",
+   "aa_name": "GPT-5.2 (Xhigh)",
+   "creator": "openai",
+   "score": 30.4,
+   "open_weights": false,
+   "release_date": "2025-12-11"
+  },
+  {
+   "name": "Beam 1.0",
+   "aa_name": "Beam 1.0",
+   "creator": "reflection",
+   "score": 30.3,
+   "open_weights": null,
+   "release_date": "2026-10-16"
+  },
+  {
+   "name": "Claude Sonnet 4.6",
+   "aa_name": "Claude Sonnet 4.6 (Max)",
+   "creator": "anthropic",
+   "score": 30.1,
+   "open_weights": false,
+   "release_date": "2026-02-17"
+  },
+  {
+   "name": "Gemini 3.1 Pro Preview",
+   "aa_name": "Gemini 3.1 Pro Preview",
+   "creator": "google",
+   "score": 29.7,
+   "open_weights": false,
+   "release_date": "2026-02-19"
+  },
+  {
+   "name": "Qwen 3.7 Max",
+   "aa_name": "Qwen3.7 Max",
+   "creator": "alibaba",
+   "score": 29.5,
+   "open_weights": false,
+   "release_date": "2026-05-19"
+  },
+  {
+   "name": "MiniMax M3",
+   "aa_name": "MiniMax-M3",
+   "creator": "minimax",
+   "score": 29.2,
+   "open_weights": true,
+   "release_date": "2026-06-01"
+  },
+  {
+   "name": "Claude Opus 4.5",
+   "aa_name": "Claude Opus 4.5 (Reasoning)",
+   "creator": "anthropic",
+   "score": 29.1,
+   "open_weights": false,
+   "release_date": "2025-11-24"
+  },
+  {
+   "name": "MiMo-V2-Pro",
+   "aa_name": "MiMo-V2-Pro",
+   "creator": "xiaomi",
+   "score": 28.6,
+   "open_weights": null,
+   "release_date": "2026-03-18"
+  },
+  {
+   "name": "GPT 5.2 Codex",
+   "aa_name": "GPT-5.2 Codex (Xhigh)",
+   "creator": "openai",
+   "score": 28.5,
+   "open_weights": false,
+   "release_date": "2025-12-11"
+  },
+  {
+   "name": "Qwen3.6 Max Preview",
+   "aa_name": "Qwen3.6 Max Preview",
+   "creator": "alibaba",
+   "score": 28.4,
+   "open_weights": null,
+   "release_date": "2026-04-20"
+  },
+  {
+   "name": "Nex-N2-Pro (Based on Qwen3.5-397B-A17B)",
+   "aa_name": "Nex-N2-Pro (Based on Qwen3.5-397B-A17B)",
+   "creator": "nex",
+   "score": 28.2,
+   "open_weights": null,
+   "release_date": "2026-06-02"
+  },
+  {
+   "name": "Gemini 3 Pro Preview (High)",
+   "aa_name": "Gemini 3 Pro Preview (High)",
+   "creator": "google",
+   "score": 28,
+   "open_weights": null,
+   "release_date": "2025-11-18"
+  },
+  {
+   "name": "GLM 5",
+   "aa_name": "GLM-5 (Reasoning)",
+   "creator": "zai",
+   "score": 27.9,
+   "open_weights": true,
+   "release_date": "2026-02-11"
+  },
+  {
+   "name": "Grok Build 0.1",
+   "aa_name": "Grok Build 0.1 0616",
+   "creator": "xai",
+   "score": 27.2,
+   "open_weights": false,
+   "release_date": "2026-06-16"
+  },
+  {
+   "name": "Qwen 3.6 Plus",
+   "aa_name": "Qwen3.6 Plus",
+   "creator": "alibaba",
+   "score": 27,
+   "open_weights": false,
+   "release_date": "2026-04-02"
+  },
+  {
+   "name": "Kimi K2.6",
+   "aa_name": "Kimi K2.6 (Reasoning)",
+   "creator": "moonshotai",
+   "score": 27,
+   "open_weights": true,
+   "release_date": "2026-04-20"
+  },
+  {
+   "name": "Quasar 438B (Max, Based on GLM-5.2)",
+   "aa_name": "Quasar 438B (Max, Based on GLM-5.2)",
+   "creator": "multiversecomputing",
+   "score": 26.7,
+   "open_weights": null,
+   "release_date": "2026-08-10"
+  },
+  {
+   "name": "Solar Pro 4",
+   "aa_name": "Solar Pro 4",
+   "creator": "upstage",
+   "score": 26.6,
+   "open_weights": false,
+   "release_date": "2026-08-06"
+  },
+  {
+   "name": "GLM 5 Turbo",
+   "aa_name": "GLM-5-Turbo",
+   "creator": "zai",
+   "score": 26.6,
+   "open_weights": false,
+   "release_date": "2026-03-15"
+  },
+  {
+   "name": "NVIDIA Nemotron 3.5 Super VL",
+   "aa_name": "Nemotron 3.5 Super VL",
+   "creator": "nvidia",
+   "score": 26.5,
+   "open_weights": true,
+   "release_date": "2026-10-15"
+  },
+  {
+   "name": "Apodex 1.1",
+   "aa_name": "Apodex 1.1",
+   "creator": "apodex",
+   "score": 26.4,
+   "open_weights": null,
+   "release_date": "2026-08-30"
+  },
+  {
+   "name": "Gemini 3 Flash",
+   "aa_name": "Gemini 3 Flash Preview (Reasoning)",
+   "creator": "google",
+   "score": 26.3,
+   "open_weights": false,
+   "release_date": "2025-12-17"
+  },
+  {
+   "name": "GLM 5.1",
+   "aa_name": "GLM-5.1 (Reasoning)",
+   "creator": "zai",
+   "score": 26.1,
+   "open_weights": true,
+   "release_date": "2026-04-07"
+  },
+  {
+   "name": "GPT-5.5 Instant (June 2026)",
+   "aa_name": "GPT-5.5 Instant (June 2026)",
+   "creator": "openai",
+   "score": 26,
+   "open_weights": null,
+   "release_date": "2026-06-25"
+  },
+  {
+   "name": "MiMo V2.5 Pro",
+   "aa_name": "MiMo-V2.5-Pro (Reasoning)",
+   "creator": "xiaomi",
+   "score": 26,
+   "open_weights": true,
+   "release_date": "2026-04-22"
+  },
+  {
+   "name": "Kimi K2.7 Code",
+   "aa_name": "Kimi K2.7 Code",
+   "creator": "moonshotai",
+   "score": 25.8,
+   "open_weights": true,
+   "release_date": "2026-06-12"
+  },
+  {
+   "name": "Inkling Small",
+   "aa_name": "Inkling Small",
+   "creator": "thinkingmachines",
+   "score": 25.7,
+   "open_weights": true,
+   "release_date": "2026-07-30"
+  },
+  {
+   "name": "Grok 4.20",
+   "aa_name": null,
+   "creator": "xai",
+   "score": 25.7,
+   "open_weights": false,
+   "release_date": null
+  },
+  {
+   "name": "K2 Horizon MoVA 36B A4B",
+   "aa_name": "K2 Horizon MoVA 36B A4B",
+   "creator": "ifm",
+   "score": 25.3,
+   "open_weights": null,
+   "release_date": "2026-09-03"
+  },
+  {
+   "name": "Hy3",
+   "aa_name": "Hy3",
+   "creator": "tencent",
+   "score": 25.3,
+   "open_weights": true,
+   "release_date": "2026-07-06"
+  },
+  {
+   "name": "Grok 4.20 0309 (Reasoning)",
+   "aa_name": "Grok 4.20 0309 (Reasoning)",
+   "creator": "xai",
+   "score": 25.2,
+   "open_weights": null,
+   "release_date": "2026-03-10"
+  },
+  {
+   "name": "Qwen 3.7 Plus",
+   "aa_name": "Qwen3.7 Plus",
+   "creator": "alibaba",
+   "score": 25.2,
+   "open_weights": false,
+   "release_date": "2026-06-01"
+  },
+  {
+   "name": "MiMo-V2-Omni-0327",
+   "aa_name": "MiMo-V2-Omni-0327",
+   "creator": "xiaomi",
+   "score": 25.1,
+   "open_weights": null,
+   "release_date": "2026-03-27"
+  },
+  {
+   "name": "Inkling",
+   "aa_name": "Inkling (Xhigh)",
+   "creator": "thinkingmachines",
+   "score": 25,
+   "open_weights": true,
+   "release_date": "2026-07-15"
+  },
+  {
+   "name": "GPT-5-Codex",
+   "aa_name": "GPT-5 Codex (High)",
+   "creator": "openai",
+   "score": 24.9,
+   "open_weights": null,
+   "release_date": "2025-09-23"
+  },
+  {
+   "name": "Grok 4.3",
+   "aa_name": "Grok 4.3 (High)",
+   "creator": "xai",
+   "score": 24.9,
+   "open_weights": false,
+   "release_date": "2026-04-30"
+  },
+  {
+   "name": "Solar Open2 250B",
+   "aa_name": "Solar Open2 250B",
+   "creator": "upstage",
+   "score": 24.7,
+   "open_weights": null,
+   "release_date": "2026-08-12"
+  },
+  {
+   "name": "GPT-5.1",
+   "aa_name": "GPT-5.1 (High)",
+   "creator": "openai",
+   "score": 24.7,
+   "open_weights": false,
+   "release_date": "2025-11-13"
+  },
+  {
+   "name": "Ling 3.0 Flash VL",
+   "aa_name": "Ling-3.0-flash-VL",
+   "creator": "inclusionai",
+   "score": 24.6,
+   "open_weights": true,
+   "release_date": "2026-09-10"
+  },
+  {
+   "name": "DeepSeek V4 Flash",
+   "aa_name": "DeepSeek V4 Flash 0420 (High)",
+   "creator": "deepseek",
+   "score": 24.4,
+   "open_weights": true,
+   "release_date": "2026-04-24"
+  },
+  {
+   "name": "GPT 5.4 Mini",
+   "aa_name": "GPT-5.4 mini (Xhigh)",
+   "creator": "openai",
+   "score": 24.1,
+   "open_weights": false,
+   "release_date": "2026-03-17"
+  },
+  {
+   "name": "Solar Mini 4",
+   "aa_name": "Solar Mini 4",
+   "creator": "upstage",
+   "score": 24.1,
+   "open_weights": false,
+   "release_date": "2026-09-22"
+  },
+  {
+   "name": "MiMo-V2-Omni",
+   "aa_name": "MiMo-V2-Omni",
+   "creator": "xiaomi",
+   "score": 23.9,
+   "open_weights": null,
+   "release_date": "2026-03-19"
+  },
+  {
+   "name": "GPT-5.1-Codex",
+   "aa_name": "GPT-5.1 Codex (High)",
+   "creator": "openai",
+   "score": 23.7,
+   "open_weights": false,
+   "release_date": "2025-11-13"
+  },
+  {
+   "name": "Kimi K2.5",
+   "aa_name": "Kimi K2.5 (Reasoning)",
+   "creator": "moonshotai",
+   "score": 23.5,
+   "open_weights": true,
+   "release_date": "2026-01-27"
+  },
+  {
+   "name": "GLM 5V Turbo",
+   "aa_name": "GLM 5V Turbo (Reasoning)",
+   "creator": "zai",
+   "score": 23.5,
+   "open_weights": false,
+   "release_date": "2026-04-01"
+  },
+  {
+   "name": "GPT-5",
+   "aa_name": "GPT-5 (High)",
+   "creator": "openai",
+   "score": 23,
+   "open_weights": false,
+   "release_date": "2025-08-07"
+  },
+  {
+   "name": "Nemotron 3 Ultra",
+   "aa_name": "Nemotron 3 Ultra 550B A55B (Reasoning)",
+   "creator": "nvidia",
+   "score": 22.9,
+   "open_weights": true,
+   "release_date": "2026-06-04"
+  },
+  {
+   "name": "Qwen3.5-27B",
+   "aa_name": "Qwen3.5 27B (Reasoning)",
+   "creator": "alibaba",
+   "score": 22.9,
+   "open_weights": true,
+   "release_date": "2026-02-24"
+  },
+  {
+   "name": "Claude Opus 4.1",
+   "aa_name": "Claude 4.1 Opus (Reasoning)",
+   "creator": "anthropic",
+   "score": 22.8,
+   "open_weights": false,
+   "release_date": "2025-08-05"
+  },
+  {
+   "name": "MiniMax M2.5",
+   "aa_name": "MiniMax-M2.5",
+   "creator": "minimax",
+   "score": 22.8,
+   "open_weights": true,
+   "release_date": "2026-02-12"
+  },
+  {
+   "name": "MiniMax M2.7",
+   "aa_name": "MiniMax-M2.7",
+   "creator": "minimax",
+   "score": 22.8,
+   "open_weights": true,
+   "release_date": "2026-03-18"
+  },
+  {
+   "name": "GPT-5.5 Instant (May 2026)",
+   "aa_name": "GPT-5.5 Instant (May 2026)",
+   "creator": "openai",
+   "score": 22.7,
+   "open_weights": null,
+   "release_date": "2026-05-05"
+  },
+  {
+   "name": "Hy3 preview",
+   "aa_name": "Hy3-preview (Reasoning)",
+   "creator": "tencent",
+   "score": 22.7,
+   "open_weights": true,
+   "release_date": "2026-04-23"
+  },
+  {
+   "name": "Ling 3.0 Flash Fin",
+   "aa_name": "Ling-3.0-flash-Fin",
+   "creator": "inclusionai",
+   "score": 22.6,
+   "open_weights": null,
+   "release_date": "2026-09-11"
+  },
+  {
+   "name": "Grok 4",
+   "aa_name": "Grok 4",
+   "creator": "xai",
+   "score": 22.5,
+   "open_weights": null,
+   "release_date": "2025-07-10"
+  },
+  {
+   "name": "MiMo-V2-Flash (Feb 2026)",
+   "aa_name": "MiMo-V2-Flash (Feb 2026)",
+   "creator": "xiaomi",
+   "score": 22.4,
+   "open_weights": null,
+   "release_date": "2025-12-16"
+  },
+  {
+   "name": "Gemini 3.5 Flash Lite",
+   "aa_name": "Gemini 3.5 Flash-Lite",
+   "creator": "google",
+   "score": 22.2,
+   "open_weights": false,
+   "release_date": "2026-07-21"
+  },
+  {
+   "name": "GLM 4.7",
+   "aa_name": "GLM-4.7 (Reasoning)",
+   "creator": "zai",
+   "score": 22.2,
+   "open_weights": true,
+   "release_date": "2025-12-22"
+  },
+  {
+   "name": "Kimi K2 Thinking",
+   "aa_name": "Kimi K2 Thinking",
+   "creator": "moonshotai",
+   "score": 22,
+   "open_weights": true,
+   "release_date": "2025-11-06"
+  },
+  {
+   "name": "o3 Pro",
+   "aa_name": "o3-pro",
+   "creator": "openai",
+   "score": 21.9,
+   "open_weights": false,
+   "release_date": "2025-06-10"
+  },
+  {
+   "name": "G9v3-39A5B",
+   "aa_name": "G9v3-39A5B",
+   "creator": "ai9star",
+   "score": 21.8,
+   "open_weights": null,
+   "release_date": "2026-08-20"
+  },
+  {
+   "name": "MiMo M2.5",
+   "aa_name": "MiMo-V2.5",
+   "creator": "xiaomi",
+   "score": 21.8,
+   "open_weights": true,
+   "release_date": "2026-04-22"
+  },
+  {
+   "name": "KAT Coder Pro V2",
+   "aa_name": "KAT Coder Pro V2",
+   "creator": "kwaikat",
+   "score": 21.7,
+   "open_weights": null,
+   "release_date": "2026-03-27"
+  },
+  {
+   "name": "A.X-K2",
+   "aa_name": "A.X-K2",
+   "creator": "sk-telecom",
+   "score": 21.5,
+   "open_weights": null,
+   "release_date": "2026-08-12"
+  },
+  {
+   "name": "DeepSeek V3.2",
+   "aa_name": "DeepSeek V3.2 (Reasoning)",
+   "creator": "deepseek",
+   "score": 21.5,
+   "open_weights": true,
+   "release_date": "2025-12-01"
+  },
+  {
+   "name": "DeepSeek V3.2 Thinking",
+   "aa_name": "DeepSeek V3.2 (Reasoning)",
+   "creator": "deepseek",
+   "score": 21.5,
+   "open_weights": null,
+   "release_date": "2025-12-01"
+  },
+  {
+   "name": "Nemotron 3.5 Bolt 74B-A9B",
+   "aa_name": "Nemotron 3.5 Bolt 74B-A9B",
+   "creator": "nvidia",
+   "score": 21.4,
+   "open_weights": null,
+   "release_date": "2026-10-15"
+  },
+  {
+   "name": "Qwen 3.6 27B",
+   "aa_name": "Qwen3.6 27B (Reasoning)",
+   "creator": "alibaba",
+   "score": 21.4,
+   "open_weights": true,
+   "release_date": "2026-04-22"
+  },
+  {
+   "name": "Qwen3.5 397B A17B",
+   "aa_name": "Qwen3.5 397B A17B (Non-reasoning)",
+   "creator": "alibaba",
+   "score": 21.4,
+   "open_weights": true,
+   "release_date": "2026-02-16"
+  },
+  {
+   "name": "Qwen 3 Max Thinking",
+   "aa_name": "Qwen3 Max Thinking",
+   "creator": "alibaba",
+   "score": 21.3,
+   "open_weights": null,
+   "release_date": "2026-01-26"
+  },
+  {
+   "name": "MiniMax M2.1",
+   "aa_name": "MiniMax-M2.1",
+   "creator": "minimax",
+   "score": 20.9,
+   "open_weights": true,
+   "release_date": "2025-12-23"
+  },
+  {
+   "name": "MiMo-V2-Flash (Reasoning)",
+   "aa_name": "MiMo-V2-Flash (Reasoning)",
+   "creator": "xiaomi",
+   "score": 20.8,
+   "open_weights": null,
+   "release_date": "2025-12-16"
+  },
+  {
+   "name": "Claude Sonnet 4.5",
+   "aa_name": "Claude 4.5 Sonnet (Reasoning)",
+   "creator": "anthropic",
+   "score": 20.7,
+   "open_weights": false,
+   "release_date": "2025-09-29"
+  },
+  {
+   "name": "GPT 5.4 Nano",
+   "aa_name": "GPT-5.4 nano (Xhigh)",
+   "creator": "openai",
+   "score": 20.7,
+   "open_weights": false,
+   "release_date": "2026-03-17"
+  },
+  {
+   "name": "Claude 4 Opus (Reasoning)",
+   "aa_name": "Claude 4 Opus (Reasoning)",
+   "creator": "anthropic",
+   "score": 20.6,
+   "open_weights": null,
+   "release_date": "2025-05-22"
+  },
+  {
+   "name": "K2 Horizon 7B",
+   "aa_name": "K2 Horizon 7B",
+   "creator": "ifm",
+   "score": 20.6,
+   "open_weights": null,
+   "release_date": "2026-09-03"
+  },
+  {
+   "name": "GPT-5 mini",
+   "aa_name": "GPT-5 mini (Medium)",
+   "creator": "openai",
+   "score": 20.6,
+   "open_weights": false,
+   "release_date": "2025-08-07"
+  },
+  {
+   "name": "Grok 4.1 Fast (Reasoning)",
+   "aa_name": "Grok 4.1 Fast (Reasoning)",
+   "creator": "xai",
+   "score": 20.4,
+   "open_weights": null,
+   "release_date": "2025-11-19"
+  },
+  {
+   "name": "Qwen3.5 Omni Plus",
+   "aa_name": "Qwen3.5 Omni Plus",
+   "creator": "alibaba",
+   "score": 20.4,
+   "open_weights": null,
+   "release_date": "2026-03-30"
+  },
+  {
+   "name": "GPT 5.1 Codex Mini",
+   "aa_name": "GPT-5.1 Codex mini (High)",
+   "creator": "openai",
+   "score": 20.4,
+   "open_weights": false,
+   "release_date": "2025-11-13"
+  },
+  {
+   "name": "o3",
+   "aa_name": "o3",
+   "creator": "openai",
+   "score": 20.2,
+   "open_weights": false,
+   "release_date": "2025-04-16"
+  },
+  {
+   "name": "Ling 3.0 Flash",
+   "aa_name": "Ling 3.0 Flash",
+   "creator": "inclusionai",
+   "score": 20.1,
+   "open_weights": true,
+   "release_date": "2026-08-04"
+  },
+  {
+   "name": "K-EXAONE 2.0 0803",
+   "aa_name": "K-EXAONE 2.0 0803",
+   "creator": "lg",
+   "score": 19.7,
+   "open_weights": null,
+   "release_date": "2026-08-12"
+  },
+  {
+   "name": "Step 3.7 Flash",
+   "aa_name": "Step 3.7 Flash",
+   "creator": "stepfun",
+   "score": 19.5,
+   "open_weights": true,
+   "release_date": "2026-05-29"
+  },
+  {
+   "name": "Qwen3.5-35B-A3B",
+   "aa_name": "Qwen3.5 35B A3B (Reasoning)",
+   "creator": "alibaba",
+   "score": 19.3,
+   "open_weights": true,
+   "release_date": "2026-02-24"
+  },
+  {
+   "name": "LongCat 2.0",
+   "aa_name": "LongCat 2.0",
+   "creator": "meituan",
+   "score": 19.1,
+   "open_weights": true,
+   "release_date": "2026-06-29"
+  },
+  {
+   "name": "Claude 4 Sonnet (Reasoning)",
+   "aa_name": "Claude 4 Sonnet (Reasoning)",
+   "creator": "anthropic",
+   "score": 18.9,
+   "open_weights": null,
+   "release_date": "2025-05-22"
+  },
+  {
+   "name": "JT-35B-Flash",
+   "aa_name": "JT-35B-Flash",
+   "creator": "china-mobile",
+   "score": 18.7,
+   "open_weights": null,
+   "release_date": "2026-05-14"
+  },
+  {
+   "name": "KAT-Coder-Pro V1",
+   "aa_name": "KAT-Coder-Pro V1",
+   "creator": "kwaikat",
+   "score": 18.6,
+   "open_weights": null,
+   "release_date": "2025-11-11"
+  },
+  {
+   "name": "MiniMax M2",
+   "aa_name": "MiniMax-M2",
+   "creator": "minimax",
+   "score": 18.6,
+   "open_weights": true,
+   "release_date": "2025-10-26"
+  },
+  {
+   "name": "GLM 4.6",
+   "aa_name": "GLM-4.6 (Reasoning)",
+   "creator": "zai",
+   "score": 18.5,
+   "open_weights": true,
+   "release_date": "2025-09-30"
+  },
+  {
+   "name": "Qwen3.6 35B A3B",
+   "aa_name": "Qwen3.6 35B A3B (Reasoning)",
+   "creator": "alibaba",
+   "score": 18.2,
+   "open_weights": true,
+   "release_date": "2026-04-16"
+  },
+  {
+   "name": "Grok 4 Fast (Reasoning)",
+   "aa_name": "Grok 4 Fast (Reasoning)",
+   "creator": "xai",
+   "score": 17.9,
+   "open_weights": null,
+   "release_date": "2025-09-19"
+  },
+  {
+   "name": "Claude 3.7 Sonnet (Reasoning)",
+   "aa_name": "Claude 3.7 Sonnet (Reasoning)",
+   "creator": "anthropic",
+   "score": 17.7,
+   "open_weights": null,
+   "release_date": "2025-02-24"
+  },
+  {
+   "name": "Qwen3.5-122B-A10B",
+   "aa_name": "Qwen3.5 122B A10B (Non-reasoning)",
+   "creator": "alibaba",
+   "score": 17.7,
+   "open_weights": true,
+   "release_date": "2026-02-24"
+  },
+  {
+   "name": "Muse Glimmer 30B",
+   "aa_name": "Muse Glimmer (High)",
+   "creator": "meta",
+   "score": 17.5,
+   "open_weights": true,
+   "release_date": "2026-08-10"
+  },
+  {
+   "name": "Ling-2.6-1T",
+   "aa_name": "Ling-2.6-1T",
+   "creator": "inclusionai",
+   "score": 17,
+   "open_weights": null,
+   "release_date": "2026-04-23"
+  },
+  {
+   "name": "Step 3.5 Flash 2603",
+   "aa_name": "Step 3.5 Flash 2603",
+   "creator": "stepfun",
+   "score": 17,
+   "open_weights": null,
+   "release_date": "2026-04-02"
+  },
+  {
+   "name": "Doubao Seed Code",
+   "aa_name": "Doubao Seed Code",
+   "creator": "bytedance_seed",
+   "score": 16.9,
+   "open_weights": null,
+   "release_date": "2025-11-11"
+  },
+  {
+   "name": "Claude Haiku 4.5",
+   "aa_name": "Claude 4.5 Haiku (Reasoning)",
+   "creator": "anthropic",
+   "score": 16.9,
+   "open_weights": false,
+   "release_date": "2025-10-15"
+  },
+  {
+   "name": "Google Gemma 4 26B A4B",
+   "aa_name": "Gemma 4 26B A4B (Reasoning)",
+   "creator": "google",
+   "score": 16.7,
+   "open_weights": true,
+   "release_date": "2026-04-02"
+  },
+  {
+   "name": "o4-mini",
+   "aa_name": "o4-mini (High)",
+   "creator": "openai",
+   "score": 16.7,
+   "open_weights": false,
+   "release_date": "2025-04-16"
+  },
+  {
+   "name": "o4 Mini High",
+   "aa_name": "o4-mini (High)",
+   "creator": "openai",
+   "score": 16.7,
+   "open_weights": false,
+   "release_date": "2025-04-16"
+  },
+  {
+   "name": "Ring-2.6-1T",
+   "aa_name": "Ring-2.6-1T",
+   "creator": "inclusionai",
+   "score": 16.6,
+   "open_weights": null,
+   "release_date": "2026-05-08"
+  },
+  {
+   "name": "DeepSeek V3.2 Exp",
+   "aa_name": "DeepSeek V3.2 Exp (Reasoning)",
+   "creator": "deepseek",
+   "score": 16.6,
+   "open_weights": true,
+   "release_date": "2025-09-29"
+  },
+  {
+   "name": "Step 3.5 Flash",
+   "aa_name": "Step 3.5 Flash",
+   "creator": "stepfun",
+   "score": 16.6,
+   "open_weights": true,
+   "release_date": "2026-02-02"
+  },
+  {
+   "name": "Qwen3 Max Thinking (Preview)",
+   "aa_name": "Qwen3 Max Thinking (Preview)",
+   "creator": "alibaba",
+   "score": 16.3,
+   "open_weights": null,
+   "release_date": "2025-11-03"
+  },
+  {
+   "name": "Gemini 2.5 Pro",
+   "aa_name": "Gemini 2.5 Pro",
+   "creator": "google",
+   "score": 16.1,
+   "open_weights": false,
+   "release_date": "2025-06-05"
+  },
+  {
+   "name": "Gemini 2.5 Pro Preview 06-05",
+   "aa_name": "Gemini 2.5 Pro",
+   "creator": "google",
+   "score": 16.1,
+   "open_weights": false,
+   "release_date": "2025-06-05"
+  },
+  {
+   "name": "K2 Horizon 3.7B",
+   "aa_name": "K2 Horizon 3.7B",
+   "creator": "ifm",
+   "score": 15.6,
+   "open_weights": null,
+   "release_date": "2026-09-03"
+  },
+  {
+   "name": "Qwen3 Max",
+   "aa_name": "Qwen3 Max",
+   "creator": "alibaba",
+   "score": 15.6,
+   "open_weights": null,
+   "release_date": "2025-09-23"
+  },
+  {
+   "name": "Gemini 3.1 Flash Lite",
+   "aa_name": "Gemini 3.1 Flash-Lite",
+   "creator": "google",
+   "score": 15.6,
+   "open_weights": false,
+   "release_date": "2026-03-03"
+  },
+  {
+   "name": "Gemini 3.1 Flash Lite Preview",
+   "aa_name": "Gemini 3.1 Flash-Lite",
+   "creator": "google",
+   "score": 15.6,
+   "open_weights": false,
+   "release_date": "2026-03-03"
+  },
+  {
+   "name": "Gemini 2.5 Flash Preview (Sep '25) (Reasoning)",
+   "aa_name": "Gemini 2.5 Flash Preview (Sep '25) (Reasoning)",
+   "creator": "google",
+   "score": 15.5,
+   "open_weights": null,
+   "release_date": "2025-09-25"
+  },
+  {
+   "name": "Kimi K2 0905",
+   "aa_name": "Kimi K2 0905",
+   "creator": "moonshotai",
+   "score": 15.3,
+   "open_weights": true,
+   "release_date": "2025-09-05"
+  },
+  {
+   "name": "o1",
+   "aa_name": "o1",
+   "creator": "openai",
+   "score": 15.2,
+   "open_weights": false,
+   "release_date": "2024-12-05"
+  },
+  {
+   "name": "Gemini 2.5 Pro Preview (Mar' 25)",
+   "aa_name": "Gemini 2.5 Pro Preview (Mar' 25)",
+   "creator": "google",
+   "score": 15,
+   "open_weights": null,
+   "release_date": "2025-03-25"
+  },
+  {
+   "name": "GLM 4.7 Flash",
+   "aa_name": "GLM-4.7-Flash (Reasoning)",
+   "creator": "zai",
+   "score": 14.9,
+   "open_weights": true,
+   "release_date": "2026-01-19"
+  },
+  {
+   "name": "DeepSeek V3.1 Terminus",
+   "aa_name": "DeepSeek V3.1 Terminus (Reasoning)",
+   "creator": "deepseek",
+   "score": 14.8,
+   "open_weights": true,
+   "release_date": "2025-09-22"
+  },
+  {
+   "name": "Gemma 4 31B IT",
+   "aa_name": "Gemma 4 31B (Reasoning)",
+   "creator": "google",
+   "score": 14.7,
+   "open_weights": true,
+   "release_date": "2026-04-02"
+  },
+  {
+   "name": "Grok 3 mini Reasoning (High)",
+   "aa_name": "Grok 3 mini Reasoning (High)",
+   "creator": "xai",
+   "score": 14.6,
+   "open_weights": null,
+   "release_date": "2025-02-19"
+  },
+  {
+   "name": "DeepSeek V3.2 Speciale",
+   "aa_name": "DeepSeek V3.2 Speciale",
+   "creator": "deepseek",
+   "score": 14.5,
+   "open_weights": null,
+   "release_date": "2025-12-01"
+  },
+  {
+   "name": "Gemini 2.5 Pro Preview (May' 25)",
+   "aa_name": "Gemini 2.5 Pro Preview (May' 25)",
+   "creator": "google",
+   "score": 14.5,
+   "open_weights": null,
+   "release_date": "2025-05-06"
+  },
+  {
+   "name": "K-EXAONE (Reasoning)",
+   "aa_name": "K-EXAONE (Reasoning)",
+   "creator": "lg",
+   "score": 14.4,
+   "open_weights": null,
+   "release_date": "2025-12-31"
+  },
+  {
+   "name": "ERNIE 5.0 Thinking Preview",
+   "aa_name": "ERNIE 5.0 Thinking Preview",
+   "creator": "baidu",
+   "score": 14.3,
+   "open_weights": null,
+   "release_date": "2025-11-13"
+  },
+  {
+   "name": "Gemma 4 12B (Reasoning)",
+   "aa_name": "Gemma 4 12B (Reasoning)",
+   "creator": "google",
+   "score": 14.2,
+   "open_weights": null,
+   "release_date": "2026-06-03"
+  },
+  {
+   "name": "Nova 2.0 Pro Preview (Medium)",
+   "aa_name": "Nova 2.0 Pro Preview (Medium)",
+   "creator": "amazon",
+   "score": 14.2,
+   "open_weights": null,
+   "release_date": "2025-11-27"
+  },
+  {
+   "name": "Mistral Medium Latest",
+   "aa_name": "Mistral Medium 3.5",
+   "creator": "mistral",
+   "score": 14.2,
+   "open_weights": false,
+   "release_date": "2026-04-29"
+  },
+  {
+   "name": "Grok 4.20 Non-Reasoning",
+   "aa_name": "Grok 4.20 0309 v2 (Non-reasoning)",
+   "creator": "xai",
+   "score": 14.2,
+   "open_weights": null,
+   "release_date": "2026-04-07"
+  },
+  {
+   "name": "Grok Code Fast 1",
+   "aa_name": "Grok Code Fast 1",
+   "creator": "xai",
+   "score": 14.1,
+   "open_weights": null,
+   "release_date": "2025-08-28"
+  },
+  {
+   "name": "Apriel-v1.5-15B-Thinker",
+   "aa_name": "Apriel-v1.5-15B-Thinker",
+   "creator": "servicenow",
+   "score": 13.8,
+   "open_weights": null,
+   "release_date": "2025-09-30"
+  },
+  {
+   "name": "DeepSeek V3.1",
+   "aa_name": "DeepSeek V3.1 (Non-reasoning)",
+   "creator": "deepseek",
+   "score": 13.7,
+   "open_weights": true,
+   "release_date": "2025-08-21"
+  },
+  {
+   "name": "Nova 2.0 Omni (Medium)",
+   "aa_name": "Nova 2.0 Omni (Medium)",
+   "creator": "amazon",
+   "score": 13.6,
+   "open_weights": null,
+   "release_date": "2025-11-26"
+  },
+  {
+   "name": "Apriel-v1.6-15B-Thinker",
+   "aa_name": "Apriel-v1.6-15B-Thinker",
+   "creator": "servicenow",
+   "score": 13.4,
+   "open_weights": null,
+   "release_date": "2025-11-25"
+  },
+  {
+   "name": "Nova 2.0 Lite (High)",
+   "aa_name": "Nova 2.0 Lite (High)",
+   "creator": "amazon",
+   "score": 13.4,
+   "open_weights": null,
+   "release_date": "2025-10-29"
+  },
+  {
+   "name": "Qwen3 VL 235B A22B (Reasoning)",
+   "aa_name": "Qwen3 VL 235B A22B (Reasoning)",
+   "creator": "alibaba",
+   "score": 13.4,
+   "open_weights": null,
+   "release_date": "2025-09-23"
+  },
+  {
+   "name": "Nova 2 Lite",
+   "aa_name": null,
+   "creator": "amazon",
+   "score": 13.4,
+   "open_weights": false,
+   "release_date": null
+  },
+  {
+   "name": "Qwen3.5-9B",
+   "aa_name": "Qwen3.5 9B (Non-reasoning)",
+   "creator": "alibaba",
+   "score": 13.3,
+   "open_weights": true,
+   "release_date": "2026-03-02"
+  },
+  {
+   "name": "EXAONE 4.5 33B (Reasoning)",
+   "aa_name": "EXAONE 4.5 33B (Reasoning)",
+   "creator": "lg",
+   "score": 13.2,
+   "open_weights": null,
+   "release_date": "2026-04-09"
+  },
+  {
+   "name": "Qwen3.5 4B (Reasoning)",
+   "aa_name": "Qwen3.5 4B (Reasoning)",
+   "creator": "alibaba",
+   "score": 13.1,
+   "open_weights": null,
+   "release_date": "2026-03-02"
+  },
+  {
+   "name": "Command A+",
+   "aa_name": "Command A+",
+   "creator": "cohere",
+   "score": 13.1,
+   "open_weights": false,
+   "release_date": "2026-05-20"
+  },
+  {
+   "name": "DeepSeek-R1",
+   "aa_name": "DeepSeek R1 0528 (May '25)",
+   "creator": "deepseek",
+   "score": 13.1,
+   "open_weights": true,
+   "release_date": "2025-05-28"
+  },
+  {
+   "name": "Gemini 2.5 Flash",
+   "aa_name": "Gemini 2.5 Flash (Reasoning)",
+   "creator": "google",
+   "score": 13.1,
+   "open_weights": false,
+   "release_date": "2025-05-20"
+  },
+  {
+   "name": "GPT-5 nano",
+   "aa_name": "GPT-5 nano (High)",
+   "creator": "openai",
+   "score": 13,
+   "open_weights": false,
+   "release_date": "2025-08-07"
+  },
+  {
+   "name": "Nemotron 3.5 Lightning 30B",
+   "aa_name": "Nemotron 3.5 Lightning",
+   "creator": "nvidia",
+   "score": 12.9,
+   "open_weights": true,
+   "release_date": "2026-08-11"
+  },
+  {
+   "name": "NVIDIA Nemotron 3 Super 120B A12B",
+   "aa_name": "Nemotron 3 Super 120B A12B (Reasoning)",
+   "creator": "nvidia",
+   "score": 12.8,
+   "open_weights": true,
+   "release_date": "2026-03-11"
+  },
+  {
+   "name": "GLM 4.5",
+   "aa_name": "GLM-4.5 (Reasoning)",
+   "creator": "zai",
+   "score": 12.8,
+   "open_weights": true,
+   "release_date": "2025-07-28"
+  },
+  {
+   "name": "Granite 4.2 30B",
+   "aa_name": "Granite 4.2 30B",
+   "creator": "ibm",
+   "score": 12.7,
+   "open_weights": null,
+   "release_date": "2026-08-25"
+  },
+  {
+   "name": "Kimi K2 Instruct",
+   "aa_name": "Kimi K2",
+   "creator": "moonshotai",
+   "score": 12.7,
+   "open_weights": true,
+   "release_date": "2025-07-11"
+  },
+  {
+   "name": "GPT-4.1",
+   "aa_name": "GPT-4.1",
+   "creator": "openai",
+   "score": 12.7,
+   "open_weights": false,
+   "release_date": "2025-04-14"
+  },
+  {
+   "name": "Qwen3 235B A22B Instruct 2507",
+   "aa_name": "Qwen3 235B A22B 2507 (Reasoning)",
+   "creator": "alibaba",
+   "score": 12.7,
+   "open_weights": true,
+   "release_date": "2025-07-25"
+  },
+  {
+   "name": "Qwen3 235B A22B Thinking 2507",
+   "aa_name": "Qwen3 235B A22B 2507 (Reasoning)",
+   "creator": "alibaba",
+   "score": 12.7,
+   "open_weights": true,
+   "release_date": "2025-07-25"
+  },
+  {
+   "name": "Qwen3 Max (Preview)",
+   "aa_name": "Qwen3 Max (Preview)",
+   "creator": "alibaba",
+   "score": 12.6,
+   "open_weights": null,
+   "release_date": "2025-09-05"
+  },
+  {
+   "name": "MiniCPM5-2B",
+   "aa_name": "MiniCPM5-2B",
+   "creator": "openbmb",
+   "score": 12.5,
+   "open_weights": null,
+   "release_date": "2026-09-07"
+  },
+  {
+   "name": "Qwen3.5 Omni Flash",
+   "aa_name": "Qwen3.5 Omni Flash",
+   "creator": "alibaba",
+   "score": 12.5,
+   "open_weights": null,
+   "release_date": "2026-03-30"
+  },
+  {
+   "name": "o3-mini",
+   "aa_name": "o3-mini",
+   "creator": "openai",
+   "score": 12.5,
+   "open_weights": false,
+   "release_date": "2025-01-31"
+  },
+  {
+   "name": "o1-pro",
+   "aa_name": "o1-pro",
+   "creator": "openai",
+   "score": 12.4,
+   "open_weights": false,
+   "release_date": "2025-03-19"
+  },
+  {
+   "name": "Mercury 2.5",
+   "aa_name": "Mercury 2.5",
+   "creator": "inception",
+   "score": 12.3,
+   "open_weights": false,
+   "release_date": "2026-09-08"
+  },
+  {
+   "name": "JT-MINI",
+   "aa_name": "JT-MINI",
+   "creator": "china-mobile",
+   "score": 12.2,
+   "open_weights": null,
+   "release_date": "2026-04-15"
+  },
+  {
+   "name": "Grok 3",
+   "aa_name": "Grok 3",
+   "creator": "xai",
+   "score": 12.1,
+   "open_weights": null,
+   "release_date": "2025-02-19"
+  },
+  {
+   "name": "Seed-OSS-36B-Instruct",
+   "aa_name": "Seed-OSS-36B-Instruct",
+   "creator": "bytedance_seed",
+   "score": 12.1,
+   "open_weights": null,
+   "release_date": "2025-08-20"
+  },
+  {
+   "name": "Qwen3 235B A22B 2507 Instruct",
+   "aa_name": "Qwen3 235B A22B 2507 Instruct",
+   "creator": "alibaba",
+   "score": 12,
+   "open_weights": null,
+   "release_date": "2025-07-21"
+  },
+  {
+   "name": "Qwen3 VL 32B (Reasoning)",
+   "aa_name": "Qwen3 VL 32B (Reasoning)",
+   "creator": "alibaba",
+   "score": 11.9,
+   "open_weights": null,
+   "release_date": "2025-10-21"
+  },
+  {
+   "name": "Qwen3 Coder 480B A35B Instruct",
+   "aa_name": "Qwen3 Coder 480B A35B Instruct",
+   "creator": "alibaba",
+   "score": 11.9,
+   "open_weights": true,
+   "release_date": "2025-07-22"
+  },
+  {
+   "name": "Magistral Medium 1.2",
+   "aa_name": "Magistral Medium 1.2",
+   "creator": "mistral",
+   "score": 11.8,
+   "open_weights": null,
+   "release_date": "2025-09-18"
+  },
+  {
+   "name": "Sonar Reasoning Pro",
+   "aa_name": "Sonar Reasoning Pro",
+   "creator": "perplexity",
+   "score": 11.8,
+   "open_weights": false,
+   "release_date": "2025-01-28"
+  },
+  {
+   "name": "Gemini 2.5 Flash Preview (Reasoning)",
+   "aa_name": "Gemini 2.5 Flash Preview (Reasoning)",
+   "creator": "google",
+   "score": 11.7,
+   "open_weights": null,
+   "release_date": "2025-04-17"
+  },
+  {
+   "name": "HyperNova 60B 2605 (High, Based on gpt-oss-120b)",
+   "aa_name": "HyperNova 60B 2605 (High, Based on gpt-oss-120b)",
+   "creator": "multiversecomputing",
+   "score": 11.7,
+   "open_weights": null,
+   "release_date": "2026-05-26"
+  },
+  {
+   "name": "MiniMax M1 80k",
+   "aa_name": "MiniMax M1 80k",
+   "creator": "minimax",
+   "score": 11.7,
+   "open_weights": null,
+   "release_date": "2025-06-17"
+  },
+  {
+   "name": "Nemotron Cascade 2 30B A3B",
+   "aa_name": "Nemotron Cascade 2 30B A3B",
+   "creator": "nvidia",
+   "score": 11.7,
+   "open_weights": null,
+   "release_date": "2026-03-19"
+  },
+  {
+   "name": "MiniMax M1",
+   "aa_name": null,
+   "creator": "minimax",
+   "score": 11.7,
+   "open_weights": false,
+   "release_date": null
+  },
+  {
+   "name": "GPT OSS 120B",
+   "aa_name": "gpt-oss-120b (High)",
+   "creator": "openai",
+   "score": 11.6,
+   "open_weights": true,
+   "release_date": "2025-08-05"
+  },
+  {
+   "name": "K2 Think V2",
+   "aa_name": "K2 Think V2",
+   "creator": "ifm",
+   "score": 11.5,
+   "open_weights": null,
+   "release_date": "2025-12-15"
+  },
+  {
+   "name": "LongCat Flash Lite",
+   "aa_name": "LongCat Flash Lite",
+   "creator": "longcat",
+   "score": 11.5,
+   "open_weights": null,
+   "release_date": "2026-01-28"
+  },
+  {
+   "name": "DeepSeek R1 (Jan '25)",
+   "aa_name": "DeepSeek R1 (Jan '25)",
+   "creator": "deepseek",
+   "score": 11.4,
+   "open_weights": null,
+   "release_date": "2025-01-20"
+  },
+  {
+   "name": "HyperCLOVA X SEED Think (32B)",
+   "aa_name": "HyperCLOVA X SEED Think (32B)",
+   "creator": "naver",
+   "score": 11.4,
+   "open_weights": null,
+   "release_date": "2025-12-26"
+  },
+  {
+   "name": "o1-preview",
+   "aa_name": "o1-preview",
+   "creator": "openai",
+   "score": 11.4,
+   "open_weights": null,
+   "release_date": "2024-09-12"
+  },
+  {
+   "name": "Mistral Small",
+   "aa_name": "Mistral Small 4 (Reasoning)",
+   "creator": "mistral",
+   "score": 11.3,
+   "open_weights": true,
+   "release_date": "2026-03-16"
+  },
+  {
+   "name": "Qwen3 Next 80B A3B Thinking",
+   "aa_name": "Qwen3 Next 80B A3B (Reasoning)",
+   "creator": "alibaba",
+   "score": 11.2,
+   "open_weights": true,
+   "release_date": "2025-09-11"
+  },
+  {
+   "name": "GLM 4.6V",
+   "aa_name": "GLM-4.6V (Reasoning)",
+   "creator": "zai",
+   "score": 11.2,
+   "open_weights": true,
+   "release_date": "2025-12-08"
+  },
+  {
+   "name": "Ling 3.0 Tiny",
+   "aa_name": "Ling 3.0 Tiny",
+   "creator": "inclusionai",
+   "score": 11.1,
+   "open_weights": null,
+   "release_date": "2026-08-06"
+  },
+  {
+   "name": "Granite 4.2 8B",
+   "aa_name": "Granite 4.2 8B",
+   "creator": "ibm-granite",
+   "score": 11.1,
+   "open_weights": true,
+   "release_date": "2026-08-25"
+  },
+  {
+   "name": "GLM 4.5 Air",
+   "aa_name": "GLM-4.5-Air",
+   "creator": "zai",
+   "score": 11.1,
+   "open_weights": true,
+   "release_date": "2025-07-28"
+  },
+  {
+   "name": "Mi:dm K 2.5 Pro",
+   "aa_name": "Mi:dm K 2.5 Pro",
+   "creator": "korea-telecom",
+   "score": 11,
+   "open_weights": null,
+   "release_date": "2025-12-11"
+  },
+  {
+   "name": "o3 Mini High",
+   "aa_name": "o3-mini (High)",
+   "creator": "openai",
+   "score": 11,
+   "open_weights": false,
+   "release_date": "2025-01-31"
+  },
+  {
+   "name": "Ring-1T",
+   "aa_name": "Ring-1T",
+   "creator": "inclusionai",
+   "score": 10.9,
+   "open_weights": null,
+   "release_date": "2025-10-13"
+  },
+  {
+   "name": "G9v3-3B",
+   "aa_name": "G9v3-3B",
+   "creator": "ai9star",
+   "score": 10.8,
+   "open_weights": null,
+   "release_date": "2026-07-23"
+  },
+  {
+   "name": "Trinity Large Thinking",
+   "aa_name": "Trinity Large Thinking",
+   "creator": "arcee-ai",
+   "score": 10.8,
+   "open_weights": true,
+   "release_date": "2026-04-01"
+  },
+  {
+   "name": "Mercury 2",
+   "aa_name": "Mercury 2",
+   "creator": "inception",
+   "score": 10.8,
+   "open_weights": false,
+   "release_date": "2026-02-20"
+  },
+  {
+   "name": "INTELLECT-3 (Based on GLM-4.5-Air)",
+   "aa_name": "INTELLECT-3 (Based on GLM-4.5-Air)",
+   "creator": "prime-intellect",
+   "score": 10.6,
+   "open_weights": null,
+   "release_date": "2025-11-27"
+  },
+  {
+   "name": "Gemini 2.5 Flash-Lite Preview (Sep '25) (Reasoning)",
+   "aa_name": "Gemini 2.5 Flash-Lite Preview (Sep '25) (Reasoning)",
+   "creator": "google",
+   "score": 10.4,
+   "open_weights": null,
+   "release_date": "2025-09-25"
+  },
+  {
+   "name": "GPT-5 (ChatGPT)",
+   "aa_name": "GPT-5 (ChatGPT)",
+   "creator": "openai",
+   "score": 10.4,
+   "open_weights": null,
+   "release_date": "2025-08-07"
+  },
+  {
+   "name": "Grok 3 Reasoning Beta",
+   "aa_name": "Grok 3 Reasoning Beta",
+   "creator": "xai",
+   "score": 10.4,
+   "open_weights": null,
+   "release_date": "2025-02-19"
+  },
+  {
+   "name": "Solar Open 100B (Reasoning)",
+   "aa_name": "Solar Open 100B (Reasoning)",
+   "creator": "upstage",
+   "score": 10.4,
+   "open_weights": null,
+   "release_date": "2025-12-17"
+  },
+  {
+   "name": "Nemotron 3 Nano Omni 30B A3B Reasoning",
+   "aa_name": "Nemotron 3 Nano Omni 30B A3B Reasoning",
+   "creator": "nvidia",
+   "score": 10.3,
+   "open_weights": null,
+   "release_date": "2026-04-29"
+  },
+  {
+   "name": "GPT-4.1 mini",
+   "aa_name": "GPT-4.1 mini",
+   "creator": "openai",
+   "score": 10.2,
+   "open_weights": false,
+   "release_date": "2025-04-14"
+  },
+  {
+   "name": "MiniMax M1 40k",
+   "aa_name": "MiniMax M1 40k",
+   "creator": "minimax",
+   "score": 10,
+   "open_weights": null,
+   "release_date": "2025-06-17"
+  },
+  {
+   "name": "GPT OSS 20B",
+   "aa_name": "gpt-oss-20b (Low)",
+   "creator": "openai",
+   "score": 10,
+   "open_weights": true,
+   "release_date": "2025-08-05"
+  },
+  {
+   "name": "K2-V2 (High)",
+   "aa_name": "K2-V2 (High)",
+   "creator": "ifm",
+   "score": 9.9,
+   "open_weights": null,
+   "release_date": "2025-12-05"
+  },
+  {
+   "name": "North Mini Code",
+   "aa_name": "North Mini Code",
+   "creator": "cohere",
+   "score": 9.9,
+   "open_weights": null,
+   "release_date": "2026-06-09"
+  },
+  {
+   "name": "Qwen3 VL 235B A22B Instruct",
+   "aa_name": "Qwen3 VL 235B A22B Instruct",
+   "creator": "alibaba",
+   "score": 9.9,
+   "open_weights": null,
+   "release_date": "2025-09-23"
+  },
+  {
+   "name": "Qwen3 VL 235B A22B Instruct",
+   "aa_name": "Qwen3 VL 235B A22B Instruct",
+   "creator": "alibaba",
+   "score": 9.9,
+   "open_weights": true,
+   "release_date": "2025-09-23"
+  },
+  {
+   "name": "o1-mini",
+   "aa_name": "o1-mini",
+   "creator": "openai",
+   "score": 9.8,
+   "open_weights": null,
+   "release_date": "2024-09-12"
+  },
+  {
+   "name": "Qwen3 30B A3B 2507 (Reasoning)",
+   "aa_name": "Qwen3 30B A3B 2507 (Reasoning)",
+   "creator": "alibaba",
+   "score": 9.8,
+   "open_weights": null,
+   "release_date": "2025-07-30"
+  },
+  {
+   "name": "Ling 2.6 Flash",
+   "aa_name": "Ling 2.6 Flash",
+   "creator": "inclusionai",
+   "score": 9.7,
+   "open_weights": null,
+   "release_date": "2026-04-21"
+  },
+  {
+   "name": "DeepSeek V3 0324",
+   "aa_name": "DeepSeek V3 0324",
+   "creator": "deepseek",
+   "score": 9.7,
+   "open_weights": true,
+   "release_date": "2025-03-25"
+  },
+  {
+   "name": "GPT-4.5 (Preview)",
+   "aa_name": "GPT-4.5 (Preview)",
+   "creator": "openai",
+   "score": 9.6,
+   "open_weights": null,
+   "release_date": "2025-02-27"
+  },
+  {
+   "name": "Tri-21B-think Preview",
+   "aa_name": "Tri-21B-think Preview",
+   "creator": "trillionlabs",
+   "score": 9.6,
+   "open_weights": null,
+   "release_date": "2026-02-10"
+  },
+  {
+   "name": "Qwen 3 Coder 30B A3B Instruct",
+   "aa_name": "Qwen3 Coder 30B A3B Instruct",
+   "creator": "alibaba",
+   "score": 9.6,
+   "open_weights": true,
+   "release_date": "2025-07-31"
+  },
+  {
+   "name": "Qwen3 Next 80B A3B Instruct",
+   "aa_name": "Qwen3 Next 80B A3B Instruct",
+   "creator": "alibaba",
+   "score": 9.6,
+   "open_weights": true,
+   "release_date": "2025-09-11"
+  },
+  {
+   "name": "DiffusionGemma 26B A4B",
+   "aa_name": "DiffusionGemma 26B A4B",
+   "creator": "google",
+   "score": 9.5,
+   "open_weights": null,
+   "release_date": "2026-06-10"
+  },
+  {
+   "name": "QwQ 32B",
+   "aa_name": "QwQ 32B",
+   "creator": "alibaba",
+   "score": 9.5,
+   "open_weights": null,
+   "release_date": "2025-03-05"
+  },
+  {
+   "name": "Qwen3 235B A22B",
+   "aa_name": "Qwen3 235B A22B (Reasoning)",
+   "creator": "alibaba",
+   "score": 9.5,
+   "open_weights": null,
+   "release_date": "2025-04-28"
+  },
+  {
+   "name": "Qwen3 VL 30B A3B Thinking",
+   "aa_name": "Qwen3 VL 30B A3B (Reasoning)",
+   "creator": "alibaba",
+   "score": 9.5,
+   "open_weights": true,
+   "release_date": "2025-10-03"
+  },
+  {
+   "name": "Gemini 2.0 Flash Thinking Experimental (Jan '25)",
+   "aa_name": "Gemini 2.0 Flash Thinking Experimental (Jan '25)",
+   "creator": "google",
+   "score": 9.4,
+   "open_weights": null,
+   "release_date": "2025-01-21"
+  },
+  {
+   "name": "Llama 4 Maverick 17B Instruct",
+   "aa_name": "Llama 4 Maverick",
+   "creator": "meta",
+   "score": 9.3,
+   "open_weights": true,
+   "release_date": "2025-04-05"
+  },
+  {
+   "name": "Mistral Large 3",
+   "aa_name": "Mistral Large 3",
+   "creator": "mistral",
+   "score": 9.3,
+   "open_weights": false,
+   "release_date": "2025-12-02"
+  },
+  {
+   "name": "Ling-1T",
+   "aa_name": "Ling-1T",
+   "creator": "inclusionai",
+   "score": 9.2,
+   "open_weights": null,
+   "release_date": "2025-10-08"
+  },
+  {
+   "name": "Motif-2-12.7B-Reasoning",
+   "aa_name": "Motif-2-12.7B-Reasoning",
+   "creator": "motif-technologies",
+   "score": 9.2,
+   "open_weights": null,
+   "release_date": "2025-12-04"
+  },
+  {
+   "name": "Nova Premier",
+   "aa_name": "Nova Premier",
+   "creator": "amazon",
+   "score": 9.2,
+   "open_weights": null,
+   "release_date": "2025-04-30"
+  },
+  {
+   "name": "Qwen3 Coder Next",
+   "aa_name": "Qwen3 Coder Next",
+   "creator": "alibaba",
+   "score": 9.2,
+   "open_weights": true,
+   "release_date": "2026-02-03"
+  },
+  {
+   "name": "Nova Premier 1.0",
+   "aa_name": null,
+   "creator": "amazon",
+   "score": 9.2,
+   "open_weights": false,
+   "release_date": null
+  },
+  {
+   "name": "Mistral Medium 3.1",
+   "aa_name": "Mistral Medium 3.1",
+   "creator": "mistral",
+   "score": 9.2,
+   "open_weights": false,
+   "release_date": "2025-08-12"
+  },
+  {
+   "name": "Granite 4.2 3B",
+   "aa_name": "Granite 4.2 3B",
+   "creator": "ibm",
+   "score": 9.1,
+   "open_weights": null,
+   "release_date": "2026-08-25"
+  },
+  {
+   "name": "Magistral Medium 1",
+   "aa_name": "Magistral Medium 1",
+   "creator": "mistral",
+   "score": 9.1,
+   "open_weights": null,
+   "release_date": "2025-06-10"
+  },
+  {
+   "name": "Solar Pro 2 (Preview) (Reasoning)",
+   "aa_name": "Solar Pro 2 (Preview) (Reasoning)",
+   "creator": "upstage",
+   "score": 9.1,
+   "open_weights": null,
+   "release_date": "2025-05-20"
+  },
+  {
+   "name": "Devstral Medium",
+   "aa_name": "Devstral Medium",
+   "creator": "mistral",
+   "score": 9,
+   "open_weights": null,
+   "release_date": "2025-07-10"
+  },
+  {
+   "name": "Llama Nemotron Super 49B v1.5 (Reasoning)",
+   "aa_name": "Llama Nemotron Super 49B v1.5 (Reasoning)",
+   "creator": "nvidia",
+   "score": 9,
+   "open_weights": null,
+   "release_date": "2025-07-25"
+  },
+  {
+   "name": "Tri-21B-Think",
+   "aa_name": "Tri-21B-Think",
+   "creator": "trillionlabs",
+   "score": 9,
+   "open_weights": null,
+   "release_date": "2026-02-10"
+  },
+  {
+   "name": "Mistral Medium 3",
+   "aa_name": "Mistral Medium 3",
+   "creator": "mistral",
+   "score": 9,
+   "open_weights": false,
+   "release_date": "2025-05-07"
+  },
+  {
+   "name": "GPT-4o",
+   "aa_name": "GPT-4o (March 2025, chatgpt-4o-latest)",
+   "creator": "openai",
+   "score": 9,
+   "open_weights": false,
+   "release_date": "2025-03-27"
+  },
+  {
+   "name": "Claude 3.5 Haiku",
+   "aa_name": "Claude 3.5 Haiku",
+   "creator": "anthropic",
+   "score": 8.9,
+   "open_weights": null,
+   "release_date": "2024-10-22"
+  },
+  {
+   "name": "Gemini 2.0 Flash (Feb '25)",
+   "aa_name": "Gemini 2.0 Flash (Feb '25)",
+   "creator": "google",
+   "score": 8.9,
+   "open_weights": null,
+   "release_date": "2025-02-05"
+  },
+  {
+   "name": "Gemma 4 E4B (Reasoning)",
+   "aa_name": "Gemma 4 E4B (Reasoning)",
+   "creator": "google",
+   "score": 8.9,
+   "open_weights": null,
+   "release_date": "2026-04-03"
+  },
+  {
+   "name": "Llama 3.3 Nemotron Super 49B v1 (Reasoning)",
+   "aa_name": "Llama 3.3 Nemotron Super 49B v1 (Reasoning)",
+   "creator": "nvidia",
+   "score": 8.9,
+   "open_weights": null,
+   "release_date": "2025-03-18"
+  },
+  {
+   "name": "NVIDIA Nemotron 3 Nano 30B A3B (Reasoning)",
+   "aa_name": "NVIDIA Nemotron 3 Nano 30B A3B (Reasoning)",
+   "creator": "nvidia",
+   "score": 8.9,
+   "open_weights": null,
+   "release_date": "2025-12-15"
+  },
+  {
+   "name": "Nemotron 3 Nano 30B A3B",
+   "aa_name": null,
+   "creator": "nvidia",
+   "score": 8.9,
+   "open_weights": true,
+   "release_date": null
+  },
+  {
+   "name": "MiniCPM5-1B (Reasoning)",
+   "aa_name": "MiniCPM5-1B (Reasoning)",
+   "creator": "openbmb",
+   "score": 8.8,
+   "open_weights": null,
+   "release_date": "2026-05-25"
+  },
+  {
+   "name": "Qwen3 4B 2507 (Reasoning)",
+   "aa_name": "Qwen3 4B 2507 (Reasoning)",
+   "creator": "alibaba",
+   "score": 8.8,
+   "open_weights": null,
+   "release_date": "2025-08-06"
+  },
+  {
+   "name": "Sarvam 105B (High)",
+   "aa_name": "Sarvam 105B (High)",
+   "creator": "sarvam",
+   "score": 8.8,
+   "open_weights": null,
+   "release_date": "2026-03-06"
+  },
+  {
+   "name": "Claude 3 Opus",
+   "aa_name": "Claude 3 Opus",
+   "creator": "anthropic",
+   "score": 8.7,
+   "open_weights": null,
+   "release_date": "2024-03-04"
+  },
+  {
+   "name": "Devstral Small (May '25)",
+   "aa_name": "Devstral Small (May '25)",
+   "creator": "mistral",
+   "score": 8.7,
+   "open_weights": null,
+   "release_date": "2025-05-21"
+  },
+  {
+   "name": "Gemini 2.0 Pro Experimental (Feb '25)",
+   "aa_name": "Gemini 2.0 Pro Experimental (Feb '25)",
+   "creator": "google",
+   "score": 8.7,
+   "open_weights": null,
+   "release_date": "2025-02-05"
+  },
+  {
+   "name": "Sonar Reasoning",
+   "aa_name": "Sonar Reasoning",
+   "creator": "perplexity",
+   "score": 8.7,
+   "open_weights": null,
+   "release_date": "2025-01-28"
+  },
+  {
+   "name": "Magistral Small 1.2",
+   "aa_name": "Magistral Small 1.2",
+   "creator": "mistral",
+   "score": 8.6,
+   "open_weights": null,
+   "release_date": "2025-09-17"
+  },
+  {
+   "name": "Devstral 2 2512",
+   "aa_name": "Devstral 2",
+   "creator": "mistral",
+   "score": 8.6,
+   "open_weights": true,
+   "release_date": "2025-12-09"
+  },
+  {
+   "name": "DeepSeek V3 (Dec '24)",
+   "aa_name": "DeepSeek V3 (Dec '24)",
+   "creator": "deepseek",
+   "score": 8.5,
+   "open_weights": null,
+   "release_date": "2024-12-26"
+  },
+  {
+   "name": "Gemini 2.5 Flash Lite",
+   "aa_name": "Gemini 2.5 Flash-Lite (Reasoning)",
+   "creator": "google",
+   "score": 8.5,
+   "open_weights": false,
+   "release_date": "2025-06-17"
+  },
+  {
+   "name": "DeepSeek R1 Distill Qwen 32B",
+   "aa_name": "DeepSeek R1 Distill Qwen 32B",
+   "creator": "deepseek",
+   "score": 8.4,
+   "open_weights": null,
+   "release_date": "2025-01-20"
+  },
+  {
+   "name": "GPT-4o (Nov '24)",
+   "aa_name": "GPT-4o (Nov '24)",
+   "creator": "openai",
+   "score": 8.4,
+   "open_weights": null,
+   "release_date": "2024-11-20"
+  },
+  {
+   "name": "LFM2.5-2.6B",
+   "aa_name": "LFM2.5-2.6B",
+   "creator": "liquidai",
+   "score": 8.4,
+   "open_weights": null,
+   "release_date": "2026-08-04"
+  },
+  {
+   "name": "Nanbeige4.1-3B",
+   "aa_name": "Nanbeige4.1-3B",
+   "creator": "nanbeige",
+   "score": 8.4,
+   "open_weights": null,
+   "release_date": "2026-02-11"
+  },
+  {
+   "name": "Qwen3 VL 32B Instruct",
+   "aa_name": "Qwen3 VL 32B Instruct",
+   "creator": "alibaba",
+   "score": 8.4,
+   "open_weights": null,
+   "release_date": "2025-10-21"
+  },
+  {
+   "name": "GPT-4o (2024-11-20)",
+   "aa_name": null,
+   "creator": "openai",
+   "score": 8.4,
+   "open_weights": false,
+   "release_date": null
+  },
+  {
+   "name": "EXAONE 4.0 32B (Reasoning)",
+   "aa_name": "EXAONE 4.0 32B (Reasoning)",
+   "creator": "lg",
+   "score": 8.2,
+   "open_weights": null,
+   "release_date": "2025-07-15"
+  },
+  {
+   "name": "Gemini 2.0 Flash (experimental)",
+   "aa_name": "Gemini 2.0 Flash (experimental)",
+   "creator": "google",
+   "score": 8.2,
+   "open_weights": null,
+   "release_date": "2024-12-11"
+  },
+  {
+   "name": "Magistral Small 1",
+   "aa_name": "Magistral Small 1",
+   "creator": "mistral",
+   "score": 8.2,
+   "open_weights": null,
+   "release_date": "2025-06-10"
+  },
+  {
+   "name": "Qwen3 VL 8B (Reasoning)",
+   "aa_name": "Qwen3 VL 8B (Reasoning)",
+   "creator": "alibaba",
+   "score": 8.2,
+   "open_weights": null,
+   "release_date": "2025-10-14"
+  },
+  {
+   "name": "DeepSeek R1 0528 Qwen3 8B",
+   "aa_name": "DeepSeek R1 0528 Qwen3 8B",
+   "creator": "deepseek",
+   "score": 8.1,
+   "open_weights": null,
+   "release_date": "2025-05-29"
+  },
+  {
+   "name": "Qwen2.5 Max",
+   "aa_name": "Qwen2.5 Max",
+   "creator": "alibaba",
+   "score": 8,
+   "open_weights": null,
+   "release_date": "2025-01-28"
+  },
+  {
+   "name": "Claude 3.5 Sonnet (Oct '24)",
+   "aa_name": "Claude 3.5 Sonnet (Oct '24)",
+   "creator": "anthropic",
+   "score": 7.9,
+   "open_weights": null,
+   "release_date": "2024-10-22"
+  },
+  {
+   "name": "DeepSeek R1 Distill Llama 70B",
+   "aa_name": "DeepSeek R1 Distill Llama 70B",
+   "creator": "deepseek",
+   "score": 7.9,
+   "open_weights": null,
+   "release_date": "2025-01-20"
+  },
+  {
+   "name": "Gemini 1.5 Pro (Sep '24)",
+   "aa_name": "Gemini 1.5 Pro (Sep '24)",
+   "creator": "google",
+   "score": 7.9,
+   "open_weights": null,
+   "release_date": "2024-09-24"
+  },
+  {
+   "name": "Hermes 4 - Llama-3.1 70B (Reasoning)",
+   "aa_name": "Hermes 4 - Llama-3.1 70B (Reasoning)",
+   "creator": "nous-research",
+   "score": 7.9,
+   "open_weights": null,
+   "release_date": "2025-08-27"
+  },
+  {
+   "name": "Qwen3 VL 30B A3B Instruct",
+   "aa_name": "Qwen3 VL 30B A3B Instruct",
+   "creator": "alibaba",
+   "score": 7.9,
+   "open_weights": true,
+   "release_date": "2025-10-03"
+  },
+  {
+   "name": "DeepSeek R1 Distill Qwen 14B",
+   "aa_name": "DeepSeek R1 Distill Qwen 14B",
+   "creator": "deepseek",
+   "score": 7.8,
+   "open_weights": null,
+   "release_date": "2025-01-20"
+  },
+  {
+   "name": "Falcon-H1R-7B",
+   "aa_name": "Falcon-H1R-7B",
+   "creator": "tii-uae",
+   "score": 7.8,
+   "open_weights": null,
+   "release_date": "2026-01-04"
+  },
+  {
+   "name": "Gemma 4 E2B (Reasoning)",
+   "aa_name": "Gemma 4 E2B (Reasoning)",
+   "creator": "google",
+   "score": 7.8,
+   "open_weights": null,
+   "release_date": "2026-04-02"
+  },
+  {
+   "name": "Ling-flash-2.0",
+   "aa_name": "Ling-flash-2.0",
+   "creator": "inclusionai",
+   "score": 7.8,
+   "open_weights": null,
+   "release_date": "2025-09-17"
+  },
+  {
+   "name": "Qwen3 Omni 30B A3B (Reasoning)",
+   "aa_name": "Qwen3 Omni 30B A3B (Reasoning)",
+   "creator": "alibaba",
+   "score": 7.8,
+   "open_weights": null,
+   "release_date": "2025-09-22"
+  },
+  {
+   "name": "GPT-4.1 nano",
+   "aa_name": "GPT-4.1 nano",
+   "creator": "openai",
+   "score": 7.8,
+   "open_weights": false,
+   "release_date": "2025-04-14"
+  },
+  {
+   "name": "Solar Pro 3",
+   "aa_name": "Solar Pro 3",
+   "creator": "upstage",
+   "score": 7.8,
+   "open_weights": false,
+   "release_date": "2026-04-06"
+  },
+  {
+   "name": "GPT-4o (Aug '24)",
+   "aa_name": "GPT-4o (Aug '24)",
+   "creator": "openai",
+   "score": 7.7,
+   "open_weights": null,
+   "release_date": "2024-08-06"
+  },
+  {
+   "name": "Step3 VL 10B",
+   "aa_name": "Step3 VL 10B",
+   "creator": "stepfun",
+   "score": 7.7,
+   "open_weights": null,
+   "release_date": "2026-01-20"
+  },
+  {
+   "name": "Llama 3.3 70B Instruct",
+   "aa_name": "Llama 3.3 Instruct 70B",
+   "creator": "meta",
+   "score": 7.7,
+   "open_weights": true,
+   "release_date": "2024-12-06"
+  },
+  {
+   "name": "GPT-4o (2024-08-06)",
+   "aa_name": null,
+   "creator": "openai",
+   "score": 7.7,
+   "open_weights": false,
+   "release_date": null
+  },
+  {
+   "name": "Sonar",
+   "aa_name": "Sonar",
+   "creator": "perplexity",
+   "score": 7.7,
+   "open_weights": false,
+   "release_date": "2025-01-21"
+  },
+  {
+   "name": "Qwen2.5 72B Instruct",
+   "aa_name": "Qwen2.5 Instruct 72B",
+   "creator": "alibaba",
+   "score": 7.7,
+   "open_weights": true,
+   "release_date": "2024-09-19"
+  },
+  {
+   "name": "QwQ 32B-Preview",
+   "aa_name": "QwQ 32B-Preview",
+   "creator": "alibaba",
+   "score": 7.6,
+   "open_weights": null,
+   "release_date": "2024-11-27"
+  },
+  {
+   "name": "Devstral Small (Jul '25)",
+   "aa_name": "Devstral Small (Jul '25)",
+   "creator": "mistral",
+   "score": 7.6,
+   "open_weights": null,
+   "release_date": "2025-07-10"
+  },
+  {
+   "name": "Mistral Large 2 (Nov '24)",
+   "aa_name": "Mistral Large 2 (Nov '24)",
+   "creator": "mistral",
+   "score": 7.6,
+   "open_weights": null,
+   "release_date": "2024-11-18"
+  },
+  {
+   "name": "Qwen3-30B-A3B",
+   "aa_name": "Qwen3 30B A3B (Reasoning)",
+   "creator": "alibaba",
+   "score": 7.6,
+   "open_weights": true,
+   "release_date": "2025-04-28"
+  },
+  {
+   "name": "Mistral Large 2407",
+   "aa_name": null,
+   "creator": "mistral",
+   "score": 7.6,
+   "open_weights": false,
+   "release_date": null
+  },
+  {
+   "name": "Sonar Pro",
+   "aa_name": "Sonar Pro",
+   "creator": "perplexity",
+   "score": 7.6,
+   "open_weights": false,
+   "release_date": "2025-01-21"
+  },
+  {
+   "name": "GLM 4.5V",
+   "aa_name": "GLM-4.5V (Reasoning)",
+   "creator": "zai",
+   "score": 7.6,
+   "open_weights": true,
+   "release_date": "2025-08-11"
+  },
+  {
+   "name": "Devstral Small 2",
+   "aa_name": "Devstral Small 2",
+   "creator": "mistral",
+   "score": 7.5,
+   "open_weights": null,
+   "release_date": "2025-12-09"
+  },
+  {
+   "name": "ERNIE 4.5 300B A47B",
+   "aa_name": "ERNIE 4.5 300B A47B",
+   "creator": "baidu",
+   "score": 7.5,
+   "open_weights": null,
+   "release_date": "2025-06-30"
+  },
+  {
+   "name": "Hermes 4 - Llama-3.1 405B (Reasoning)",
+   "aa_name": "Hermes 4 - Llama-3.1 405B (Reasoning)",
+   "creator": "nous-research",
+   "score": 7.5,
+   "open_weights": null,
+   "release_date": "2025-08-27"
+  },
+  {
+   "name": "Llama 3.1 Nemotron Ultra 253B v1 (Reasoning)",
+   "aa_name": "Llama 3.1 Nemotron Ultra 253B v1 (Reasoning)",
+   "creator": "nvidia",
+   "score": 7.5,
+   "open_weights": null,
+   "release_date": "2025-04-07"
+  },
+  {
+   "name": "Solar Pro 2 (Reasoning)",
+   "aa_name": "Solar Pro 2 (Reasoning)",
+   "creator": "upstage",
+   "score": 7.5,
+   "open_weights": null,
+   "release_date": "2025-07-09"
+  },
+  {
+   "name": "Hermes 4 405B",
+   "aa_name": null,
+   "creator": "nousresearch",
+   "score": 7.5,
+   "open_weights": true,
+   "release_date": null
+  },
+  {
+   "name": "Nvidia Nemotron Nano 12B V2 VL",
+   "aa_name": "NVIDIA Nemotron Nano 12B v2 VL (Reasoning)",
+   "creator": "nvidia",
+   "score": 7.5,
+   "open_weights": null,
+   "release_date": "2025-10-28"
+  },
+  {
+   "name": "Qwen3 30B A3B Instruct 2507",
+   "aa_name": "Qwen3 30B A3B 2507 Instruct",
+   "creator": "alibaba",
+   "score": 7.5,
+   "open_weights": true,
+   "release_date": "2025-07-29"
+  },
+  {
+   "name": "Gemini 2.0 Flash-Lite (Feb '25)",
+   "aa_name": "Gemini 2.0 Flash-Lite (Feb '25)",
+   "creator": "google",
+   "score": 7.4,
+   "open_weights": null,
+   "release_date": "2025-02-25"
+  },
+  {
+   "name": "Granite 4.1 30B",
+   "aa_name": "Granite 4.1 30B",
+   "creator": "ibm",
+   "score": 7.4,
+   "open_weights": null,
+   "release_date": "2026-04-29"
+  },
+  {
+   "name": "Nvidia Nemotron Nano 9B V2",
+   "aa_name": "NVIDIA Nemotron Nano 9B V2 (Reasoning)",
+   "creator": "nvidia",
+   "score": 7.4,
+   "open_weights": null,
+   "release_date": "2025-08-18"
+  },
+  {
+   "name": "Gemini 2.0 Flash-Lite (Preview)",
+   "aa_name": "Gemini 2.0 Flash-Lite (Preview)",
+   "creator": "google",
+   "score": 7.3,
+   "open_weights": null,
+   "release_date": "2025-02-05"
+  },
+  {
+   "name": "GPT-4o (May '24)",
+   "aa_name": "GPT-4o (May '24)",
+   "creator": "openai",
+   "score": 7.3,
+   "open_weights": null,
+   "release_date": "2024-05-13"
+  },
+  {
+   "name": "Kimi Linear 48B A3B Instruct",
+   "aa_name": "Kimi Linear 48B A3B Instruct",
+   "creator": "kimi",
+   "score": 7.3,
+   "open_weights": null,
+   "release_date": "2025-10-30"
+  },
+  {
+   "name": "Llama 3.1 Instruct 405B",
+   "aa_name": "Llama 3.1 Instruct 405B",
+   "creator": "meta",
+   "score": 7.3,
+   "open_weights": null,
+   "release_date": "2024-07-23"
+  },
+  {
+   "name": "Llama 3.1 Nemotron Nano 4B v1.1 (Reasoning)",
+   "aa_name": "Llama 3.1 Nemotron Nano 4B v1.1 (Reasoning)",
+   "creator": "nvidia",
+   "score": 7.3,
+   "open_weights": null,
+   "release_date": "2025-05-20"
+  },
+  {
+   "name": "Qwen 3 32B",
+   "aa_name": "Qwen3 32B (Non-reasoning)",
+   "creator": "alibaba",
+   "score": 7.3,
+   "open_weights": true,
+   "release_date": "2025-04-28"
+  },
+  {
+   "name": "GPT-4o (2024-05-13)",
+   "aa_name": null,
+   "creator": "openai",
+   "score": 7.3,
+   "open_weights": false,
+   "release_date": null
+  },
+  {
+   "name": "Qwen3 VL 8B Instruct",
+   "aa_name": "Qwen3 VL 8B Instruct",
+   "creator": "alibaba",
+   "score": 7.3,
+   "open_weights": true,
+   "release_date": "2025-10-14"
+  },
+  {
+   "name": "Claude 3.5 Sonnet (June '24)",
+   "aa_name": "Claude 3.5 Sonnet (June '24)",
+   "creator": "anthropic",
+   "score": 7.2,
+   "open_weights": null,
+   "release_date": "2024-06-21"
+  },
+  {
+   "name": "GPT-4o (ChatGPT)",
+   "aa_name": "GPT-4o (ChatGPT)",
+   "creator": "openai",
+   "score": 7.2,
+   "open_weights": null,
+   "release_date": "2025-02-15"
+  },
+  {
+   "name": "LFM2.5-8B-A1B",
+   "aa_name": "LFM2.5-8B-A1B",
+   "creator": "liquidai",
+   "score": 7.2,
+   "open_weights": null,
+   "release_date": "2026-05-28"
+  },
+  {
+   "name": "Qwen3 4B (Reasoning)",
+   "aa_name": "Qwen3 4B (Reasoning)",
+   "creator": "alibaba",
+   "score": 7.2,
+   "open_weights": null,
+   "release_date": "2025-04-28"
+  },
+  {
+   "name": "Ring-flash-2.0",
+   "aa_name": "Ring-flash-2.0",
+   "creator": "inclusionai",
+   "score": 7.2,
+   "open_weights": null,
+   "release_date": "2025-09-19"
+  },
+  {
+   "name": "Llama 3.1 Tulu3 405B",
+   "aa_name": "Llama 3.1 Tulu3 405B",
+   "creator": "ai2",
+   "score": 7.2,
+   "open_weights": null,
+   "release_date": "2025-01-30"
+  },
+  {
+   "name": "Gemini 1.5 Flash (Sep '24)",
+   "aa_name": "Gemini 1.5 Flash (Sep '24)",
+   "creator": "google",
+   "score": 7.1,
+   "open_weights": null,
+   "release_date": "2024-09-24"
+  },
+  {
+   "name": "Grok 2 (Dec '24)",
+   "aa_name": "Grok 2 (Dec '24)",
+   "creator": "xai",
+   "score": 7.1,
+   "open_weights": null,
+   "release_date": "2024-12-12"
+  },
+  {
+   "name": "Mistral Small 3.1",
+   "aa_name": "Mistral Small 3.1",
+   "creator": "mistral",
+   "score": 7.1,
+   "open_weights": null,
+   "release_date": "2025-03-17"
+  },
+  {
+   "name": "Olmo 3.1 32B Think",
+   "aa_name": "Olmo 3.1 32B Think",
+   "creator": "ai2",
+   "score": 7.1,
+   "open_weights": null,
+   "release_date": "2025-12-12"
+  },
+  {
+   "name": "Pixtral Large",
+   "aa_name": "Pixtral Large",
+   "creator": "mistral",
+   "score": 7.1,
+   "open_weights": null,
+   "release_date": "2024-11-18"
+  },
+  {
+   "name": "Mistral Small 3.2",
+   "aa_name": "Mistral Small 3.2",
+   "creator": "mistral",
+   "score": 7,
+   "open_weights": null,
+   "release_date": "2025-06-20"
+  },
+  {
+   "name": "Qwen3 VL 4B (Reasoning)",
+   "aa_name": "Qwen3 VL 4B (Reasoning)",
+   "creator": "alibaba",
+   "score": 7,
+   "open_weights": null,
+   "release_date": "2025-10-14"
+  },
+  {
+   "name": "Nova Pro",
+   "aa_name": "Nova Pro",
+   "creator": "amazon",
+   "score": 7,
+   "open_weights": false,
+   "release_date": "2024-12-03"
+  },
+  {
+   "name": "Command A",
+   "aa_name": "Command A",
+   "creator": "cohere",
+   "score": 7,
+   "open_weights": true,
+   "release_date": "2025-03-13"
+  },
+  {
+   "name": "GPT-4 Turbo",
+   "aa_name": "GPT-4 Turbo",
+   "creator": "openai",
+   "score": 7,
+   "open_weights": false,
+   "release_date": "2023-11-06"
+  },
+  {
+   "name": "Grok Beta",
+   "aa_name": "Grok Beta",
+   "creator": "xai",
+   "score": 6.9,
+   "open_weights": null,
+   "release_date": "2024-08-13"
+  },
+  {
+   "name": "Llama 3.1 Nemotron Instruct 70B",
+   "aa_name": "Llama 3.1 Nemotron Instruct 70B",
+   "creator": "nvidia",
+   "score": 6.9,
+   "open_weights": null,
+   "release_date": "2024-10-15"
+  },
+  {
+   "name": "Qwen2.5 Instruct 32B",
+   "aa_name": "Qwen2.5 Instruct 32B",
+   "creator": "alibaba",
+   "score": 6.9,
+   "open_weights": null,
+   "release_date": "2024-09-19"
+  },
+  {
+   "name": "Qwen3.5 2B (Reasoning)",
+   "aa_name": "Qwen3.5 2B (Reasoning)",
+   "creator": "alibaba",
+   "score": 6.9,
+   "open_weights": null,
+   "release_date": "2026-03-02"
+  },
+  {
+   "name": "Llama 3.1 8B Instruct",
+   "aa_name": "Llama 3.1 Instruct 8B",
+   "creator": "meta",
+   "score": 6.9,
+   "open_weights": true,
+   "release_date": "2024-07-23"
+  },
+  {
+   "name": "Mistral Large 2 (Jul '24)",
+   "aa_name": "Mistral Large 2 (Jul '24)",
+   "creator": "mistral",
+   "score": 6.8,
+   "open_weights": null,
+   "release_date": "2024-07-24"
+  },
+  {
+   "name": "Qwen3 4B 2507 Instruct",
+   "aa_name": "Qwen3 4B 2507 Instruct",
+   "creator": "alibaba",
+   "score": 6.7,
+   "open_weights": null,
+   "release_date": "2025-08-06"
+  },
+  {
+   "name": "Qwen3-14B",
+   "aa_name": "Qwen3 14B (Non-reasoning)",
+   "creator": "alibaba",
+   "score": 6.7,
+   "open_weights": true,
+   "release_date": "2025-04-28"
+  },
+  {
+   "name": "Nova Lite",
+   "aa_name": "Nova Lite",
+   "creator": "amazon",
+   "score": 6.7,
+   "open_weights": false,
+   "release_date": "2024-12-03"
+  },
+  {
+   "name": "Mistral Small 3",
+   "aa_name": "Mistral Small 3",
+   "creator": "mistral",
+   "score": 6.7,
+   "open_weights": true,
+   "release_date": "2025-01-30"
+  },
+  {
+   "name": "GPT-4",
+   "aa_name": "GPT-4",
+   "creator": "openai",
+   "score": 6.7,
+   "open_weights": false,
+   "release_date": "2023-03-14"
+  },
+  {
+   "name": "GPT-4o mini",
+   "aa_name": "GPT-4o mini",
+   "creator": "openai",
+   "score": 6.7,
+   "open_weights": false,
+   "release_date": "2024-07-18"
+  },
+  {
+   "name": "Qwen2.5 Coder 32B Instruct",
+   "aa_name": "Qwen2.5 Coder Instruct 32B",
+   "creator": "alibaba",
+   "score": 6.7,
+   "open_weights": true,
+   "release_date": "2024-11-11"
+  },
+  {
+   "name": "DeepSeek-V2.5 (Dec '24)",
+   "aa_name": "DeepSeek-V2.5 (Dec '24)",
+   "creator": "deepseek",
+   "score": 6.6,
+   "open_weights": null,
+   "release_date": "2024-12-10"
+  },
+  {
+   "name": "DeepSeek-V2.5",
+   "aa_name": "DeepSeek-V2.5",
+   "creator": "deepseek",
+   "score": 6.6,
+   "open_weights": null,
+   "release_date": "2024-09-06"
+  },
+  {
+   "name": "Gemini 2.0 Flash Thinking Experimental (Dec '24)",
+   "aa_name": "Gemini 2.0 Flash Thinking Experimental (Dec '24)",
+   "creator": "google",
+   "score": 6.6,
+   "open_weights": null,
+   "release_date": "2024-12-19"
+  },
+  {
+   "name": "Granite 4.1 8B",
+   "aa_name": "Granite 4.1 8B",
+   "creator": "ibm",
+   "score": 6.6,
+   "open_weights": null,
+   "release_date": "2026-04-29"
+  },
+  {
+   "name": "Sarvam 30B (High)",
+   "aa_name": "Sarvam 30B (High)",
+   "creator": "sarvam",
+   "score": 6.6,
+   "open_weights": null,
+   "release_date": "2026-03-06"
+  },
+  {
+   "name": "Llama 3.1 70B Instruct",
+   "aa_name": "Llama 3.1 Instruct 70B",
+   "creator": "meta",
+   "score": 6.6,
+   "open_weights": true,
+   "release_date": "2024-07-23"
+  },
+  {
+   "name": "DeepSeek R1 Distill Llama 8B",
+   "aa_name": "DeepSeek R1 Distill Llama 8B",
+   "creator": "deepseek",
+   "score": 6.5,
+   "open_weights": null,
+   "release_date": "2025-01-20"
+  },
+  {
+   "name": "Olmo 3.1 32B Instruct",
+   "aa_name": "Olmo 3.1 32B Instruct",
+   "creator": "ai2",
+   "score": 6.5,
+   "open_weights": null,
+   "release_date": "2026-01-13"
+  },
+  {
+   "name": "Olmo 3 32B Think",
+   "aa_name": "Olmo 3 32B Think",
+   "creator": "ai2",
+   "score": 6.5,
+   "open_weights": null,
+   "release_date": "2025-11-20"
+  },
+  {
+   "name": "Llama 4 Scout 17B Instruct",
+   "aa_name": "Llama 4 Scout",
+   "creator": "meta",
+   "score": 6.5,
+   "open_weights": true,
+   "release_date": "2025-04-05"
+  },
+  {
+   "name": "Saba",
+   "aa_name": "Mistral Saba",
+   "creator": "mistral",
+   "score": 6.5,
+   "open_weights": false,
+   "release_date": "2025-02-17"
+  },
+  {
+   "name": "Gemini 1.5 Pro (May '24)",
+   "aa_name": "Gemini 1.5 Pro (May '24)",
+   "creator": "google",
+   "score": 6.4,
+   "open_weights": null,
+   "release_date": "2024-05-15"
+  },
+  {
+   "name": "Llama 3.2 Instruct 90B (Vision)",
+   "aa_name": "Llama 3.2 Instruct 90B (Vision)",
+   "creator": "meta",
+   "score": 6.4,
+   "open_weights": null,
+   "release_date": "2024-09-25"
+  },
+  {
+   "name": "Qwen2.5 Turbo",
+   "aa_name": "Qwen2.5 Turbo",
+   "creator": "alibaba",
+   "score": 6.4,
+   "open_weights": null,
+   "release_date": "2024-11-18"
+  },
+  {
+   "name": "R1 1776",
+   "aa_name": "R1 1776",
+   "creator": "perplexity",
+   "score": 6.4,
+   "open_weights": null,
+   "release_date": "2025-02-18"
+  },
+  {
+   "name": "Reka Flash (Sep '24)",
+   "aa_name": "Reka Flash (Sep '24)",
+   "creator": "reka-ai",
+   "score": 6.4,
+   "open_weights": null,
+   "release_date": "2024-10-04"
+  },
+  {
+   "name": "Solar Mini",
+   "aa_name": "Solar Mini",
+   "creator": "upstage",
+   "score": 6.4,
+   "open_weights": null,
+   "release_date": "2024-01-25"
+  },
+  {
+   "name": "Celeris-1",
+   "aa_name": "Celeris-1",
+   "creator": "celeris",
+   "score": 6.3,
+   "open_weights": null,
+   "release_date": "2026-07-24"
+  },
+  {
+   "name": "Grok-1",
+   "aa_name": "Grok-1",
+   "creator": "xai",
+   "score": 6.3,
+   "open_weights": null,
+   "release_date": "2024-03-17"
+  },
+  {
+   "name": "Phi-4 Mini Instruct",
+   "aa_name": "Phi-4 Mini Instruct",
+   "creator": "azure",
+   "score": 6.3,
+   "open_weights": null,
+   "release_date": "2024-02-26"
+  },
+  {
+   "name": "Qwen2 Instruct 72B",
+   "aa_name": "Qwen2 Instruct 72B",
+   "creator": "alibaba",
+   "score": 6.3,
+   "open_weights": null,
+   "release_date": "2024-06-07"
+  },
+  {
+   "name": "Gemini 1.5 Flash-8B",
+   "aa_name": "Gemini 1.5 Flash-8B",
+   "creator": "google",
+   "score": 6.2,
+   "open_weights": null,
+   "release_date": "2024-10-03"
+  },
+  {
+   "name": "DeepHermes 3 - Mistral 24B Preview (Non-reasoning)",
+   "aa_name": "DeepHermes 3 - Mistral 24B Preview (Non-reasoning)",
+   "creator": "nous-research",
+   "score": 6.1,
+   "open_weights": null,
+   "release_date": "2025-03-13"
+  },
+  {
+   "name": "Jamba 1.7 Large",
+   "aa_name": "Jamba 1.7 Large",
+   "creator": "ai21-labs",
+   "score": 6.1,
+   "open_weights": null,
+   "release_date": "2025-07-07"
+  },
+  {
+   "name": "Qwen3.5 0.8B (Reasoning)",
+   "aa_name": "Qwen3.5 0.8B (Reasoning)",
+   "creator": "alibaba",
+   "score": 6.1,
+   "open_weights": null,
+   "release_date": "2026-03-02"
+  },
+  {
+   "name": "DeepSeek-Coder-V2",
+   "aa_name": "DeepSeek-Coder-V2",
+   "creator": "deepseek",
+   "score": 6,
+   "open_weights": null,
+   "release_date": "2024-06-17"
+  },
+  {
+   "name": "Granite 4.0 H Small",
+   "aa_name": "Granite 4.0 H Small",
+   "creator": "ibm",
+   "score": 6,
+   "open_weights": null,
+   "release_date": "2025-09-22"
+  },
+  {
+   "name": "Jamba 1.5 Large",
+   "aa_name": "Jamba 1.5 Large",
+   "creator": "ai21-labs",
+   "score": 6,
+   "open_weights": null,
+   "release_date": "2024-08-22"
+  },
+  {
+   "name": "Jamba 1.6 Large",
+   "aa_name": "Jamba 1.6 Large",
+   "creator": "ai21-labs",
+   "score": 6,
+   "open_weights": null,
+   "release_date": "2025-03-06"
+  },
+  {
+   "name": "OLMo 2 32B",
+   "aa_name": "OLMo 2 32B",
+   "creator": "ai2",
+   "score": 6,
+   "open_weights": null,
+   "release_date": "2025-03-13"
+  },
+  {
+   "name": "Qwen3 8B (Non-reasoning)",
+   "aa_name": "Qwen3 8B (Non-reasoning)",
+   "creator": "alibaba",
+   "score": 6,
+   "open_weights": null,
+   "release_date": "2025-04-28"
+  },
+  {
+   "name": "Qwen3 Omni 30B A3B Instruct",
+   "aa_name": "Qwen3 Omni 30B A3B Instruct",
+   "creator": "alibaba",
+   "score": 6,
+   "open_weights": null,
+   "release_date": "2025-09-22"
+  },
+  {
+   "name": "Ministral 14B",
+   "aa_name": "Ministral 3 14B",
+   "creator": "mistral",
+   "score": 6,
+   "open_weights": true,
+   "release_date": "2025-12-02"
+  },
+  {
+   "name": "Hermes 3 70B Instruct",
+   "aa_name": "Hermes 3 - Llama-3.1 70B",
+   "creator": "nousresearch",
+   "score": 6,
+   "open_weights": true,
+   "release_date": "2024-08-15"
+  },
+  {
+   "name": "Claude 3 Sonnet",
+   "aa_name": "Claude 3 Sonnet",
+   "creator": "anthropic",
+   "score": 5.9,
+   "open_weights": null,
+   "release_date": "2024-03-04"
+  },
+  {
+   "name": "Gemini 1.5 Flash (May '24)",
+   "aa_name": "Gemini 1.5 Flash (May '24)",
+   "creator": "google",
+   "score": 5.9,
+   "open_weights": null,
+   "release_date": "2024-05-14"
+  },
+  {
+   "name": "Granite 4.1 3B",
+   "aa_name": "Granite 4.1 3B",
+   "creator": "ibm",
+   "score": 5.9,
+   "open_weights": null,
+   "release_date": "2026-04-29"
+  },
+  {
+   "name": "LFM2 24B A2B",
+   "aa_name": "LFM2 24B A2B",
+   "creator": "liquidai",
+   "score": 5.9,
+   "open_weights": null,
+   "release_date": "2026-02-25"
+  },
+  {
+   "name": "Nova Micro",
+   "aa_name": "Nova Micro",
+   "creator": "amazon",
+   "score": 5.9,
+   "open_weights": false,
+   "release_date": "2024-12-03"
+  },
+  {
+   "name": "Phi 4",
+   "aa_name": "Phi-4",
+   "creator": "microsoft",
+   "score": 5.9,
+   "open_weights": true,
+   "release_date": "2024-12-12"
+  },
+  {
+   "name": "Gemini 1.0 Ultra",
+   "aa_name": "Gemini 1.0 Ultra",
+   "creator": "google",
+   "score": 5.8,
+   "open_weights": null,
+   "release_date": "2023-12-06"
+  },
+  {
+   "name": "Gemma 3n E4B Instruct Preview (May '25)",
+   "aa_name": "Gemma 3n E4B Instruct Preview (May '25)",
+   "creator": "google",
+   "score": 5.8,
+   "open_weights": null,
+   "release_date": "2025-05-20"
+  },
+  {
+   "name": "Mistral Small (Sep '24)",
+   "aa_name": "Mistral Small (Sep '24)",
+   "creator": "mistral",
+   "score": 5.8,
+   "open_weights": null,
+   "release_date": "2024-09-17"
+  },
+  {
+   "name": "Phi-3 Mini Instruct 3.8B",
+   "aa_name": "Phi-3 Mini Instruct 3.8B",
+   "creator": "azure",
+   "score": 5.8,
+   "open_weights": null,
+   "release_date": "2024-04-23"
+  },
+  {
+   "name": "Phi-4 Multimodal Instruct",
+   "aa_name": "Phi-4 Multimodal Instruct",
+   "creator": "azure",
+   "score": 5.8,
+   "open_weights": null,
+   "release_date": "2025-02-26"
+  },
+  {
+   "name": "Qwen2.5 Coder Instruct 7B",
+   "aa_name": "Qwen2.5 Coder Instruct 7B",
+   "creator": "alibaba",
+   "score": 5.8,
+   "open_weights": null,
+   "release_date": "2024-09-19"
+  },
+  {
+   "name": "Mistral Large",
+   "aa_name": "Mistral Large (Feb '24)",
+   "creator": "mistral",
+   "score": 5.8,
+   "open_weights": false,
+   "release_date": "2024-02-26"
+  },
+  {
+   "name": "Jamba Reasoning 3B",
+   "aa_name": "Jamba Reasoning 3B",
+   "creator": "ai21-labs",
+   "score": 5.7,
+   "open_weights": null,
+   "release_date": "2025-10-08"
+  },
+  {
+   "name": "Llama 2 Chat 7B",
+   "aa_name": "Llama 2 Chat 7B",
+   "creator": "meta",
+   "score": 5.7,
+   "open_weights": null,
+   "release_date": "2023-07-18"
+  },
+  {
+   "name": "MiniCPM-V 4.6 1.3B",
+   "aa_name": "MiniCPM-V 4.6 1.3B",
+   "creator": "openbmb",
+   "score": 5.7,
+   "open_weights": null,
+   "release_date": "2026-05-11"
+  },
+  {
+   "name": "Qwen1.5 Chat 110B",
+   "aa_name": "Qwen1.5 Chat 110B",
+   "creator": "alibaba",
+   "score": 5.7,
+   "open_weights": null,
+   "release_date": "2024-04-25"
+  },
+  {
+   "name": "Qwen3 VL 4B Instruct",
+   "aa_name": "Qwen3 VL 4B Instruct",
+   "creator": "alibaba",
+   "score": 5.7,
+   "open_weights": null,
+   "release_date": "2025-10-14"
+  },
+  {
+   "name": "Llama 3.2 3B Instruct",
+   "aa_name": "Llama 3.2 Instruct 3B",
+   "creator": "meta",
+   "score": 5.7,
+   "open_weights": true,
+   "release_date": "2024-09-25"
+  },
+  {
+   "name": "Mixtral 8x22B Instruct",
+   "aa_name": "Mixtral 8x22B Instruct",
+   "creator": "mistral",
+   "score": 5.7,
+   "open_weights": true,
+   "release_date": "2024-04-17"
+  },
+  {
+   "name": "Claude 2.1",
+   "aa_name": "Claude 2.1",
+   "creator": "anthropic",
+   "score": 5.6,
+   "open_weights": null,
+   "release_date": "2023-11-21"
+  },
+  {
+   "name": "Claude 3 Haiku",
+   "aa_name": "Claude 3 Haiku",
+   "creator": "anthropic",
+   "score": 5.6,
+   "open_weights": null,
+   "release_date": "2024-03-04"
+  },
+  {
+   "name": "Molmo 7B-D",
+   "aa_name": "Molmo 7B-D",
+   "creator": "ai2",
+   "score": 5.6,
+   "open_weights": null,
+   "release_date": "2024-09-25"
+  },
+  {
+   "name": "OLMo 2 7B",
+   "aa_name": "OLMo 2 7B",
+   "creator": "ai2",
+   "score": 5.6,
+   "open_weights": null,
+   "release_date": "2024-11-26"
+  },
+  {
+   "name": "Olmo 3 7B Think",
+   "aa_name": "Olmo 3 7B Think",
+   "creator": "ai2",
+   "score": 5.6,
+   "open_weights": null,
+   "release_date": "2025-11-20"
+  },
+  {
+   "name": "Reka Flash 3",
+   "aa_name": "Reka Flash 3",
+   "creator": "rekaai",
+   "score": 5.6,
+   "open_weights": true,
+   "release_date": "2025-03-10"
+  },
+  {
+   "name": "Claude 2.0",
+   "aa_name": "Claude 2.0",
+   "creator": "anthropic",
+   "score": 5.5,
+   "open_weights": null,
+   "release_date": "2023-07-11"
+  },
+  {
+   "name": "DeepSeek R1 Distill Qwen 1.5B",
+   "aa_name": "DeepSeek R1 Distill Qwen 1.5B",
+   "creator": "deepseek",
+   "score": 5.5,
+   "open_weights": null,
+   "release_date": "2025-01-20"
+  },
+  {
+   "name": "DeepSeek-V2-Chat",
+   "aa_name": "DeepSeek-V2-Chat",
+   "creator": "deepseek",
+   "score": 5.5,
+   "open_weights": null,
+   "release_date": "2024-05-06"
+  },
+  {
+   "name": "Ling-mini-2.0",
+   "aa_name": "Ling-mini-2.0",
+   "creator": "inclusionai",
+   "score": 5.5,
+   "open_weights": null,
+   "release_date": "2025-09-09"
+  },
+  {
+   "name": "Llama 3 Instruct 70B",
+   "aa_name": "Llama 3 Instruct 70B",
+   "creator": "meta",
+   "score": 5.5,
+   "open_weights": null,
+   "release_date": "2024-04-18"
+  },
+  {
+   "name": "Mistral Medium",
+   "aa_name": "Mistral Medium",
+   "creator": "mistral",
+   "score": 5.5,
+   "open_weights": null,
+   "release_date": "2023-12-11"
+  },
+  {
+   "name": "Mistral Small (Feb '24)",
+   "aa_name": "Mistral Small (Feb '24)",
+   "creator": "mistral",
+   "score": 5.5,
+   "open_weights": null,
+   "release_date": "2024-02-26"
+  },
+  {
+   "name": "Ministral 8B",
+   "aa_name": "Ministral 3 8B",
+   "creator": "mistral",
+   "score": 5.5,
+   "open_weights": true,
+   "release_date": "2025-12-02"
+  },
+  {
+   "name": "GPT-3.5 Turbo",
+   "aa_name": "GPT-3.5 Turbo",
+   "creator": "openai",
+   "score": 5.5,
+   "open_weights": false,
+   "release_date": "2022-11-30"
+  },
+  {
+   "name": "GPT-3.5 Turbo Instruct",
+   "aa_name": "GPT-3.5 Turbo",
+   "creator": "openai",
+   "score": 5.5,
+   "open_weights": false,
+   "release_date": "2022-11-30"
+  },
+  {
+   "name": "Arctic Instruct",
+   "aa_name": "Arctic Instruct",
+   "creator": "snowflake",
+   "score": 5.4,
+   "open_weights": null,
+   "release_date": "2024-04-24"
+  },
+  {
+   "name": "LFM 40B",
+   "aa_name": "LFM 40B",
+   "creator": "liquidai",
+   "score": 5.4,
+   "open_weights": null,
+   "release_date": "2024-09-30"
+  },
+  {
+   "name": "Llama 3.2 Instruct 11B (Vision)",
+   "aa_name": "Llama 3.2 Instruct 11B (Vision)",
+   "creator": "meta",
+   "score": 5.4,
+   "open_weights": null,
+   "release_date": "2024-09-25"
+  },
+  {
+   "name": "PALM-2",
+   "aa_name": "PALM-2",
+   "creator": "google",
+   "score": 5.4,
+   "open_weights": null,
+   "release_date": "2023-05-10"
+  },
+  {
+   "name": "Qwen Chat 72B",
+   "aa_name": "Qwen Chat 72B",
+   "creator": "alibaba",
+   "score": 5.4,
+   "open_weights": null,
+   "release_date": "2023-11-30"
+  },
+  {
+   "name": "Command-R+ (Apr '24)",
+   "aa_name": "Command-R+ (Apr '24)",
+   "creator": "cohere",
+   "score": 5.3,
+   "open_weights": null,
+   "release_date": "2024-04-04"
+  },
+  {
+   "name": "DBRX Instruct",
+   "aa_name": "DBRX Instruct",
+   "creator": "databricks",
+   "score": 5.3,
+   "open_weights": null,
+   "release_date": "2024-03-27"
+  },
+  {
+   "name": "DeepSeek Coder V2 Lite Instruct",
+   "aa_name": "DeepSeek Coder V2 Lite Instruct",
+   "creator": "deepseek",
+   "score": 5.3,
+   "open_weights": null,
+   "release_date": "2024-06-17"
+  },
+  {
+   "name": "DeepSeek LLM 67B Chat (V1)",
+   "aa_name": "DeepSeek LLM 67B Chat (V1)",
+   "creator": "deepseek",
+   "score": 5.3,
+   "open_weights": null,
+   "release_date": "2023-11-29"
+  },
+  {
+   "name": "Exaone 4.0 1.2B (Reasoning)",
+   "aa_name": "Exaone 4.0 1.2B (Reasoning)",
+   "creator": "lg",
+   "score": 5.3,
+   "open_weights": null,
+   "release_date": "2025-07-15"
+  },
+  {
+   "name": "Gemini 1.0 Pro",
+   "aa_name": "Gemini 1.0 Pro",
+   "creator": "google",
+   "score": 5.3,
+   "open_weights": null,
+   "release_date": "2023-12-06"
+  },
+  {
+   "name": "Llama 2 Chat 13B",
+   "aa_name": "Llama 2 Chat 13B",
+   "creator": "meta",
+   "score": 5.3,
+   "open_weights": null,
+   "release_date": "2023-07-18"
+  },
+  {
+   "name": "Llama 2 Chat 70B",
+   "aa_name": "Llama 2 Chat 70B",
+   "creator": "meta",
+   "score": 5.3,
+   "open_weights": null,
+   "release_date": "2023-07-18"
+  },
+  {
+   "name": "OpenChat 3.5 (1210)",
+   "aa_name": "OpenChat 3.5 (1210)",
+   "creator": "openchat",
+   "score": 5.3,
+   "open_weights": null,
+   "release_date": "2023-12-18"
+  },
+  {
+   "name": "Sarvam M (Reasoning, Based on Mistral Small 3.1)",
+   "aa_name": "Sarvam M (Reasoning, Based on Mistral Small 3.1)",
+   "creator": "sarvam",
+   "score": 5.3,
+   "open_weights": null,
+   "release_date": "2025-05-23"
+  },
+  {
+   "name": "Granite 4.0 H 1B",
+   "aa_name": "Granite 4.0 H 1B",
+   "creator": "ibm",
+   "score": 5.2,
+   "open_weights": null,
+   "release_date": "2025-10-28"
+  },
+  {
+   "name": "Jamba 1.5 Mini",
+   "aa_name": "Jamba 1.5 Mini",
+   "creator": "ai21-labs",
+   "score": 5.2,
+   "open_weights": null,
+   "release_date": "2024-08-22"
+  },
+  {
+   "name": "Jamba 1.6 Mini",
+   "aa_name": "Jamba 1.6 Mini",
+   "creator": "ai21-labs",
+   "score": 5.2,
+   "open_weights": null,
+   "release_date": "2025-03-06"
+  },
+  {
+   "name": "Jamba 1.7 Mini",
+   "aa_name": "Jamba 1.7 Mini",
+   "creator": "ai21-labs",
+   "score": 5.2,
+   "open_weights": null,
+   "release_date": "2025-07-07"
+  },
+  {
+   "name": "LFM2 2.6B",
+   "aa_name": "LFM2 2.6B",
+   "creator": "liquidai",
+   "score": 5.2,
+   "open_weights": null,
+   "release_date": "2025-09-23"
+  },
+  {
+   "name": "LFM2.5-1.2B-Instruct",
+   "aa_name": "LFM2.5-1.2B-Instruct",
+   "creator": "liquidai",
+   "score": 5.2,
+   "open_weights": null,
+   "release_date": "2026-01-05"
+  },
+  {
+   "name": "LFM2.5-1.2B-Thinking",
+   "aa_name": "LFM2.5-1.2B-Thinking",
+   "creator": "liquidai",
+   "score": 5.2,
+   "open_weights": null,
+   "release_date": "2026-01-20"
+  },
+  {
+   "name": "Olmo 3 7B Instruct",
+   "aa_name": "Olmo 3 7B Instruct",
+   "creator": "ai2",
+   "score": 5.2,
+   "open_weights": null,
+   "release_date": "2025-11-20"
+  },
+  {
+   "name": "Qwen3 1.7B (Reasoning)",
+   "aa_name": "Qwen3 1.7B (Reasoning)",
+   "creator": "alibaba",
+   "score": 5.2,
+   "open_weights": null,
+   "release_date": "2025-04-28"
+  },
+  {
+   "name": "Apertus 70B Instruct",
+   "aa_name": "Apertus 70B Instruct",
+   "creator": "swiss-ai-initiative",
+   "score": 5.1,
+   "open_weights": null,
+   "release_date": "2025-09-02"
+  },
+  {
+   "name": "DeepHermes 3 - Llama-3.1 8B Preview (Non-reasoning)",
+   "aa_name": "DeepHermes 3 - Llama-3.1 8B Preview (Non-reasoning)",
+   "creator": "nous-research",
+   "score": 5.1,
+   "open_weights": null,
+   "release_date": "2025-02-13"
+  },
+  {
+   "name": "Gemma 3 270M",
+   "aa_name": "Gemma 3 270M",
+   "creator": "google",
+   "score": 5.1,
+   "open_weights": null,
+   "release_date": "2025-08-14"
+  },
+  {
+   "name": "Granite 4.0 Micro",
+   "aa_name": "Granite 4.0 Micro",
+   "creator": "ibm",
+   "score": 5.1,
+   "open_weights": null,
+   "release_date": "2025-09-22"
+  },
+  {
+   "name": "Mixtral 8x7B Instruct",
+   "aa_name": "Mixtral 8x7B Instruct",
+   "creator": "mistral",
+   "score": 5.1,
+   "open_weights": null,
+   "release_date": "2023-12-11"
+  },
+  {
+   "name": "Granite 4.0 Micro",
+   "aa_name": null,
+   "creator": "ibm-granite",
+   "score": 5.1,
+   "open_weights": true,
+   "release_date": null
+  },
+  {
+   "name": "Claude Instant",
+   "aa_name": "Claude Instant",
+   "creator": "anthropic",
+   "score": 5,
+   "open_weights": null,
+   "release_date": "2023-03-14"
+  },
+  {
+   "name": "Command-R (Mar '24)",
+   "aa_name": "Command-R (Mar '24)",
+   "creator": "cohere",
+   "score": 5,
+   "open_weights": null,
+   "release_date": "2024-03-12"
+  },
+  {
+   "name": "Granite 4.0 1B",
+   "aa_name": "Granite 4.0 1B",
+   "creator": "ibm",
+   "score": 5,
+   "open_weights": null,
+   "release_date": "2025-10-28"
+  },
+  {
+   "name": "Llama 65B",
+   "aa_name": "Llama 65B",
+   "creator": "meta",
+   "score": 5,
+   "open_weights": null,
+   "release_date": "2023-02-24"
+  },
+  {
+   "name": "Mistral 7B Instruct",
+   "aa_name": "Mistral 7B Instruct",
+   "creator": "mistral",
+   "score": 5,
+   "open_weights": null,
+   "release_date": "2023-09-27"
+  },
+  {
+   "name": "Molmo2-8B",
+   "aa_name": "Molmo2-8B",
+   "creator": "ai2",
+   "score": 5,
+   "open_weights": null,
+   "release_date": "2025-12-11"
+  },
+  {
+   "name": "Qwen Chat 14B",
+   "aa_name": "Qwen Chat 14B",
+   "creator": "alibaba",
+   "score": 5,
+   "open_weights": null,
+   "release_date": "2023-09-25"
+  },
+  {
+   "name": "Granite 3.3 8B (Non-reasoning)",
+   "aa_name": "Granite 3.3 8B (Non-reasoning)",
+   "creator": "ibm",
+   "score": 4.9,
+   "open_weights": null,
+   "release_date": "2025-04-16"
+  },
+  {
+   "name": "LFM2 8B A1B",
+   "aa_name": "LFM2 8B A1B",
+   "creator": "liquidai",
+   "score": 4.9,
+   "open_weights": null,
+   "release_date": "2025-10-07"
+  },
+  {
+   "name": "Gemma 3 27B",
+   "aa_name": "Gemma 3 27B Instruct",
+   "creator": "google",
+   "score": 4.9,
+   "open_weights": true,
+   "release_date": "2025-03-12"
+  },
+  {
+   "name": "Apertus 8B Instruct",
+   "aa_name": "Apertus 8B Instruct",
+   "creator": "swiss-ai-initiative",
+   "score": 4.8,
+   "open_weights": null,
+   "release_date": "2025-09-02"
+  },
+  {
+   "name": "Gemma 3 1B Instruct",
+   "aa_name": "Gemma 3 1B Instruct",
+   "creator": "google",
+   "score": 4.8,
+   "open_weights": null,
+   "release_date": "2025-03-13"
+  },
+  {
+   "name": "Gemma 3n E2B Instruct",
+   "aa_name": "Gemma 3n E2B Instruct",
+   "creator": "google",
+   "score": 4.8,
+   "open_weights": null,
+   "release_date": "2025-06-26"
+  },
+  {
+   "name": "Gemma 3n E4B Instruct",
+   "aa_name": "Gemma 3n E4B Instruct",
+   "creator": "google",
+   "score": 4.8,
+   "open_weights": null,
+   "release_date": "2025-06-26"
+  },
+  {
+   "name": "Granite 4.0 350M",
+   "aa_name": "Granite 4.0 350M",
+   "creator": "ibm",
+   "score": 4.8,
+   "open_weights": null,
+   "release_date": "2025-10-28"
+  },
+  {
+   "name": "Granite 4.0 H 350M",
+   "aa_name": "Granite 4.0 H 350M",
+   "creator": "ibm",
+   "score": 4.8,
+   "open_weights": null,
+   "release_date": "2025-10-28"
+  },
+  {
+   "name": "LFM2 1.2B",
+   "aa_name": "LFM2 1.2B",
+   "creator": "liquidai",
+   "score": 4.8,
+   "open_weights": null,
+   "release_date": "2025-07-10"
+  },
+  {
+   "name": "LFM2.5-VL-1.6B",
+   "aa_name": "LFM2.5-VL-1.6B",
+   "creator": "liquidai",
+   "score": 4.8,
+   "open_weights": null,
+   "release_date": "2026-01-05"
+  },
+  {
+   "name": "Llama 3 Instruct 8B",
+   "aa_name": "Llama 3 Instruct 8B",
+   "creator": "meta",
+   "score": 4.8,
+   "open_weights": null,
+   "release_date": "2024-04-18"
+  },
+  {
+   "name": "NVIDIA Nemotron 3 Nano 4B",
+   "aa_name": "NVIDIA Nemotron 3 Nano 4B",
+   "creator": "nvidia",
+   "score": 4.8,
+   "open_weights": null,
+   "release_date": "2026-03-16"
+  },
+  {
+   "name": "Qwen3 0.6B (Non-reasoning)",
+   "aa_name": "Qwen3 0.6B (Non-reasoning)",
+   "creator": "alibaba",
+   "score": 4.8,
+   "open_weights": null,
+   "release_date": "2025-04-28"
+  },
+  {
+   "name": "Tiny Aya Global",
+   "aa_name": "Tiny Aya Global",
+   "creator": "cohere",
+   "score": 4.8,
+   "open_weights": null,
+   "release_date": "2026-02-17"
+  },
+  {
+   "name": "Gemma 3 4B",
+   "aa_name": "Gemma 3 4B Instruct",
+   "creator": "google",
+   "score": 4.8,
+   "open_weights": true,
+   "release_date": "2025-03-12"
+  },
+  {
+   "name": "Llama 3.2 1B Instruct",
+   "aa_name": "Llama 3.2 Instruct 1B",
+   "creator": "meta",
+   "score": 4.8,
+   "open_weights": true,
+   "release_date": "2024-09-25"
+  },
+  {
+   "name": "Ministral 3B",
+   "aa_name": "Ministral 3 3B",
+   "creator": "mistral",
+   "score": 4.8,
+   "open_weights": true,
+   "release_date": "2025-12-02"
+  },
+  {
+   "name": "Gemma 3 12B",
+   "aa_name": "Gemma 3 12B Instruct",
+   "creator": "google",
+   "score": 3.8,
+   "open_weights": true,
+   "release_date": "2025-03-12"
+  },
+  {
+   "name": "K2 Horizon 0.9B",
+   "aa_name": "K2 Horizon 0.9B",
+   "creator": "ifm",
+   "score": 3,
+   "open_weights": null,
+   "release_date": "2026-09-03"
+  }
+ ]
+}
