@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Australian Endpoints — Deploy a model</title>
+<meta name="description" content="A local prototype for deploying Hugging Face models to Australian GPU providers.">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/style.css">
+<script defer src="/static/app.js"></script>
+</head>
+<body>
+<header><a class="brand" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 20 12 30 16 20 20 16 30 12 20 2 16 12 12Z"/></svg><span>Australian<span class="brand-light"> Endpoints</span></span><span class="alpha">LOCAL ALPHA</span></a><div class="header-right"><span class="local-dot"></span><span id="environment">Local simulation</span><button id="login-open" class="text-button">Admin access ↗</button></div></header>
+<div class="workspace">
+<aside class="sidebar"><div class="workspace-label">YOUR WORKSPACE</div><div class="workspace-name"><span class="avatar">AU</span> Local workspace</div><div class="nav-active"><span>▤</span> Inference endpoints <span class="nav-count" id="endpoint-count">0</span></div><div class="side-bottom"><span class="compass">✳</span><p>Open models.<br>Australian compute.</p><small>One provider to start.<br>A common API to build on.</small></div></aside>
+<main>
+<div class="breadcrumb">Workspace <span>/</span> Inference endpoints <span>/</span> <strong>New endpoint</strong></div>
+<div class="page-heading"><div><div class="eyebrow">INFERENCE, CLOSER TO HOME</div><h1>From model to endpoint.</h1><p>Choose your model. Choose Australian compute. Start building.</p></div><div class="region-mark"><span>◎</span> AU <small>AUSTRALIA</small></div></div>
+<div id="mode-banner" class="mode-banner"><span class="banner-icon">◇</span><div><strong>You're in the local sandbox.</strong> Deployments and model responses are mocked. The endpoint and API key work locally. No cloud resources or charges.</div><span class="badge">MOCK MODE</span></div>
+<div class="flow-layout">
+<div class="selections">
+<section class="selection-section"><div class="section-title"><span class="step">01</span><div><h2>Select a model</h2><p>Your Artificial Analysis shortlist · 12 Sep 2026.</p></div><span class="source-label">AA INDEX v4.3</span></div><label class="input-label" for="model-search">FIND A MODEL <span id="model-count">14 MODELS</span></label><input id="model-search" type="search" placeholder="Search models…" autocomplete="off"><div id="model-list" class="model-list" role="radiogroup" aria-label="Hugging Face model"></div><p class="field-note">Scores and evaluation settings from your supplied chart. K2 Horizon is an estimate, with independent evaluation forthcoming. HF repositories, licences and GPU sizing are not yet verified. All 14 models are mock-only.</p></section>
+<section class="selection-section provider-section"><div class="section-title"><span class="step">02</span><div><h2>Choose Australian compute</h2><p>Start with our first provider adapter.</p></div></div><div id="provider-list" class="provider-list" role="radiogroup" aria-label="Australian GPU provider"></div><p class="field-note">Additional providers are shown as planned integrations, not available capacity.</p></section>
+</div>
+<aside class="deploy-panel">
+<div class="panel-top"><span class="step">03</span><h2>Your endpoint</h2><span id="panel-mode" class="badge">MOCK</span></div>
+<div id="configure-view"><label class="input-label" for="endpoint-name">ENDPOINT NAME</label><input id="endpoint-name" value="my-first-endpoint" maxlength="48" pattern="[a-zA-Z0-9][a-zA-Z0-9_-]*" autocomplete="off"><div class="deployment-summary"><div><span>Model</span><strong id="summary-model">GLM-5.3</strong></div><div><span>Provider</span><strong>AWS Australia</strong></div><div><span>Region</span><strong>Sydney <span class="small-dot"></span></strong></div><div><span>GPU configuration</span><strong id="summary-gpu">Sizing not verified</strong></div><div><span>Instance</span><code id="summary-instance">Not provisioned</code></div></div><div class="cost-block"><span id="cost-title">Sandbox cost</span><strong id="cost-value">A$0<span> / simulation</span></strong><p id="cost-detail">No AWS account or payment details needed.</p></div><button class="primary" id="deploy-button">Deploy mock endpoint <span>↗</span></button><p class="deploy-note" id="deploy-note">Simulates provisioning in a few seconds.<br>Local endpoint expires after 60 minutes.</p></div>
+<div id="progress-view" hidden><div class="progress-heading"><span class="spinner"></span><h3 id="progress-title">Preparing your endpoint</h3></div><p id="progress-note">Simulating the AWS Sydney deployment flow.</p><ol id="progress-events" class="events"></ol><div class="progress-track"><div id="progress-bar"></div></div><button class="secondary" id="cancel-button">Cancel deployment</button></div>
+<div id="ready-view" hidden><div class="ready-title"><span>✓</span><div><h3 id="ready-title">Mock endpoint ready</h3><p id="ready-subtitle">Your local API is available.</p></div></div><div class="endpoint-details"><label class="input-label" for="base-url">OPENAI-COMPATIBLE BASE URL</label><div class="copy-field"><input id="base-url" readonly aria-label="Endpoint base URL"><button id="copy-url" title="Copy endpoint URL" aria-label="Copy endpoint URL">⧉</button></div><label class="input-label" for="api-key">ENDPOINT API KEY <span id="key-note">SHOWN ONCE</span></label><div class="copy-field"><input id="api-key" readonly type="password" aria-label="Endpoint API key"><button id="reveal-key" title="Show or hide key" aria-label="Show or hide API key">◉</button><button id="copy-key" title="Copy API key" aria-label="Copy API key">⧉</button></div><p class="field-note" id="key-help">Save this key. Only its hash is stored on the server.</p><button id="generate-key" class="secondary" hidden>Generate a new key</button></div><div class="code-heading"><span>CONNECT WITH PYTHON</span><button class="text-button" id="copy-code">Copy code ⧉</button></div><pre id="code-example"></pre><button id="verify-button" class="secondary">Verify local endpoint →</button><p id="verify-result" aria-live="polite"></p><button class="text-button danger" id="delete-button">Delete endpoint</button></div>
+<div id="failed-view" hidden><h3>Deployment didn't complete</h3><p id="failed-message"></p><button id="retry-button" class="secondary">Back to configuration</button></div>
+<div id="error" role="alert" hidden></div><div class="panel-foot"><span>⌁</span> OpenAI-compatible API format</div>
+</aside>
+</div>
+<footer><span>Built for Australian inference.</span><span id="footer-status">AWS adapter implemented · Live connection not verified</span></footer>
+</main></div>
+<dialog id="login-dialog"><form id="login-form"><button class="close text-button" type="button" id="login-close" aria-label="Close">×</button><h2>Admin access</h2><p>The local sandbox is available on this computer.<br>Remote access requires the server's admin token.</p><label for="admin-token">Admin token</label><input type="password" id="admin-token" autocomplete="current-password" required><button class="primary" type="submit">Sign in</button><p id="login-error" role="alert"></p></form></dialog>
+<div class="toast" id="toast" role="status" hidden></div>
+</body></html>

@@ -1,0 +1,21 @@
+[project]
+name = "australian-endpoints"
+version = "0.1.0"
+description = "Australian Hugging Face model deployments, starting with AWS Sydney"
+requires-python = ">=3.11"
+dependencies = ["fastapi==0.141.1", "uvicorn[standard]==0.52.4", "boto3==1.43.93", "httpx==0.28.1", "python-dotenv==1.2.3"]
+[project.optional-dependencies]
+test = ["pytest==9.1.1", "openai==3.13.0", "ruff==0.16.7"]
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+[tool.ruff]
+line-length = 110
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools]
+packages = ["app"]
+[tool.setuptools.package-data]
+app = ["static/*"]
