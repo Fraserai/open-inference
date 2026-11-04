@@ -133,6 +133,6 @@ def render(s):
     w("- **Overseas only** = offered, but processed outside Australia (e.g. SCX models not in its AU table, AWS Global-only models).")
     w("- Scores are a snapshot of the Artificial Analysis Intelligence Index; its versions are rescaled from time to time, so compare ranks rather than raw points across versions.")
     if sc["status"] != "live":
-        w("- **To get live scores:** add a free `ARTIFICIAL_ANALYSIS_API_KEY` to `~/Desktop/open-inference/.env`.")
+        w("- **To get live scores:** add a free `ARTIFICIAL_ANALYSIS_API_KEY` to `~/open-inference/.env`.")
     w(f"- {s['attribution']}")
     return "\n".join(out) + "\n"

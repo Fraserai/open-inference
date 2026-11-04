@@ -4,7 +4,7 @@
 <dict>
   <key>Label</key><string>com.openinference.daily</string>
   <key>ProgramArguments</key>
-  <array><string>/bin/zsh</string><string>-lc</string><string>~/Desktop/open-inference/bin/daily.sh --if-due</string></array>
+  <array><string>/bin/zsh</string><string>-lc</string><string>~/open-inference/bin/daily.sh --if-due</string></array>
   <!-- 6pm Brisbane (08:00 UTC) and at login; daily.sh skips when the report already exists -->
   <key>StartCalendarInterval</key><dict><key>Hour</key><integer>18</integer><key>Minute</key><integer>0</integer></dict>
   <key>RunAtLoad</key><true/>
