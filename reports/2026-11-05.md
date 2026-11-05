@@ -1,11 +1,11 @@
 # Open Inference daily report: 2026-11-05
 
-_Generated 2026-11-05T01:36:08+00:00 UTC. Model scores: Artificial Analysis Intelligence Index as of **2026-10-23** (saved copy: ARTIFICIAL_ANALYSIS_API_KEY not set)._
+_Generated 2026-11-05T02:14:11+00:00 UTC. Model scores: Artificial Analysis Intelligence Index as of **2026-10-23** (saved copy: ARTIFICIAL_ANALYSIS_API_KEY not set)._
 
 ## Today in one look
-- **Top 30 open models processed in Australia somewhere:** 5 (3 of them only on a provider's own claim).
+- **Top 30 open models processed in Australia somewhere:** 6 (4 of them only on a provider's own claim).
 - **Listed for Australia *and* overseas, with no documented way to pin to Australia:** 1.
-- **Missing in Australia (top 30 open, not processed here):** 24.
+- **Missing in Australia (top 30 open, not processed here):** 23.
 - **Best open model overall:** MiMo V2.6 Pro (46.3), not offered. **Best processed in Australia:** Kimi K3 (43.6, #5).
 - **Changes since 2026-11-04:** 14 (see below).
 
@@ -26,11 +26,11 @@ _Generated 2026-11-05T01:36:08+00:00 UTC. Model scores: Artificial Analysis Inte
 | 12 | DeepSeek V4 Flash Vision Exp | deepseek | 34.8 | Not offered | – |
 | 13 | DeepSeek V4 Flash 0731 | deepseek | 34.3 | Not offered | – |
 | 14 | Qwen3.8 27B | alibaba | 33.7 | Not offered | – |
-| 15 | GLM 5.2 | zai | 33.7 | In Australia | SCX (overseas only), ResetData (in Australia) |
+| 15 | GLM 5.2 | zai | 33.7 | In Australia | SCX (overseas only), ResetData (in Australia), Continuum Labs (in Australia) |
 | 16 | DeepSeek V4 Pro | deepseek | 30.4 | Overseas only | SCX (overseas only) |
 | 17 | MiniMax M3 | minimax | 29.2 | Australia + overseas | SCX (Australia + overseas) |
 | 18 | GLM 5 | zai | 27.9 | In Australia | AWS Bedrock (in Australia) |
-| 19 | Kimi K2.6 | moonshotai | 27.0 | Not offered | – |
+| 19 | Kimi K2.6 | moonshotai | 27.0 | In Australia | Continuum Labs (in Australia) |
 | 20 | NVIDIA Nemotron 3.5 Super VL | nvidia | 26.5 | Not offered | – |
 | 21 | GLM 5.1 | zai | 26.1 | Not offered | – |
 | 22 | MiMo V2.5 Pro | xiaomi | 26.0 | Not offered | – |
@@ -59,7 +59,6 @@ Top 30 open models with no provider processing them in Australia:
 - #13 DeepSeek V4 Flash 0731 (34.3)
 - #14 Qwen3.8 27B (33.7)
 - #16 DeepSeek V4 Pro (30.4) — SCX (overseas only)
-- #19 Kimi K2.6 (27.0)
 - #20 NVIDIA Nemotron 3.5 Super VL (26.5)
 - #21 GLM 5.1 (26.1)
 - #22 MiMo V2.5 Pro (26.0)
@@ -86,6 +85,7 @@ Top 30 open models with no provider processing them in Australia:
 - **Gone** from SCX: Claude Sonnet 4.6
 - **Gone** from SCX: Claude Sonnet 5
 - **Gone** from SCX: Claude Sonnet 5.5
+- Not compared (a fetch failed on one of the days): continuum
 
 ## New open models, not scored yet
 - Tencent: Hy4 (`tencent/Hy4`), listed on OpenRouter 2026-11-04
@@ -105,10 +105,11 @@ Every model (open or closed) that a checked provider processes in Australia, or 
 | Claude Opus 4.7 | closed | 40.7 | AWS Bedrock (in Australia) |
 | DeepSeek V4.1 Flash | open | 39.5 | Xinference (in Australia) |
 | Claude Sonnet 5 | closed | 38.2 | AWS Bedrock (in Australia) |
-| GLM 5.2 | open | 33.7 | ResetData (in Australia) |
+| GLM 5.2 | open | 33.7 | ResetData (in Australia), Continuum Labs (in Australia) |
 | Claude Opus 4.6 | closed | 31.9 | AWS Bedrock (in Australia) |
 | Claude Sonnet 4.6 | closed | 30.1 | AWS Bedrock (in Australia) |
 | GLM 5 | open | 27.9 | AWS Bedrock (in Australia) |
+| Kimi K2.6 | open | 27.0 | Continuum Labs (in Australia) |
 | Kimi K2.5 | open | 23.5 | AWS Bedrock (in Australia) |
 | MiniMax M2.5 | open | 22.8 | AWS Bedrock (in Australia) |
 | GLM 4.7 | open | 22.2 | AWS Bedrock (in Australia) |
@@ -118,11 +119,12 @@ Every model (open or closed) that a checked provider processes in Australia, or 
 | Claude Haiku 4.5 | closed | 16.9 | AWS Bedrock (in Australia) |
 | Google Gemma 4 26B A4B | open | 16.7 | ResetData (in Australia) |
 | GLM 4.7 Flash | open | 14.9 | AWS Bedrock (in Australia) |
+| Mistral Medium Latest | closed | 14.2 | Continuum Labs (in Australia) |
 | DeepSeek V3.1 | open | 13.7 | AWS Bedrock (in Australia) |
 | Qwen3 VL 235B A22B (Reasoning) | ? | 13.4 | AWS Bedrock (in Australia) |
 | Qwen3 235B A22B Instruct 2507 | open | 12.7 | AWS Bedrock (in Australia) |
 | Qwen3 Coder 480B A35B Instruct | open | 11.9 | AWS Bedrock (in Australia) |
-| GPT OSS 120B | open | 11.6 | SCX (Australia + overseas), AWS Bedrock (in Australia) |
+| GPT OSS 120B | open | 11.6 | SCX (Australia + overseas), Continuum Labs (in Australia), AWS Bedrock (in Australia) |
 | Qwen3 Next 80B A3B Thinking | open | 11.2 | AWS Bedrock (in Australia) |
 | GPT OSS 20B | open | 10.0 | AWS Bedrock (in Australia) |
 | Qwen 3 Coder 30B A3B Instruct | open | 9.6 | ResetData (in Australia), AWS Bedrock (in Australia) |
@@ -145,21 +147,26 @@ Every model (open or closed) that a checked provider processes in Australia, or 
 | Ministral 3B | open | 4.8 | AWS Bedrock (in Australia) |
 | Gemma 3 12B | open | 3.8 | AWS Bedrock (in Australia) |
 | Apex | ? | – | SCX (in Australia) |
+| BGE-M3 | ? | – | Continuum Labs (in Australia) |
 | Devstral 2 123B | ? | – | AWS Bedrock (in Australia) |
 | E5-Mistral-7B-Instruct | ? | – | SCX (in Australia) |
 | Embed English | ? | – | AWS Bedrock (in Australia) |
 | Embed Multilingual | ? | – | AWS Bedrock (in Australia) |
 | GPT OSS Safeguard 120B | ? | – | AWS Bedrock (in Australia) |
 | GPT OSS Safeguard 20B | ? | – | AWS Bedrock (in Australia) |
+| Gemma 4 26B | ? | – | Continuum Labs (in Australia) |
 | Magistral Small 2509 | ? | – | AWS Bedrock (in Australia) |
 | Ministral 14B 3.0 | ? | – | AWS Bedrock (in Australia) |
 | NVIDIA Nemotron 3 Super 120B | ? | – | AWS Bedrock (in Australia) |
 | NVIDIA Nemotron Nano 12B v2 VL BF16 | ? | – | AWS Bedrock (in Australia) |
 | Nemotron Nano 3 30B | ? | – | AWS Bedrock (in Australia) |
+| Qwen3 Coder 30B | ? | – | Continuum Labs (in Australia) |
+| Qwen3 Embedding 8B | ? | – | Continuum Labs (in Australia) |
 | Titan Multimodal Embeddings G1 | ? | – | AWS Bedrock (in Australia) |
 | Titan Text Embeddings V2 | ? | – | AWS Bedrock (in Australia) |
 | Voxtral Mini 3B 2507 | ? | – | AWS Bedrock (in Australia) |
 | Voxtral Small 24B 2507 | ? | – | AWS Bedrock (in Australia) |
+| Whisper V3 Turbo | ? | – | Continuum Labs (in Australia) |
 | Whisper-Large-v3 | ? | – | SCX (in Australia) |
 | black-forest-labs/flux-1-schnell | ? | – | ResetData (in Australia) |
 | coder | ? | – | SCX (in Australia) |
@@ -176,6 +183,7 @@ Every model (open or closed) that a checked provider processes in Australia, or 
 | SCX.ai | SCX.ai, ASX-listed Australian company | 29 | 7 | 5 | region per model | https://platform.scx.ai/docs/models |
 | ResetData | ResetData (Centuria Capital owns 50%, per press coverage) | 6 | 6 | 0 | provider's own claim | https://docs.resetdata.ai/models/overview/ |
 | Xinference | Xinference (says it is Australian; not checked) | 3 | 2 | 0 | provider's own claim | https://xinference.co/model-api.html |
+| Continuum Labs | Continuum Labs Pty Ltd, Melbourne (says it is Australian owned) | 9 | 9 | 0 | provider's own claim | https://www.continuumlabs.ai/models |
 | AWS Bedrock (Sydney, Melbourne) | Amazon Web Services (US-owned hyperscaler) | 76 | 56 | 0 | region per model | https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html |
 - ResetData: Only the serverless list is public; the full catalogue needs a login.
 - OpenRouter providers listing an Australian data centre: none.
@@ -183,16 +191,19 @@ Every model (open or closed) that a checked provider processes in Australia, or 
 ## Not checked yet
 - **Microsoft Azure AI Foundry (Australia East)**: Region availability isn't in a table we can read reliably yet.
 - **Google Vertex AI (australia-southeast1)**: Region availability isn't in a table we can read reliably yet.
-- **Amaze**: No public model catalogue found (amaze.au/models returns 404).
+- **Amaze**: Lists 34 open models for Sydney and Melbourne, all marked coming soon (checked 2026-11-05).
+- **Groq**: Runs a 4.5MW inference site at Equinix Sydney (Nov 2025), but publishes no way to keep requests in Sydney.
+- **Sharon AI**: Australian GPU cloud with an inference engine; no public list of hosted models (checked 2026-11-05).
+- **Data Global**: DGX B300 cluster at Micron21 for a 'Token Factory' inference platform, not launched yet.
 - **Micron21 (mCloud)**: Sells GPUs to run your own models; no hosted model list.
-- **NorthStar**: Site shows only a contact address.
+- **NorthStar**: Says it serves Gemma 3 from South Australia; no official site or API domain we could confirm.
 - **Datacom**: No public model catalogue found.
 - **Sovereign Australia AI**: Builds Australian models; no public inference catalogue found.
 
 ## Names not matched to a score
 Provider model names we couldn't match to an Artificial Analysis entry (often embeddings, audio, or a spelling to add to `tracker/names.py`):
 
-Apex, Claude Mythos 5.1, Devstral 2 123B, E5-Mistral-7B-Instruct, Embed English, Embed Multilingual, Embed v4, GLM-5.2-Fast, GLM-5.3-Fast, GPT OSS Safeguard 120B, GPT OSS Safeguard 20B, GPT-6.1 Terra, Kimi-K3.1-Pro, Kimi-K3.1-Pro-Highspeed, MAGPiE, Magistral Small 2509, Ministral 14B 3.0, NVIDIA Nemotron 3 Super 120B, NVIDIA Nemotron Nano 12B v2 VL BF16, Nemotron Nano 3 30B, Pegasus v1.2, Pegasus v1.5, Titan Multimodal Embeddings G1, Titan Text Embeddings V2, Voxtral Mini 3B 2507, Voxtral Small 24B 2507, Whisper-Large-v3, black-forest-labs/flux-1-schnell, coder, openai/whisper-large-v3-turbo, scx-stt
+Apex, BGE-M3, Claude Mythos 5.1, Devstral 2 123B, E5-Mistral-7B-Instruct, Embed English, Embed Multilingual, Embed v4, GLM-5.2-Fast, GLM-5.3-Fast, GPT OSS Safeguard 120B, GPT OSS Safeguard 20B, GPT-6.1 Terra, Gemma 4 26B, Kimi-K3.1-Pro, Kimi-K3.1-Pro-Highspeed, MAGPiE, Magistral Small 2509, Ministral 14B 3.0, NVIDIA Nemotron 3 Super 120B, NVIDIA Nemotron Nano 12B v2 VL BF16, Nemotron Nano 3 30B, Pegasus v1.2, Pegasus v1.5, Qwen3 Coder 30B, Qwen3 Embedding 8B, Titan Multimodal Embeddings G1, Titan Text Embeddings V2, Voxtral Mini 3B 2507, Voxtral Small 24B 2507, Whisper V3 Turbo, Whisper-Large-v3, black-forest-labs/flux-1-schnell, coder, openai/whisper-large-v3-turbo, scx-stt
 
 ## How to read this
 - **In Australia** = an Australia-only region in the provider's docs, AWS in-region or its Australian Geo profile in Sydney/Melbourne, or a provider that says all its serving is in Australia (ResetData, Xinference). Provider claims haven't been checked from outside.

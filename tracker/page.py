@@ -28,7 +28,7 @@ CSS = """
   --base: #eef2f7; --ink: #0b1220; --soft: #4b5567; --faint: #8a93a3;
   --glass: rgba(255,255,255,.52); --glass-strong: rgba(255,255,255,.72); --edge: rgba(255,255,255,.75);
   --spec: rgba(255,255,255,.95); --shade: rgba(20,32,60,.10);
-  --here: #1f9d55; --here-glass: rgba(52,199,89,.20); --here-edge: rgba(52,199,89,.55);
+  --ring-track: rgba(11,18,32,.09); --here: #1f9d55; --here-glass: rgba(52,199,89,.20); --here-edge: rgba(52,199,89,.55);
   --aura-1: #7cc4ff; --aura-2: #a7f0d0; --aura-3: #ffc59a;
   --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Segoe UI", Roboto, Arial, sans-serif;
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
@@ -37,13 +37,13 @@ CSS = """
   --base: #05080f; --ink: #f2f5fa; --soft: #aab3c2; --faint: #6f7889;
   --glass: rgba(28,34,46,.46); --glass-strong: rgba(36,42,56,.72); --edge: rgba(255,255,255,.14);
   --spec: rgba(255,255,255,.22); --shade: rgba(0,0,0,.45);
-  --here: #30d158; --here-glass: rgba(48,209,88,.18); --here-edge: rgba(48,209,88,.5);
+  --ring-track: rgba(255,255,255,.13); --here: #30d158; --here-glass: rgba(48,209,88,.18); --here-edge: rgba(48,209,88,.5);
   --aura-1: #1d4e89; --aura-2: #0f5c4a; --aura-3: #6b3a1c; color-scheme: dark; } }
 :root[data-theme="dark"] {
   --base: #05080f; --ink: #f2f5fa; --soft: #aab3c2; --faint: #6f7889;
   --glass: rgba(28,34,46,.46); --glass-strong: rgba(36,42,56,.72); --edge: rgba(255,255,255,.14);
   --spec: rgba(255,255,255,.22); --shade: rgba(0,0,0,.45);
-  --here: #30d158; --here-glass: rgba(48,209,88,.18); --here-edge: rgba(48,209,88,.5);
+  --ring-track: rgba(255,255,255,.13); --here: #30d158; --here-glass: rgba(48,209,88,.18); --here-edge: rgba(48,209,88,.5);
   --aura-1: #1d4e89; --aura-2: #0f5c4a; --aura-3: #6b3a1c; color-scheme: dark; }
 
 body { background: var(--base); color: var(--ink); font-family: var(--font); font-size: 16px; line-height: 1.45;
@@ -71,15 +71,22 @@ body { background: var(--base); color: var(--ink); font-family: var(--font); fon
 .brand i { width: 10px; height: 10px; border-radius: 50%; background: var(--here); box-shadow: 0 0 12px var(--here); }
 .date { font-size: 13px; color: var(--soft); padding: 6px 12px; border-radius: 999px; background: var(--glass-strong); }
 
-.hero { padding: clamp(24px, 5vw, 48px); display: grid; gap: 10px; }
+.hero { padding: clamp(24px, 5vw, 52px); display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 32px; }
+.copy { display: grid; gap: 12px; min-width: 0; }
+.ring { margin: 0; width: clamp(170px, 24vw, 230px); }
+.ring svg { display: block; width: 100%; height: auto; overflow: visible; }
+.ring circle { fill: none; stroke-width: 16; }
+.ring .track { stroke: var(--ring-track); }
+.ring .fill { stroke: var(--here); stroke-linecap: round; transform: rotate(-90deg); transform-origin: 100px 100px;
+  filter: drop-shadow(0 0 8px var(--here-edge)); }
+.ring .num { fill: var(--ink); font-size: 64px; font-weight: 800; letter-spacing: -.04em; font-family: var(--font); }
+.ring .of { fill: var(--soft); font-size: 17px; font-weight: 600; font-family: var(--font); }
+.hl { color: var(--here); }
+@media (max-width: 640px) { .hero { grid-template-columns: 1fr; justify-items: start; } .ring { width: 150px; } }
 .kicker { font-size: 13px; font-weight: 600; color: var(--soft); letter-spacing: .02em; }
-.big { display: flex; align-items: baseline; gap: 6px; line-height: .9; font-weight: 800; letter-spacing: -.045em; }
-.big b { font-size: clamp(96px, 20vw, 188px); background: linear-gradient(180deg, var(--ink), var(--here));
-  -webkit-background-clip: text; background-clip: text; color: transparent; }
-.big span { font-size: clamp(40px, 8vw, 72px); color: var(--faint); }
-h1 { margin: 0; font-size: clamp(26px, 4.4vw, 40px); font-weight: 700; letter-spacing: -.025em; line-height: 1.1;
-  text-wrap: balance; max-width: 20ch; }
-.lede { margin: 6px 0 0; color: var(--soft); font-size: 17px; max-width: 56ch; }
+h1 { margin: 0; font-size: clamp(32px, 5.2vw, 54px); font-weight: 800; letter-spacing: -.035em; line-height: 1.04;
+  text-wrap: balance; max-width: 16ch; }
+.lede { margin: 0; color: var(--soft); font-size: 19px; max-width: 56ch; }
 
 .section { padding: clamp(18px, 3.5vw, 28px); display: grid; gap: 16px; min-width: 0; }
 h2 { margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -.02em; }
@@ -121,6 +128,8 @@ h2 { margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -.02em; }
   background: var(--glass-strong); border: 1px solid var(--edge); color: var(--ink); text-decoration: none; }
 .pill b { font-variant-numeric: tabular-nums; color: var(--here); }
 .pill:hover { box-shadow: 0 6px 18px var(--shade); }
+.pill.soon { color: var(--soft); background: var(--glass); }
+.mini { margin: 6px 0 0; font-size: 15px; font-weight: 650; color: var(--soft); letter-spacing: -.01em; }
 footer { color: var(--soft); font-size: 13px; display: grid; gap: 6px; padding: 4px 8px; }
 footer p { margin: 0; max-width: 80ch; }
 a { color: inherit; }
@@ -223,13 +232,18 @@ def render_body(s):
       f'<div class="date">Updated {_e(_date(s["date"]))}</div></header>')
 
     # Hero.
-    w('<section class="glass hero">')
-    w('<div class="kicker">Open AI models in Australia, checked daily</div>')
-    w(f'<div class="big" aria-hidden="true"><b>{len(here)}</b><span>/{n}</span></div>')
-    w(f"<h1>{len(here)} of the top {n} open models run in Australia.</h1>")
+    w('<section class="glass hero"><div class="copy">')
+    w('<div class="kicker">Checked daily</div>')
+    w(f'<h1><span class="hl">{len(here)} of the top {n}</span> open AI models run in Australia.</h1>')
     if lead_missing:
         line = f"None of the top {lead_missing} do." if lead_missing > 1 else "The #1 doesn't."
         w(f'<p class="lede">{_e(line)}</p>')
+    circ = 2 * 3.14159265 * 84
+    w('</div><figure class="ring" aria-hidden="true"><svg viewBox="0 0 200 200">'
+      '<circle class="track" cx="100" cy="100" r="84"/>'
+      f'<circle class="fill" cx="100" cy="100" r="84" stroke-dasharray="{circ * len(here) / max(n, 1):.1f} {circ:.1f}"/>'
+      f'<text class="num" x="100" y="108" text-anchor="middle">{len(here)}</text>'
+      f'<text class="of" x="100" y="138" text-anchor="middle">of {n}</text></svg></figure>')
     w("</section>")
 
     # Board.
@@ -263,12 +277,6 @@ def render_body(s):
           f'<span class="t"><b>#{best_open_here["rank"]} in the world</b> · on {_e(_onshore_names(best_open_here))}</span></div>')
     w("</section>")
 
-    # Today.
-    w('<section class="glass section">')
-    items = _changes(s, n)
-    w("<h2>Latest</h2>")
-    w('<ul class="list">' + "".join(items) + "</ul>")
-    w("</section>")
 
     # Providers.
     w('<section class="glass section">')
@@ -286,6 +294,12 @@ def render_body(s):
         else:
             pills.append(f'<a class="pill" href="{_e(p["catalogue"][0])}">{_e(p["name"])} <b>{counts.get(p["id"], 0)}</b></a>')
     w('<div class="pills">' + "".join(pills) + "</div>")
+    coming = [p for p in s["not_checked"] if p.get("coming")]
+    if coming:
+        w('<h3 class="mini">Coming to Australia</h3>')
+        w('<div class="pills">' + "".join(
+            f'<a class="pill soon" href="{_e(p["url"])}">{_e(p["name"])}</a>' if p.get("url") else
+            f'<span class="pill soon">{_e(p["name"])}</span>' for p in coming) + "</div>")
     w("</section>")
 
     w("<footer>")

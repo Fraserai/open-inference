@@ -15,7 +15,7 @@
   --base: #eef2f7; --ink: #0b1220; --soft: #4b5567; --faint: #8a93a3;
   --glass: rgba(255,255,255,.52); --glass-strong: rgba(255,255,255,.72); --edge: rgba(255,255,255,.75);
   --spec: rgba(255,255,255,.95); --shade: rgba(20,32,60,.10);
-  --here: #1f9d55; --here-glass: rgba(52,199,89,.20); --here-edge: rgba(52,199,89,.55);
+  --ring-track: rgba(11,18,32,.09); --here: #1f9d55; --here-glass: rgba(52,199,89,.20); --here-edge: rgba(52,199,89,.55);
   --aura-1: #7cc4ff; --aura-2: #a7f0d0; --aura-3: #ffc59a;
   --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Segoe UI", Roboto, Arial, sans-serif;
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
@@ -24,13 +24,13 @@
   --base: #05080f; --ink: #f2f5fa; --soft: #aab3c2; --faint: #6f7889;
   --glass: rgba(28,34,46,.46); --glass-strong: rgba(36,42,56,.72); --edge: rgba(255,255,255,.14);
   --spec: rgba(255,255,255,.22); --shade: rgba(0,0,0,.45);
-  --here: #30d158; --here-glass: rgba(48,209,88,.18); --here-edge: rgba(48,209,88,.5);
+  --ring-track: rgba(255,255,255,.13); --here: #30d158; --here-glass: rgba(48,209,88,.18); --here-edge: rgba(48,209,88,.5);
   --aura-1: #1d4e89; --aura-2: #0f5c4a; --aura-3: #6b3a1c; color-scheme: dark; } }
 :root[data-theme="dark"] {
   --base: #05080f; --ink: #f2f5fa; --soft: #aab3c2; --faint: #6f7889;
   --glass: rgba(28,34,46,.46); --glass-strong: rgba(36,42,56,.72); --edge: rgba(255,255,255,.14);
   --spec: rgba(255,255,255,.22); --shade: rgba(0,0,0,.45);
-  --here: #30d158; --here-glass: rgba(48,209,88,.18); --here-edge: rgba(48,209,88,.5);
+  --ring-track: rgba(255,255,255,.13); --here: #30d158; --here-glass: rgba(48,209,88,.18); --here-edge: rgba(48,209,88,.5);
   --aura-1: #1d4e89; --aura-2: #0f5c4a; --aura-3: #6b3a1c; color-scheme: dark; }
 
 body { background: var(--base); color: var(--ink); font-family: var(--font); font-size: 16px; line-height: 1.45;
@@ -58,15 +58,22 @@ body { background: var(--base); color: var(--ink); font-family: var(--font); fon
 .brand i { width: 10px; height: 10px; border-radius: 50%; background: var(--here); box-shadow: 0 0 12px var(--here); }
 .date { font-size: 13px; color: var(--soft); padding: 6px 12px; border-radius: 999px; background: var(--glass-strong); }
 
-.hero { padding: clamp(24px, 5vw, 48px); display: grid; gap: 10px; }
+.hero { padding: clamp(24px, 5vw, 52px); display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 32px; }
+.copy { display: grid; gap: 12px; min-width: 0; }
+.ring { margin: 0; width: clamp(170px, 24vw, 230px); }
+.ring svg { display: block; width: 100%; height: auto; overflow: visible; }
+.ring circle { fill: none; stroke-width: 16; }
+.ring .track { stroke: var(--ring-track); }
+.ring .fill { stroke: var(--here); stroke-linecap: round; transform: rotate(-90deg); transform-origin: 100px 100px;
+  filter: drop-shadow(0 0 8px var(--here-edge)); }
+.ring .num { fill: var(--ink); font-size: 64px; font-weight: 800; letter-spacing: -.04em; font-family: var(--font); }
+.ring .of { fill: var(--soft); font-size: 17px; font-weight: 600; font-family: var(--font); }
+.hl { color: var(--here); }
+@media (max-width: 640px) { .hero { grid-template-columns: 1fr; justify-items: start; } .ring { width: 150px; } }
 .kicker { font-size: 13px; font-weight: 600; color: var(--soft); letter-spacing: .02em; }
-.big { display: flex; align-items: baseline; gap: 6px; line-height: .9; font-weight: 800; letter-spacing: -.045em; }
-.big b { font-size: clamp(96px, 20vw, 188px); background: linear-gradient(180deg, var(--ink), var(--here));
-  -webkit-background-clip: text; background-clip: text; color: transparent; }
-.big span { font-size: clamp(40px, 8vw, 72px); color: var(--faint); }
-h1 { margin: 0; font-size: clamp(26px, 4.4vw, 40px); font-weight: 700; letter-spacing: -.025em; line-height: 1.1;
-  text-wrap: balance; max-width: 20ch; }
-.lede { margin: 6px 0 0; color: var(--soft); font-size: 17px; max-width: 56ch; }
+h1 { margin: 0; font-size: clamp(32px, 5.2vw, 54px); font-weight: 800; letter-spacing: -.035em; line-height: 1.04;
+  text-wrap: balance; max-width: 16ch; }
+.lede { margin: 0; color: var(--soft); font-size: 19px; max-width: 56ch; }
 
 .section { padding: clamp(18px, 3.5vw, 28px); display: grid; gap: 16px; min-width: 0; }
 h2 { margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -.02em; }
@@ -108,6 +115,8 @@ h2 { margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -.02em; }
   background: var(--glass-strong); border: 1px solid var(--edge); color: var(--ink); text-decoration: none; }
 .pill b { font-variant-numeric: tabular-nums; color: var(--here); }
 .pill:hover { box-shadow: 0 6px 18px var(--shade); }
+.pill.soon { color: var(--soft); background: var(--glass); }
+.mini { margin: 6px 0 0; font-size: 15px; font-weight: 650; color: var(--soft); letter-spacing: -.01em; }
 footer { color: var(--soft); font-size: 13px; display: grid; gap: 6px; padding: 4px 8px; }
 footer p { margin: 0; max-width: 80ch; }
 a { color: inherit; }
@@ -132,11 +141,11 @@ dialog::backdrop { background: rgba(5,10,20,.25); -webkit-backdrop-filter: blur(
 <div class="aura" aria-hidden="true"></div>
 <main class="wrap">
 <header class="glass bar"><div class="brand"><i></i>Open Inference</div><div class="date">Updated 5 Nov 2026</div></header>
-<section class="glass hero">
-<div class="kicker">Open AI models in Australia, checked daily</div>
-<div class="big" aria-hidden="true"><b>5</b><span>/30</span></div>
-<h1>5 of the top 30 open models run in Australia.</h1>
+<section class="glass hero"><div class="copy">
+<div class="kicker">Checked daily</div>
+<h1><span class="hl">6 of the top 30</span> open AI models run in Australia.</h1>
 <p class="lede">None of the top 4 do.</p>
+</div><figure class="ring" aria-hidden="true"><svg viewBox="0 0 200 200"><circle class="track" cx="100" cy="100" r="84"/><circle class="fill" cx="100" cy="100" r="84" stroke-dasharray="105.6 527.8"/><text class="num" x="100" y="108" text-anchor="middle">6</text><text class="of" x="100" y="138" text-anchor="middle">of 30</text></svg></figure>
 </section>
 <section class="glass section">
 <h2>The top 30</h2>
@@ -161,7 +170,7 @@ dialog::backdrop { background: rgba(5,10,20,.25); -webkit-backdrop-filter: blur(
 <li><button type="button" class="seat not" data-i="15" aria-label="#16 DeepSeek V4 Pro, not in Australia"><span class="top"><span>#16</span><i class="dot"></i></span><span class="m">DeepSeek V4 Pro</span><span class="s">Not here</span></button></li>
 <li><button type="button" class="seat not" data-i="16" aria-label="#17 MiniMax M3, not in Australia"><span class="top"><span>#17</span><i class="dot"></i></span><span class="m">MiniMax M3</span><span class="s">Not here</span></button></li>
 <li><button type="button" class="seat here" data-i="17" aria-label="#18 GLM 5, runs in Australia"><span class="top"><span>#18</span><i class="dot here"></i></span><span class="m">GLM 5</span><span class="s">In Australia</span></button></li>
-<li><button type="button" class="seat not" data-i="18" aria-label="#19 Kimi K2.6, not in Australia"><span class="top"><span>#19</span><i class="dot"></i></span><span class="m">Kimi K2.6</span><span class="s">Not here</span></button></li>
+<li><button type="button" class="seat here" data-i="18" aria-label="#19 Kimi K2.6, runs in Australia"><span class="top"><span>#19</span><i class="dot here"></i></span><span class="m">Kimi K2.6</span><span class="s">In Australia</span></button></li>
 <li><button type="button" class="seat not" data-i="19" aria-label="#20 NVIDIA Nemotron 3.5 Super VL, not in Australia"><span class="top"><span>#20</span><i class="dot"></i></span><span class="m">NVIDIA Nemotron 3.5 Super VL</span><span class="s">Not here</span></button></li>
 <li><button type="button" class="seat not" data-i="20" aria-label="#21 GLM 5.1, not in Australia"><span class="top"><span>#21</span><i class="dot"></i></span><span class="m">GLM 5.1</span><span class="s">Not here</span></button></li>
 <li><button type="button" class="seat not" data-i="21" aria-label="#22 MiMo V2.5 Pro, not in Australia"><span class="top"><span>#22</span><i class="dot"></i></span><span class="m">MiMo V2.5 Pro</span><span class="s">Not here</span></button></li>
@@ -180,20 +189,18 @@ dialog::backdrop { background: rgba(5,10,20,.25); -webkit-backdrop-filter: blur(
 <div class="glass card here"><span class="k">Best open model in Australia</span><span class="name">Kimi K3</span><span class="t"><b>#5 in the world</b> · on Xinference</span></div>
 </section>
 <section class="glass section">
-<h2>Latest</h2>
-<ul class="list"><li>AWS Bedrock added GPT-6.1 Terra<small>not in Australia</small></li><li>SCX stopped listing 13 models<small>Claude Fable 5, Claude Fable 5.1, Claude Haiku 4.5, Claude Haiku 5.5, Claude Opus 4.5, Claude Opus 4.6, Claude Opus 4.7, Claude Opus 4.8, Claude Opus 5, Claude Opus 5.5, Claude Sonnet 4.6, Claude Sonnet 5, Claude Sonnet 5.5</small></li><li>New open model: Hy4<small>not ranked yet</small></li></ul>
-</section>
-<section class="glass section">
 <h2>Providers</h2>
 <p class="sub">Top open models each one runs in Australia.</p>
-<div class="pills"><a class="pill" href="https://platform.scx.ai/docs/models">SCX.ai <b>0</b></a><a class="pill" href="https://docs.resetdata.ai/models/overview/">ResetData <b>1</b></a><a class="pill" href="https://xinference.co/model-api.html">Xinference <b>2</b></a><a class="pill" href="https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html">AWS Bedrock (Sydney, Melbourne) <b>2</b></a></div>
+<div class="pills"><a class="pill" href="https://platform.scx.ai/docs/models">SCX.ai <b>0</b></a><a class="pill" href="https://docs.resetdata.ai/models/overview/">ResetData <b>1</b></a><a class="pill" href="https://xinference.co/model-api.html">Xinference <b>2</b></a><a class="pill" href="https://www.continuumlabs.ai/models">Continuum Labs <b>2</b></a><a class="pill" href="https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html">AWS Bedrock (Sydney, Melbourne) <b>2</b></a></div>
+<h3 class="mini">Coming to Australia</h3>
+<div class="pills"><a class="pill soon" href="https://www.amaze.au/ai-models/">Amaze</a><a class="pill soon" href="https://groq.com/newsroom/groq-expands-to-asia-pacific-with-sydney-data-center-to-power-the-next-generation-of-ai-inference">Groq</a><a class="pill soon" href="https://sharonai.com/ai-cloud/">Sharon AI</a><a class="pill soon" href="https://www.prnewswire.com/apac/news-releases/data-global-pty-ltd-enters-australian-market-with-dgx-b300-ai-server-cluster-at-micron21-data-centre-302927579.html">Data Global</a></div>
 </section>
 <footer>
 <p>Updated every day. Rankings by Artificial Analysis. Built in Brisbane · @Openinference</p>
 </footer>
 </main>
 <dialog id="sheet" aria-label="Where this model runs"><div class="glass sheet"><div id="sheet-body"></div><button type="button" class="close" id="sheet-close">Done</button></div></dialog>
-<script type="application/json" id="models">[{"name": "MiMo V2.6 Pro", "rank": 1, "maker": "Xiaomi", "score": "46.3", "at": []}, {"name": "DeepSeek V4.1 Flash 1017", "rank": 2, "maker": "DeepSeek", "score": "45.1", "at": [{"provider": "SCX", "where": "Overseas only", "here": false, "claim": false}]}, {"name": "GLM 5.3", "rank": 3, "maker": "Z.ai", "score": "44.8", "at": [{"provider": "SCX", "where": "Overseas only", "here": false, "claim": false}, {"provider": "Xinference", "where": "On request", "here": false, "claim": false}, {"provider": "AWS Bedrock", "where": "Overseas only", "here": false, "claim": false}]}, {"name": "Step 5 Preview", "rank": 4, "maker": "StepFun", "score": "43.7", "at": []}, {"name": "Kimi K3", "rank": 5, "maker": "Moonshot", "score": "43.6", "at": [{"provider": "SCX", "where": "Overseas only", "here": false, "claim": false}, {"provider": "Xinference", "where": "In Australia", "here": true, "claim": true}, {"provider": "AWS Bedrock", "where": "Overseas only", "here": false, "claim": false}]}, {"name": "GLM 5.3 Flash", "rank": 6, "maker": "Z.ai", "score": "41.8", "at": [{"provider": "SCX", "where": "Overseas only", "here": false, "claim": false}]}, {"name": "Qwen3.8 2.4T A95B", "rank": 7, "maker": "Alibaba", "score": "39.9", "at": [{"provider": "SCX", "where": "Overseas only", "here": false, "claim": false}]}, {"name": "DeepSeek V4.1 Flash", "rank": 8, "maker": "DeepSeek", "score": "39.5", "at": [{"provider": "SCX", "where": "Overseas only", "here": false, "claim": false}, {"provider": "Xinference", "where": "In Australia", "here": true, "claim": true}]}, {"name": "Muse Spark Open", "rank": 9, "maker": "Meta", "score": "38.9", "at": []}, {"name": "MiMo V2.6 Flash", "rank": 10, "maker": "Xiaomi", "score": "37.9", "at": []}, {"name": "DeepSeek V4 Pro 0813", "rank": 11, "maker": "DeepSeek", "score": "36.0", "at": []}, {"name": "DeepSeek V4 Flash Vision Exp", "rank": 12, "maker": "DeepSeek", "score": "34.8", "at": []}, {"name": "DeepSeek V4 Flash 0731", "rank": 13, "maker": "DeepSeek", "score": "34.3", "at": []}, {"name": "Qwen3.8 27B", "rank": 14, "maker": "Alibaba", "score": "33.7", "at": []}, {"name": "GLM 5.2", "rank": 15, "maker": "Z.ai", "score": "33.7", "at": [{"provider": "SCX", "where": "Overseas only", "here": false, "claim": false}, {"provider": "ResetData", "where": "In Australia", "here": true, "claim": true}]}, {"name": "DeepSeek V4 Pro", "rank": 16, "maker": "DeepSeek", "score": "30.4", "at": [{"provider": "SCX", "where": "Overseas only", "here": false, "claim": false}]}, {"name": "MiniMax M3", "rank": 17, "maker": "MiniMax", "score": "29.2", "at": [{"provider": "SCX", "where": "Australia or overseas", "here": false, "claim": false}]}, {"name": "GLM 5", "rank": 18, "maker": "Z.ai", "score": "27.9", "at": [{"provider": "AWS Bedrock", "where": "In Australia", "here": true, "claim": false}]}, {"name": "Kimi K2.6", "rank": 19, "maker": "Moonshot", "score": "27.0", "at": []}, {"name": "NVIDIA Nemotron 3.5 Super VL", "rank": 20, "maker": "NVIDIA", "score": "26.5", "at": []}, {"name": "GLM 5.1", "rank": 21, "maker": "Z.ai", "score": "26.1", "at": []}, {"name": "MiMo V2.5 Pro", "rank": 22, "maker": "Xiaomi", "score": "26.0", "at": []}, {"name": "Kimi K2.7 Code", "rank": 23, "maker": "Moonshot", "score": "25.8", "at": [{"provider": "SCX", "where": "Overseas only", "here": false, "claim": false}]}, {"name": "Inkling Small", "rank": 24, "maker": "Thinking Machines", "score": "25.7", "at": []}, {"name": "Hy3", "rank": 25, "maker": "Tencent", "score": "25.3", "at": []}, {"name": "Inkling", "rank": 26, "maker": "Thinking Machines", "score": "25.0", "at": []}, {"name": "Ling 3.0 Flash VL", "rank": 27, "maker": "InclusionAI", "score": "24.6", "at": []}, {"name": "DeepSeek V4 Flash", "rank": 28, "maker": "DeepSeek", "score": "24.4", "at": [{"provider": "SCX", "where": "Overseas only", "here": false, "claim": false}]}, {"name": "Kimi K2.5", "rank": 29, "maker": "Moonshot", "score": "23.5", "at": [{"provider": "AWS Bedrock", "where": "In Australia", "here": true, "claim": false}]}, {"name": "Nemotron 3 Ultra", "rank": 30, "maker": "NVIDIA", "score": "22.9", "at": []}]</script>
+<script type="application/json" id="models">[{"name": "MiMo V2.6 Pro", "rank": 1, "maker": "Xiaomi", "score": "46.3", "at": []}, {"name": "DeepSeek V4.1 Flash 1017", "rank": 2, "maker": "DeepSeek", "score": "45.1", "at": [{"provider": "SCX", "where": "Overseas only", "here": false, "claim": false}]}, {"name": "GLM 5.3", "rank": 3, "maker": "Z.ai", "score": "44.8", "at": [{"provider": "SCX", "where": "Overseas only", "here": false, "claim": false}, {"provider": "Xinference", "where": "On request", "here": false, "claim": false}, {"provider": "AWS Bedrock", "where": "Overseas only", "here": false, "claim": false}]}, {"name": "Step 5 Preview", "rank": 4, "maker": "StepFun", "score": "43.7", "at": []}, {"name": "Kimi K3", "rank": 5, "maker": "Moonshot", "score": "43.6", "at": [{"provider": "SCX", "where": "Overseas only", "here": false, "claim": false}, {"provider": "Xinference", "where": "In Australia", "here": true, "claim": true}, {"provider": "AWS Bedrock", "where": "Overseas only", "here": false, "claim": false}]}, {"name": "GLM 5.3 Flash", "rank": 6, "maker": "Z.ai", "score": "41.8", "at": [{"provider": "SCX", "where": "Overseas only", "here": false, "claim": false}]}, {"name": "Qwen3.8 2.4T A95B", "rank": 7, "maker": "Alibaba", "score": "39.9", "at": [{"provider": "SCX", "where": "Overseas only", "here": false, "claim": false}]}, {"name": "DeepSeek V4.1 Flash", "rank": 8, "maker": "DeepSeek", "score": "39.5", "at": [{"provider": "SCX", "where": "Overseas only", "here": false, "claim": false}, {"provider": "Xinference", "where": "In Australia", "here": true, "claim": true}]}, {"name": "Muse Spark Open", "rank": 9, "maker": "Meta", "score": "38.9", "at": []}, {"name": "MiMo V2.6 Flash", "rank": 10, "maker": "Xiaomi", "score": "37.9", "at": []}, {"name": "DeepSeek V4 Pro 0813", "rank": 11, "maker": "DeepSeek", "score": "36.0", "at": []}, {"name": "DeepSeek V4 Flash Vision Exp", "rank": 12, "maker": "DeepSeek", "score": "34.8", "at": []}, {"name": "DeepSeek V4 Flash 0731", "rank": 13, "maker": "DeepSeek", "score": "34.3", "at": []}, {"name": "Qwen3.8 27B", "rank": 14, "maker": "Alibaba", "score": "33.7", "at": []}, {"name": "GLM 5.2", "rank": 15, "maker": "Z.ai", "score": "33.7", "at": [{"provider": "SCX", "where": "Overseas only", "here": false, "claim": false}, {"provider": "ResetData", "where": "In Australia", "here": true, "claim": true}, {"provider": "Continuum Labs", "where": "In Australia", "here": true, "claim": true}]}, {"name": "DeepSeek V4 Pro", "rank": 16, "maker": "DeepSeek", "score": "30.4", "at": [{"provider": "SCX", "where": "Overseas only", "here": false, "claim": false}]}, {"name": "MiniMax M3", "rank": 17, "maker": "MiniMax", "score": "29.2", "at": [{"provider": "SCX", "where": "Australia or overseas", "here": false, "claim": false}]}, {"name": "GLM 5", "rank": 18, "maker": "Z.ai", "score": "27.9", "at": [{"provider": "AWS Bedrock", "where": "In Australia", "here": true, "claim": false}]}, {"name": "Kimi K2.6", "rank": 19, "maker": "Moonshot", "score": "27.0", "at": [{"provider": "Continuum Labs", "where": "In Australia", "here": true, "claim": true}]}, {"name": "NVIDIA Nemotron 3.5 Super VL", "rank": 20, "maker": "NVIDIA", "score": "26.5", "at": []}, {"name": "GLM 5.1", "rank": 21, "maker": "Z.ai", "score": "26.1", "at": []}, {"name": "MiMo V2.5 Pro", "rank": 22, "maker": "Xiaomi", "score": "26.0", "at": []}, {"name": "Kimi K2.7 Code", "rank": 23, "maker": "Moonshot", "score": "25.8", "at": [{"provider": "SCX", "where": "Overseas only", "here": false, "claim": false}]}, {"name": "Inkling Small", "rank": 24, "maker": "Thinking Machines", "score": "25.7", "at": []}, {"name": "Hy3", "rank": 25, "maker": "Tencent", "score": "25.3", "at": []}, {"name": "Inkling", "rank": 26, "maker": "Thinking Machines", "score": "25.0", "at": []}, {"name": "Ling 3.0 Flash VL", "rank": 27, "maker": "InclusionAI", "score": "24.6", "at": []}, {"name": "DeepSeek V4 Flash", "rank": 28, "maker": "DeepSeek", "score": "24.4", "at": [{"provider": "SCX", "where": "Overseas only", "here": false, "claim": false}]}, {"name": "Kimi K2.5", "rank": 29, "maker": "Moonshot", "score": "23.5", "at": [{"provider": "AWS Bedrock", "where": "In Australia", "here": true, "claim": false}]}, {"name": "Nemotron 3 Ultra", "rank": 30, "maker": "NVIDIA", "score": "22.9", "at": []}]</script>
 <script>
 (function () {
   var data = JSON.parse(document.getElementById('models').textContent);

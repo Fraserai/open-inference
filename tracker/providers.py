@@ -130,6 +130,34 @@ def parse_bedrock(pages):
     return offers
 
 
+def parse_continuum(pages):
+    """continuumlabs.ai/models: one table (Model | Good for | Made in | prices...). The model cell
+    reads "<Role> <Model name> · <Maker>", e.g. "Agent Kimi K2.6 · Moonshot AI". The page says
+    every model on it runs on Continuum's computers in Australia."""
+    url = CONTINUUM["catalogue"][0]
+    doc = html_tables.parse(pages[url])
+    table = html_tables.table_with_header(doc.tables, "Model", "Made in")
+    if table is None:
+        raise ValueError("Continuum: no Model/Made in table found")
+    offers = []
+    for row in table["rows"][1:]:
+        cell = row[0]["text"]
+        head = cell.split(" · ")[0].strip()
+        parts = head.split(" ", 1)
+        if len(parts) != 2:
+            raise ValueError(f"Continuum: unexpected model cell {cell!r}")
+        role, model = parts
+        maker = cell.split(" · ", 1)[1].strip() if " · " in cell else ""
+        offers.append(_offer("continuum", model, "onshore", "provider_statement",
+                             "Continuum says every model on its models page runs on its computers in Australia.",
+                             url, maker=maker, role=role,
+                             price_in=row[3]["text"] if len(row) > 3 else None,
+                             price_out=row[4]["text"] if len(row) > 4 else None))
+    if not offers:
+        raise ValueError("Continuum: models table is empty")
+    return offers
+
+
 # --- the registry ---------------------------------------------------------------------
 # Facts are as published on the cited pages, checked 2026-11-04. "unknown" means not checked.
 
@@ -155,6 +183,13 @@ XINFERENCE = {
     "how_to_buy": "Pay-per-token API; dedicated inference",
     "facts_source": "https://xinference.co/model-api.html",
 }
+CONTINUUM = {
+    "id": "continuum", "name": "Continuum Labs", "parser": parse_continuum,
+    "catalogue": ["https://www.continuumlabs.ai/models"],
+    "owner": "Continuum Labs Pty Ltd, Melbourne (says it is Australian owned)",
+    "how_to_buy": "Pay-per-token API (OpenAI-compatible) in AUD",
+    "facts_source": "https://www.continuumlabs.ai/models",
+}
 BEDROCK = {
     "id": "aws_bedrock", "name": "AWS Bedrock (Sydney, Melbourne)", "parser": parse_bedrock,
     "catalogue": ["https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html"],
@@ -163,7 +198,7 @@ BEDROCK = {
     "facts_source": "https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html",
 }
 
-CHECKED = [SCX, RESETDATA, XINFERENCE, BEDROCK]
+CHECKED = [SCX, RESETDATA, XINFERENCE, CONTINUUM, BEDROCK]
 
 # Known, but no machine-readable model list yet. Each says why.
 NOT_CHECKED = [
@@ -173,11 +208,22 @@ NOT_CHECKED = [
     {"id": "google_vertex", "name": "Google Vertex AI (australia-southeast1)",
      "reason": "Region availability isn't in a table we can read reliably yet.",
      "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/locations"},
-    {"id": "amaze", "name": "Amaze", "reason": "No public model catalogue found (amaze.au/models returns 404).",
-     "url": "https://www.amaze.au"},
+    {"id": "amaze", "name": "Amaze", "coming": True,
+     "reason": "Lists 34 open models for Sydney and Melbourne, all marked coming soon (checked 2026-11-05).",
+     "url": "https://www.amaze.au/ai-models/"},
+    {"id": "groq", "name": "Groq", "coming": True,
+     "reason": "Runs a 4.5MW inference site at Equinix Sydney (Nov 2025), but publishes no way to keep requests in Sydney.",
+     "url": "https://groq.com/newsroom/groq-expands-to-asia-pacific-with-sydney-data-center-to-power-the-next-generation-of-ai-inference"},
+    {"id": "sharon_ai", "name": "Sharon AI", "coming": True,
+     "reason": "Australian GPU cloud with an inference engine; no public list of hosted models (checked 2026-11-05).",
+     "url": "https://sharonai.com/ai-cloud/"},
+    {"id": "data_global", "name": "Data Global", "coming": True,
+     "reason": "DGX B300 cluster at Micron21 for a 'Token Factory' inference platform, not launched yet.",
+     "url": "https://www.prnewswire.com/apac/news-releases/data-global-pty-ltd-enters-australian-market-with-dgx-b300-ai-server-cluster-at-micron21-data-centre-302927579.html"},
     {"id": "micron21", "name": "Micron21 (mCloud)", "reason": "Sells GPUs to run your own models; no hosted model list.",
      "url": "https://www.micron21.com/enterprise/mcloud-gpu-nvidia-rtx-pro-6000"},
-    {"id": "northstar", "name": "NorthStar", "reason": "Site shows only a contact address.", "url": "https://northstar.au"},
+    {"id": "northstar", "name": "NorthStar",
+     "reason": "Says it serves Gemma 3 from South Australia; no official site or API domain we could confirm.", "url": ""},
     {"id": "datacom", "name": "Datacom", "reason": "No public model catalogue found.", "url": "https://datacom.com"},
     {"id": "sovereign_australia_ai", "name": "Sovereign Australia AI",
      "reason": "Builds Australian models; no public inference catalogue found.", "url": ""},

@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "date": "2026-11-05",
- "generated_at": "2026-11-05T01:36:08+00:00",
+ "generated_at": "2026-11-05T02:14:11+00:00",
  "scores": {
   "as_of": "2026-10-23",
   "source": "Artificial Analysis Intelligence Index, via the Open-Analysis snapshot of 2026-10-23 (artificialanalysis.ai)",
@@ -55,6 +55,21 @@
    "mixed": 0
   },
   {
+   "id": "continuum",
+   "name": "Continuum Labs",
+   "owner": "Continuum Labs Pty Ltd, Melbourne (says it is Australian owned)",
+   "how_to_buy": "Pay-per-token API (OpenAI-compatible) in AUD",
+   "facts_source": "https://www.continuumlabs.ai/models",
+   "note": null,
+   "catalogue": [
+    "https://www.continuumlabs.ai/models"
+   ],
+   "status": "ok",
+   "offerings": 9,
+   "onshore": 9,
+   "mixed": 0
+  },
+  {
    "id": "aws_bedrock",
    "name": "AWS Bedrock (Sydney, Melbourne)",
    "owner": "Amazon Web Services (US-owned hyperscaler)",
@@ -86,8 +101,30 @@
   {
    "id": "amaze",
    "name": "Amaze",
-   "reason": "No public model catalogue found (amaze.au/models returns 404).",
-   "url": "https://www.amaze.au"
+   "coming": true,
+   "reason": "Lists 34 open models for Sydney and Melbourne, all marked coming soon (checked 2026-11-05).",
+   "url": "https://www.amaze.au/ai-models/"
+  },
+  {
+   "id": "groq",
+   "name": "Groq",
+   "coming": true,
+   "reason": "Runs a 4.5MW inference site at Equinix Sydney (Nov 2025), but publishes no way to keep requests in Sydney.",
+   "url": "https://groq.com/newsroom/groq-expands-to-asia-pacific-with-sydney-data-center-to-power-the-next-generation-of-ai-inference"
+  },
+  {
+   "id": "sharon_ai",
+   "name": "Sharon AI",
+   "coming": true,
+   "reason": "Australian GPU cloud with an inference engine; no public list of hosted models (checked 2026-11-05).",
+   "url": "https://sharonai.com/ai-cloud/"
+  },
+  {
+   "id": "data_global",
+   "name": "Data Global",
+   "coming": true,
+   "reason": "DGX B300 cluster at Micron21 for a 'Token Factory' inference platform, not launched yet.",
+   "url": "https://www.prnewswire.com/apac/news-releases/data-global-pty-ltd-enters-australian-market-with-dgx-b300-ai-server-cluster-at-micron21-data-centre-302927579.html"
   },
   {
    "id": "micron21",
@@ -98,8 +135,8 @@
   {
    "id": "northstar",
    "name": "NorthStar",
-   "reason": "Site shows only a contact address.",
-   "url": "https://northstar.au"
+   "reason": "Says it serves Gemma 3 from South Australia; no official site or API domain we could confirm.",
+   "url": ""
   },
   {
    "id": "datacom",
@@ -343,6 +380,14 @@
      "evidence": "provider_statement",
      "basis": "Listed as a serverless model; ResetData says the platform runs on Australian infrastructure.",
      "url": "https://docs.resetdata.ai/models/overview/"
+    },
+    {
+     "provider": "continuum",
+     "model": "GLM-5.2",
+     "status": "onshore",
+     "evidence": "provider_statement",
+     "basis": "Continuum says every model on its models page runs on its computers in Australia.",
+     "url": "https://www.continuumlabs.ai/models"
     }
    ]
   },
@@ -402,8 +447,17 @@
    "name": "Kimi K2.6",
    "creator": "moonshotai",
    "score": 27,
-   "best_status": "not_offered",
-   "at": []
+   "best_status": "onshore",
+   "at": [
+    {
+     "provider": "continuum",
+     "model": "Kimi K2.6",
+     "status": "onshore",
+     "evidence": "provider_statement",
+     "basis": "Continuum says every model on its models page runs on its computers in Australia.",
+     "url": "https://www.continuumlabs.ai/models"
+    }
+   ]
   },
   {
    "rank": 20,
@@ -686,14 +740,6 @@
      "url": "https://platform.scx.ai/docs/models"
     }
    ]
-  },
-  {
-   "rank": 19,
-   "name": "Kimi K2.6",
-   "creator": "moonshotai",
-   "score": 27,
-   "best_status": "not_offered",
-   "at": []
   },
   {
    "rank": 20,
@@ -1003,6 +1049,14 @@
      "evidence": "provider_statement",
      "basis": "Listed as a serverless model; ResetData says the platform runs on Australian infrastructure.",
      "url": "https://docs.resetdata.ai/models/overview/"
+    },
+    {
+     "provider": "continuum",
+     "model": "GLM-5.2",
+     "status": "onshore",
+     "evidence": "provider_statement",
+     "basis": "Continuum says every model on its models page runs on its computers in Australia.",
+     "url": "https://www.continuumlabs.ai/models"
     }
    ],
    "best_status": "onshore"
@@ -1057,6 +1111,24 @@
      "evidence": "per_model_regions",
      "basis": "AWS lists it Sydney (in-region).",
      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html"
+    }
+   ],
+   "best_status": "onshore"
+  },
+  {
+   "name": "Kimi K2.6",
+   "creator": "moonshotai",
+   "score": 27,
+   "open_weights": true,
+   "scored": true,
+   "at": [
+    {
+     "provider": "continuum",
+     "model": "Kimi K2.6",
+     "status": "onshore",
+     "evidence": "provider_statement",
+     "basis": "Continuum says every model on its models page runs on its computers in Australia.",
+     "url": "https://www.continuumlabs.ai/models"
     }
    ],
    "best_status": "onshore"
@@ -1224,6 +1296,24 @@
    "best_status": "onshore"
   },
   {
+   "name": "Mistral Medium Latest",
+   "creator": "mistral",
+   "score": 14.2,
+   "open_weights": false,
+   "scored": true,
+   "at": [
+    {
+     "provider": "continuum",
+     "model": "Mistral Medium 3.5",
+     "status": "onshore",
+     "evidence": "provider_statement",
+     "basis": "Continuum says every model on its models page runs on its computers in Australia.",
+     "url": "https://www.continuumlabs.ai/models"
+    }
+   ],
+   "best_status": "onshore"
+  },
+  {
    "name": "DeepSeek V3.1",
    "creator": "deepseek",
    "score": 13.7,
@@ -1317,6 +1407,14 @@
      "evidence": "per_model_regions",
      "basis": "SCX docs list regions DE US AU; no documented way to pin a request to Australia.",
      "url": "https://platform.scx.ai/docs/models"
+    },
+    {
+     "provider": "continuum",
+     "model": "GPT-OSS 120B",
+     "status": "onshore",
+     "evidence": "provider_statement",
+     "basis": "Continuum says every model on its models page runs on its computers in Australia.",
+     "url": "https://www.continuumlabs.ai/models"
     },
     {
      "provider": "aws_bedrock",
@@ -1742,6 +1840,24 @@
    "best_status": "onshore"
   },
   {
+   "name": "BGE-M3",
+   "creator": null,
+   "score": null,
+   "open_weights": null,
+   "scored": false,
+   "at": [
+    {
+     "provider": "continuum",
+     "model": "BGE-M3",
+     "status": "onshore",
+     "evidence": "provider_statement",
+     "basis": "Continuum says every model on its models page runs on its computers in Australia.",
+     "url": "https://www.continuumlabs.ai/models"
+    }
+   ],
+   "best_status": "onshore"
+  },
+  {
    "name": "Devstral 2 123B",
    "creator": null,
    "score": null,
@@ -1850,6 +1966,24 @@
    "best_status": "onshore"
   },
   {
+   "name": "Gemma 4 26B",
+   "creator": null,
+   "score": null,
+   "open_weights": null,
+   "scored": false,
+   "at": [
+    {
+     "provider": "continuum",
+     "model": "Gemma 4 26B",
+     "status": "onshore",
+     "evidence": "provider_statement",
+     "basis": "Continuum says every model on its models page runs on its computers in Australia.",
+     "url": "https://www.continuumlabs.ai/models"
+    }
+   ],
+   "best_status": "onshore"
+  },
+  {
    "name": "Magistral Small 2509",
    "creator": null,
    "score": null,
@@ -1940,6 +2074,42 @@
    "best_status": "onshore"
   },
   {
+   "name": "Qwen3 Coder 30B",
+   "creator": null,
+   "score": null,
+   "open_weights": null,
+   "scored": false,
+   "at": [
+    {
+     "provider": "continuum",
+     "model": "Qwen3 Coder 30B",
+     "status": "onshore",
+     "evidence": "provider_statement",
+     "basis": "Continuum says every model on its models page runs on its computers in Australia.",
+     "url": "https://www.continuumlabs.ai/models"
+    }
+   ],
+   "best_status": "onshore"
+  },
+  {
+   "name": "Qwen3 Embedding 8B",
+   "creator": null,
+   "score": null,
+   "open_weights": null,
+   "scored": false,
+   "at": [
+    {
+     "provider": "continuum",
+     "model": "Qwen3 Embedding 8B",
+     "status": "onshore",
+     "evidence": "provider_statement",
+     "basis": "Continuum says every model on its models page runs on its computers in Australia.",
+     "url": "https://www.continuumlabs.ai/models"
+    }
+   ],
+   "best_status": "onshore"
+  },
+  {
    "name": "Titan Multimodal Embeddings G1",
    "creator": null,
    "score": null,
@@ -2007,6 +2177,24 @@
      "evidence": "per_model_regions",
      "basis": "AWS lists it Sydney (in-region).",
      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html"
+    }
+   ],
+   "best_status": "onshore"
+  },
+  {
+   "name": "Whisper V3 Turbo",
+   "creator": null,
+   "score": null,
+   "open_weights": null,
+   "scored": false,
+   "at": [
+    {
+     "provider": "continuum",
+     "model": "Whisper V3 Turbo",
+     "status": "onshore",
+     "evidence": "provider_statement",
+     "basis": "Continuum says every model on its models page runs on its computers in Australia.",
+     "url": "https://www.continuumlabs.ai/models"
     }
    ],
    "best_status": "onshore"
@@ -2750,6 +2938,7 @@
  ],
  "unmatched": [
   "Apex",
+  "BGE-M3",
   "Claude Mythos 5.1",
   "Devstral 2 123B",
   "E5-Mistral-7B-Instruct",
@@ -2761,6 +2950,7 @@
   "GPT OSS Safeguard 120B",
   "GPT OSS Safeguard 20B",
   "GPT-6.1 Terra",
+  "Gemma 4 26B",
   "Kimi-K3.1-Pro",
   "Kimi-K3.1-Pro-Highspeed",
   "MAGPiE",
@@ -2771,10 +2961,13 @@
   "Nemotron Nano 3 30B",
   "Pegasus v1.2",
   "Pegasus v1.5",
+  "Qwen3 Coder 30B",
+  "Qwen3 Embedding 8B",
   "Titan Multimodal Embeddings G1",
   "Titan Text Embeddings V2",
   "Voxtral Mini 3B 2507",
   "Voxtral Small 24B 2507",
+  "Whisper V3 Turbo",
   "Whisper-Large-v3",
   "black-forest-labs/flux-1-schnell",
   "coder",
@@ -2803,6 +2996,7 @@
   "https://platform.scx.ai/docs/models": "ok",
   "https://docs.resetdata.ai/models/overview/": "ok",
   "https://xinference.co/model-api.html": "ok",
+  "https://www.continuumlabs.ai/models": "ok",
   "https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html": "ok",
   "https://openrouter.ai/api/v1/models": "ok",
   "https://openrouter.ai/api/v1/providers": "ok"
@@ -2886,6 +3080,8 @@
   ],
   "status_changed": [],
   "new_in_top_open": [],
-  "providers_failed": []
+  "providers_failed": [
+   "continuum"
+  ]
  }
 }

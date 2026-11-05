@@ -5,7 +5,8 @@ LABEL = {"onshore": "In Australia", "mixed": "Australia + overseas", "on_request
 INLINE = {"onshore": "in Australia", "mixed": "Australia + overseas", "on_request": "on request",
           "offshore": "overseas only", "not_offered": "not offered"}
 EVIDENCE = {"per_model_regions": "region listed per model", "provider_statement": "provider's own claim"}
-PROVIDER_NAMES = {"scx": "SCX", "resetdata": "ResetData", "xinference": "Xinference", "aws_bedrock": "AWS Bedrock"}
+PROVIDER_NAMES = {"scx": "SCX", "resetdata": "ResetData", "xinference": "Xinference", "continuum": "Continuum Labs",
+                  "aws_bedrock": "AWS Bedrock"}
 
 
 def _where(at, statuses=("onshore", "mixed", "on_request")):

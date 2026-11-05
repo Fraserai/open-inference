@@ -198,7 +198,18 @@ class PageTest(unittest.TestCase):
         snap = json.loads(path.read_text())
         body = page.render_body(snap)
         onshore = sum(1 for t in snap["top_open"] if t["best_status"] == "onshore")
-        self.assertIn(f"{onshore} of the top {len(snap['top_open'])}", body)
+        self.assertIn(f"{onshore} of the top {len(snap['top_open'])}</span> open AI models", body)
         self.assertEqual(body.count('class="seat '), len(snap["top_open"]))
         self.assertNotIn("<!doctype", body.lower())
         self.assertTrue(page.render_document(snap).startswith("<!doctype html>"))
+
+
+class ContinuumTest(unittest.TestCase):
+    def test_reads_model_table(self):
+        html = """<table><tr><th>Model</th><th>Good for</th><th>Made in</th><th>Sending text</th><th>Receiving text</th></tr>
+        <tr><th scope="row">Agent <b>Kimi K2.6</b> · Moonshot AI</th><td>Tools</td><td>China</td><td>$1.35</td><td>$5.70</td></tr>
+        <tr><th scope="row">Generalist GPT-OSS 120B · OpenAI</th><td>Work</td><td>United States</td><td>$0.22</td><td>$0.85</td></tr></table>"""
+        offers = providers.parse_continuum({providers.CONTINUUM["catalogue"][0]: html})
+        self.assertEqual([o["model"] for o in offers], ["Kimi K2.6", "GPT-OSS 120B"])
+        self.assertTrue(all(o["status"] == "onshore" and o["evidence"] == "provider_statement" for o in offers))
+        self.assertEqual(offers[0]["price_in"], "$1.35")
