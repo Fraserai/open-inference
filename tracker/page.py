@@ -19,7 +19,7 @@ MONTHS = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split()
 MAKERS = {"xiaomi": "Xiaomi", "deepseek": "DeepSeek", "zai": "Z.ai", "stepfun": "StepFun", "moonshotai": "Moonshot",
           "alibaba": "Alibaba", "meta": "Meta", "minimax": "MiniMax", "nvidia": "NVIDIA", "tencent": "Tencent",
           "thinkingmachines": "Thinking Machines", "inclusionai": "InclusionAI", "anthropic": "Anthropic"}
-WHERE = {"onshore": "In Australia", "mixed": "Australia and overseas, can't lock to Australia",
+WHERE = {"onshore": "In Australia", "mixed": "Australia or overseas",
          "on_request": "On request", "offshore": "Overseas only"}
 
 CSS = """
@@ -109,9 +109,9 @@ h2 { margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -.02em; }
 .card { padding: 20px; border-radius: 24px; display: grid; gap: 4px; align-content: start; }
 .card .k { font-size: 13px; color: var(--soft); font-weight: 600; }
 .card .n { font-size: 44px; font-weight: 800; letter-spacing: -.04em; line-height: 1; font-variant-numeric: tabular-nums; }
-.card .m { font-size: 17px; font-weight: 650; letter-spacing: -.01em; }
+.card .name { font-size: 30px; font-weight: 750; letter-spacing: -.03em; line-height: 1.1; margin: 2px 0 4px; }
 .card .t { font-size: 13px; color: var(--soft); }
-.card.here .n, .card.here .t b { color: var(--here); }
+.card.here .t b { color: var(--here); }
 
 .list { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
 .list li { padding: 12px 16px; border-radius: 16px; background: var(--glass-strong); border: 1px solid var(--edge); font-size: 15px; }
@@ -152,11 +152,10 @@ SCRIPT = """
   function open(i) {
     var m = data[i];
     var rows = m.at.length ? m.at.map(function (a) {
-      return '<li class="' + (a.here ? 'here' : '') + '"><span>' + esc(a.provider) + '</span><span>' + esc(a.where) +
-        (a.claim ? ' (their own claim)' : '') + '</span></li>';
+      return '<li class="' + (a.here ? 'here' : '') + '"><span>' + esc(a.provider) + '</span><span>' + esc(a.where) + '</span></li>';
     }).join('') : '<li><span>No checked provider offers it</span><span>Not in Australia</span></li>';
     body.innerHTML = '<h3>' + esc(m.name) + '</h3><div class="meta">#' + m.rank + ' open model · ' + esc(m.maker) +
-      ' · score ' + esc(m.score) + '</div><ul>' + rows + '</ul>';
+      '</div><ul>' + rows + '</ul>';
     if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', '');
   }
   document.querySelectorAll('.seat').forEach(function (el) {
@@ -228,60 +227,53 @@ def render_body(s):
     w('<div class="kicker">Open AI models in Australia, checked daily</div>')
     w(f'<div class="big" aria-hidden="true"><b>{len(here)}</b><span>/{n}</span></div>')
     w(f"<h1>{len(here)} of the top {n} open models run in Australia.</h1>")
-    lede = []
     if lead_missing:
-        lede.append(f"The top {lead_missing} don't." if lead_missing > 1 else "The #1 doesn't.")
-    if best_closed:
-        lede.append(f"{_e(best_closed['name'])} does, on {_e(_onshore_names(best_closed))}.")
-    w(f'<p class="lede">{" ".join(lede)}</p>')
+        line = f"None of the top {lead_missing} do." if lead_missing > 1 else "The #1 doesn't."
+        w(f'<p class="lede">{_e(line)}</p>')
     w("</section>")
 
     # Board.
     w('<section class="glass section">')
     w(f"<h2>The top {n}</h2>")
-    w(f'<p class="sub">Ranked by intelligence. Tap any model to see who runs it.</p>')
-    w('<div class="key"><span><i class="dot here"></i>Runs in Australia</span><span><i class="dot"></i>Not in Australia</span>'
-      + ('<span>* the provider\'s own claim</span>' if claimed else "") + "</div>")
+    w('<p class="sub">Ranked smartest first. Tap a model to see who runs it.</p>')
+    w('<div class="key"><span><i class="dot here"></i>Runs in Australia</span><span><i class="dot"></i>Not in Australia</span></div>')
     w('<ol class="board">')
     for i, t in enumerate(top):
         h = _here(t)
-        star = "*" if h and _claim_only(t) else ""
         w(f'<li><button type="button" class="seat {"here" if h else "not"}" data-i="{i}" '
           f'aria-label="#{t["rank"]} {_e(t["name"])}, {"runs in Australia" if h else "not in Australia"}">'
           f'<span class="top"><span>#{t["rank"]}</span><i class="dot{" here" if h else ""}"></i></span>'
           f'<span class="m">{_e(t["name"])}</span>'
-          f'<span class="s">{"In Australia" + star if h else "Not here"}</span></button></li>')
+          f'<span class="s">{"In Australia" if h else "Not here"}</span></button></li>')
     w("</ol></section>")
 
     # Three cards.
     w('<section class="cards">')
     if best_closed:
         w(f'<div class="glass card here"><span class="k">Best AI you can run in Australia</span>'
-          f'<span class="n">{_score(best_closed["score"])}</span><span class="m">{_e(best_closed["name"])}</span>'
-          f'<span class="t">Closed model · <b>runs here</b> on {_e(_onshore_names(best_closed))}</span></div>')
+          f'<span class="name">{_e(best_closed["name"])}</span>'
+          f'<span class="t"><b>Runs here</b> on {_e(_onshore_names(best_closed))}</span></div>')
     if best_open:
         w(f'<div class="glass card"><span class="k">Best open model in the world</span>'
-          f'<span class="n">{_score(best_open["score"])}</span><span class="m">{_e(best_open["name"])}</span>'
+          f'<span class="name">{_e(best_open["name"])}</span>'
           f'<span class="t">{"Runs here" if _here(best_open) else "Not in Australia"}</span></div>')
     if best_open_here:
-        star = " (their own claim)" if _claim_only(best_open_here) else ""
         w(f'<div class="glass card here"><span class="k">Best open model in Australia</span>'
-          f'<span class="n">{_score(best_open_here["score"])}</span><span class="m">{_e(best_open_here["name"])}</span>'
-          f'<span class="t">#{best_open_here["rank"]} open model · on {_e(_onshore_names(best_open_here))}{star}</span></div>')
+          f'<span class="name">{_e(best_open_here["name"])}</span>'
+          f'<span class="t"><b>#{best_open_here["rank"]} in the world</b> · on {_e(_onshore_names(best_open_here))}</span></div>')
     w("</section>")
 
     # Today.
     w('<section class="glass section">')
     items = _changes(s, n)
-    since = s.get("changes", {}) and s["changes"]["since"]
-    w(f"<h2>{'Since ' + _e(_date(since)) if since else 'Today'}</h2>")
+    w("<h2>Latest</h2>")
     w('<ul class="list">' + "".join(items) + "</ul>")
     w("</section>")
 
     # Providers.
     w('<section class="glass section">')
-    w("<h2>Who we checked</h2>")
-    w('<p class="sub">Open models each one runs in Australia today. Tap for their docs.</p>')
+    w("<h2>Providers</h2>")
+    w('<p class="sub">Top open models each one runs in Australia.</p>')
     counts = {}
     for t in here:
         for a in t["at"]:
@@ -294,14 +286,10 @@ def render_body(s):
         else:
             pills.append(f'<a class="pill" href="{_e(p["catalogue"][0])}">{_e(p["name"])} <b>{counts.get(p["id"], 0)}</b></a>')
     w('<div class="pills">' + "".join(pills) + "</div>")
-    w(f'<p class="sub" style="margin:0">Not checked yet: {_e(", ".join(_short(p["name"]) for p in s["not_checked"]))}.</p>')
     w("</section>")
 
     w("<footer>")
-    w(f"<p>Runs in Australia means a provider processes the model only in Australia. Listed for Australia and overseas "
-      f"with no way to lock it here counts as not here. Running here isn't the same as Australian-owned: AWS is a US company.</p>")
-    w(f"<p>Rankings: Artificial Analysis Intelligence Index, {_e(_date(sc['as_of']))}. Provider data from each provider's "
-      f"public docs, checked {_e(_date(s['generated_at']))}. Built in Brisbane. Spot a mistake? @Openinference on X.</p>")
+    w("<p>Updated every day. Rankings by Artificial Analysis. Built in Brisbane · @Openinference</p>")
     w("</footer>")
     w("</main>")
 
@@ -309,7 +297,6 @@ def render_body(s):
              "score": _score(t["score"]), "at": _sheet_rows(t)} for t in top]
     w('<dialog id="sheet" aria-label="Where this model runs"><div class="glass sheet">'
       '<div id="sheet-body"></div>'
-      '<p class="note">From each provider\'s public docs. "Their own claim" means the provider says so and we can\'t check it from outside.</p>'
       '<button type="button" class="close" id="sheet-close">Done</button></div></dialog>')
     w('<script type="application/json" id="models">' + json.dumps(data).replace("</", "<\\/") + "</script>")
     w(f"<script>{SCRIPT}</script>")
