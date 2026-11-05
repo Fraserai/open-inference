@@ -23,6 +23,6 @@ trap 'rmdir $LOCK' EXIT
 echo "== $(date '+%Y-%m-%d %H:%M') daily report"
 $PY -m unittest discover -s tests -q
 $PY -m tracker
-git add data reports
+git add data reports site
 git diff --cached --quiet || git commit -q -m "Daily report $TODAY"
 echo "done"

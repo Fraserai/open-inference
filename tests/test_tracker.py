@@ -187,3 +187,18 @@ class ReportTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class PageTest(unittest.TestCase):
+    def test_page_renders_todays_numbers(self):
+        import json
+        from pathlib import Path
+        from tracker import page
+        path = sorted(Path(__file__).resolve().parent.parent.glob("data/2026-*/snapshot.json"))[0]
+        snap = json.loads(path.read_text())
+        body = page.render_body(snap)
+        onshore = sum(1 for t in snap["top_open"] if t["best_status"] == "onshore")
+        self.assertIn(f"{onshore} of the top {len(snap['top_open'])}", body)
+        self.assertEqual(body.count('class="seat '), len(snap["top_open"]))
+        self.assertNotIn("<!doctype", body.lower())
+        self.assertTrue(page.render_document(snap).startswith("<!doctype html>"))

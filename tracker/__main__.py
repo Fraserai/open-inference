@@ -1,7 +1,7 @@
 """python3 -m tracker [--date YYYY-MM-DD] [--offline]
 
 Fetches every source, writes data/<date>/snapshot.json and reports/<date>.md, and
-copies the report to reports/latest.md. --offline rebuilds from data/raw/<date>/.
+copies the report to reports/latest.md, and writes the web page to site/. --offline rebuilds from data/raw/<date>/.
 """
 
 import argparse
@@ -11,7 +11,7 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from . import build, report, scores
+from . import build, page, report, scores
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -57,6 +57,10 @@ def main():
     (ROOT / "reports").mkdir(exist_ok=True)
     (ROOT / "reports" / f"{day}.md").write_text(text)
     (ROOT / "reports" / "latest.md").write_text(text)
+    site = ROOT / "site"
+    site.mkdir(exist_ok=True)
+    (site / "index.html").write_text(page.render_document(snapshot))   # complete page for any static host
+    (site / "artifact.html").write_text(page.render_body(snapshot))    # content only, for the claude.ai Artifact
 
     failed = [p["name"] for p in snapshot["providers"] if p["status"] != "ok"]
     print(f"{day}: {len(snapshot['top_open'])} top open models, {len(snapshot['missing'])} missing; "
