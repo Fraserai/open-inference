@@ -1,20 +1,20 @@
-# Open Inference daily report: 2026-11-05
+# Open Inference daily report: 2026-11-06
 
-_Generated 2026-11-05T02:14:11+00:00 UTC. Model scores: Artificial Analysis Intelligence Index as of **2026-10-23** (saved copy: ARTIFICIAL_ANALYSIS_API_KEY not set)._
+_Generated 2026-11-06T08:01:51+00:00 UTC. Model scores: Artificial Analysis Intelligence Index as of **2026-10-23** (saved copy: ARTIFICIAL_ANALYSIS_API_KEY not set)._
 
 ## Today in one look
-- **Top 30 open models processed in Australia somewhere:** 6 (4 of them only on a provider's own claim).
+- **Top 30 open models processed in Australia somewhere:** 7 (5 of them only on a provider's own claim).
 - **Listed for Australia *and* overseas, with no documented way to pin to Australia:** 1.
-- **Missing in Australia (top 30 open, not processed here):** 23.
-- **Best open model overall:** MiMo V2.6 Pro (46.3), not offered. **Best processed in Australia:** Kimi K3 (43.6, #5).
-- **Changes since 2026-11-04:** 14 (see below).
+- **Missing in Australia (top 30 open, not processed here):** 22.
+- **Best open model overall:** MiMo V2.6 Pro (46.3), not offered. **Best processed in Australia:** GLM 5.3 (44.8, #3).
+- **Changes since 2026-11-05:** 5 (see below).
 
 ## Top 30 open models: where they're processed
 | # | Model | Maker | Score | Australia | Where |
 |---|---|---|---|---|---|
 | 1 | MiMo V2.6 Pro | xiaomi | 46.3 | Not offered | – |
 | 2 | DeepSeek V4.1 Flash 1017 | deepseek | 45.1 | Overseas only | SCX (overseas only) |
-| 3 | GLM 5.3 | zai | 44.8 | On request | SCX (overseas only), Xinference (on request), AWS Bedrock (overseas only) |
+| 3 | GLM 5.3 | zai | 44.8 | In Australia | SCX (Australia + overseas), ResetData (in Australia), Xinference (in Australia), AWS Bedrock (overseas only) |
 | 4 | Step 5 Preview | stepfun | 43.7 | Not offered | – |
 | 5 | Kimi K3 | moonshotai | 43.6 | In Australia | SCX (overseas only), Xinference (in Australia), AWS Bedrock (overseas only) |
 | 6 | GLM 5.3 Flash | zai | 41.8 | Overseas only | SCX (overseas only) |
@@ -26,7 +26,7 @@ _Generated 2026-11-05T02:14:11+00:00 UTC. Model scores: Artificial Analysis Inte
 | 12 | DeepSeek V4 Flash Vision Exp | deepseek | 34.8 | Not offered | – |
 | 13 | DeepSeek V4 Flash 0731 | deepseek | 34.3 | Not offered | – |
 | 14 | Qwen3.8 27B | alibaba | 33.7 | Not offered | – |
-| 15 | GLM 5.2 | zai | 33.7 | In Australia | SCX (overseas only), ResetData (in Australia), Continuum Labs (in Australia) |
+| 15 | GLM 5.2 | zai | 33.7 | In Australia | SCX (overseas only), Continuum Labs (in Australia) |
 | 16 | DeepSeek V4 Pro | deepseek | 30.4 | Overseas only | SCX (overseas only) |
 | 17 | MiniMax M3 | minimax | 29.2 | Australia + overseas | SCX (Australia + overseas) |
 | 18 | GLM 5 | zai | 27.9 | In Australia | AWS Bedrock (in Australia) |
@@ -48,7 +48,6 @@ Top 30 open models with no provider processing them in Australia:
 
 - #1 MiMo V2.6 Pro (46.3)
 - #2 DeepSeek V4.1 Flash 1017 (45.1) — SCX (overseas only)
-- #3 GLM 5.3 (44.8) — SCX (overseas only), Xinference (on request), AWS Bedrock (overseas only)
 - #4 Step 5 Preview (43.7)
 - #6 GLM 5.3 Flash (41.8) — SCX (overseas only)
 - #7 Qwen3.8 2.4T A95B (39.9) — SCX (overseas only)
@@ -70,22 +69,12 @@ Top 30 open models with no provider processing them in Australia:
 - #28 DeepSeek V4 Flash (24.4) — SCX (overseas only)
 - #30 Nemotron 3 Ultra (22.9)
 
-## Changes since 2026-11-04
-- **Added** at AWS Bedrock: GPT-6.1 Terra (overseas only)
-- **Gone** from SCX: Claude Fable 5
-- **Gone** from SCX: Claude Fable 5.1
-- **Gone** from SCX: Claude Haiku 4.5
-- **Gone** from SCX: Claude Haiku 5.5
-- **Gone** from SCX: Claude Opus 4.5
-- **Gone** from SCX: Claude Opus 4.6
-- **Gone** from SCX: Claude Opus 4.7
-- **Gone** from SCX: Claude Opus 4.8
-- **Gone** from SCX: Claude Opus 5
-- **Gone** from SCX: Claude Opus 5.5
-- **Gone** from SCX: Claude Sonnet 4.6
-- **Gone** from SCX: Claude Sonnet 5
-- **Gone** from SCX: Claude Sonnet 5.5
-- Not compared (a fetch failed on one of the days): continuum
+## Changes since 2026-11-05
+- **Added** at ResetData: zai/glm-5.3 (in Australia)
+- **Added** at Xinference: GLM-5.3 (in Australia)
+- **Gone** from ResetData: zai/glm-5.2
+- **Gone** from Xinference: GLM 5.3
+- **Moved** at SCX: GLM-5.3, overseas only → Australia + overseas
 
 ## New open models, not scored yet
 - Tencent: Hy4 (`tencent/Hy4`), listed on OpenRouter 2026-11-04
@@ -99,13 +88,14 @@ Every model (open or closed) that a checked provider processes in Australia, or 
 | Claude Opus 5.5 | closed | 57.6 | AWS Bedrock (in Australia) |
 | Claude Sonnet 5.5 | closed | 56.0 | AWS Bedrock (in Australia) |
 | Claude Opus 5 | closed | 50.8 | AWS Bedrock (in Australia) |
+| GLM 5.3 | open | 44.8 | SCX (Australia + overseas), ResetData (in Australia), Xinference (in Australia) |
 | Kimi K3 | open | 43.6 | Xinference (in Australia) |
 | Claude Haiku 5.5 | closed | 43.4 | AWS Bedrock (in Australia) |
 | Claude Opus 4.8 | closed | 41.8 | AWS Bedrock (in Australia) |
 | Claude Opus 4.7 | closed | 40.7 | AWS Bedrock (in Australia) |
 | DeepSeek V4.1 Flash | open | 39.5 | Xinference (in Australia) |
 | Claude Sonnet 5 | closed | 38.2 | AWS Bedrock (in Australia) |
-| GLM 5.2 | open | 33.7 | ResetData (in Australia), Continuum Labs (in Australia) |
+| GLM 5.2 | open | 33.7 | Continuum Labs (in Australia) |
 | Claude Opus 4.6 | closed | 31.9 | AWS Bedrock (in Australia) |
 | Claude Sonnet 4.6 | closed | 30.1 | AWS Bedrock (in Australia) |
 | GLM 5 | open | 27.9 | AWS Bedrock (in Australia) |
@@ -180,9 +170,9 @@ Every model (open or closed) that a checked provider processes in Australia, or 
 ## Providers checked
 | Provider | Owner | Models listed | In Australia | AU + overseas | Evidence | Source |
 |---|---|---|---|---|---|---|
-| SCX.ai | SCX.ai, ASX-listed Australian company | 29 | 7 | 5 | region per model | https://platform.scx.ai/docs/models |
+| SCX.ai | SCX.ai, ASX-listed Australian company | 29 | 7 | 6 | region per model | https://platform.scx.ai/docs/models |
 | ResetData | ResetData (Centuria Capital owns 50%, per press coverage) | 6 | 6 | 0 | provider's own claim | https://docs.resetdata.ai/models/overview/ |
-| Xinference | Xinference (says it is Australian; not checked) | 3 | 2 | 0 | provider's own claim | https://xinference.co/model-api.html |
+| Xinference | Xinference (says it is Australian; not checked) | 3 | 3 | 0 | provider's own claim | https://xinference.co/model-api.html |
 | Continuum Labs | Continuum Labs Pty Ltd, Melbourne (says it is Australian owned) | 9 | 9 | 0 | provider's own claim | https://www.continuumlabs.ai/models |
 | AWS Bedrock (Sydney, Melbourne) | Amazon Web Services (US-owned hyperscaler) | 76 | 56 | 0 | region per model | https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html |
 - ResetData: Only the serverless list is public; the full catalogue needs a login.
